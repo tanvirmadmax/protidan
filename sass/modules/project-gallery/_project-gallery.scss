@@ -1,0 +1,23 @@
+.project-gallery-area {
+    padding: 140px 0px;
+
+    .project-gallery-controls {
+        margin-bottom: 60px;
+        text-align: center;
+
+        button {
+            background-color: transparent;
+            color: #5D666F;
+            font-family: $heading-font;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 30px;
+            margin: 0;
+            padding: 0px 40px;
+
+            &:hover {
+                color: $black;
+            }
+        }
+    }
+}

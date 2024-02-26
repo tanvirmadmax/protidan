@@ -1,0 +1,55 @@
+.info-card{
+    &.style-2 {
+        // position: absolute;
+        background: $black;
+        padding: 35px 90px 30px 35px;
+        z-index: 1;
+        left: 20px;
+        bottom: 20px;
+        font-family: $heading-font;
+        transform: scale(0);
+        transform-origin: bottom;
+        @include transition;
+
+        .short-title {
+            color: $primary-color;
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 17px;
+            margin-bottom: 0;
+        }
+
+        .title {
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 32px;
+            color: $white;
+            margin-bottom: 0;
+            a{
+                &:hover{
+                    color: $primary-color;
+                }
+            }
+        }
+
+        .icon {
+            position: absolute;
+            right: -15px;
+            top: 50%;
+            transform: translateY(-50%);
+            // display: inline-block;
+            background-color: $primary-color;
+            color: $white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 37px;
+            height: 37px;
+            border-radius: 100%;
+            i{
+                line-height: 14px;
+            }
+        }
+
+    }
+}

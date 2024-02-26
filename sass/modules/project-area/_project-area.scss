@@ -1,0 +1,122 @@
+.project-area {
+
+    .image-card-wrapper {
+        // margin: 0 auto;
+        padding: 0 100px;
+        margin-top: 60px;
+        @include sm{
+            padding: 0 12px;
+            margin-top: 30px;
+        }
+        .image-card{
+            margin: 0 12px;
+        }
+        &.project-area-slider{
+            .slick-dots{
+                display: flex !important;
+                width: 356px;
+                height: 3px;
+                list-style: none;
+                justify-content: center;
+                background: linear-gradient(270deg, rgba(217, 217, 217, 0.00) -1.4%, #ED3B3B 100%);
+                margin: 0 auto;
+                margin-top: 65px;
+                padding-left: 0;
+                li{
+                    font-size: 0;
+                    width: 20%;
+                    cursor: pointer;
+                    z-index: 3;
+                    @include transition;
+                    button{
+                        width: 15px;
+                        height: 15px;
+                        border-radius: 50%;
+                        background-color: $primary-color;
+                        visibility: hidden;
+                        opacity: 0;
+                        // margin-top: -10px;
+                        @include transition;
+                        transform: translateY(-42%);
+                    }
+                    &.slick-active{
+                        button{
+                            visibility: visible;
+                            opacity: 1;
+                            @include transition;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .image-card-wrapper {
+        &.style-2 {
+            margin-top: 30px;
+        }
+    }
+
+    .project-btn-wrapper {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        margin-bottom: 60px;
+
+        @include rmaxwd(1199) {
+            flex-wrap: wrap;
+            // justify-content: start;
+        }
+
+        button {
+            padding: 8px 32px;
+            border: 1px solid #E7E7E7;
+            border-radius: 8px;
+            color: $black;
+            font-family: $heading-font;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 32px;
+            background-color: $white;
+            @include md{
+                padding: 8px 24px;
+            }
+            @include sm {
+                padding: 8px 24px;
+            }
+
+            &:hover {
+                color: $primary-color;
+                border-color: $primary-color;
+            }
+
+            &.active {
+                color: $primary-color;
+                border-color: $primary-color;
+            }
+        }
+    }
+
+    .btn-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &.style-2{
+        .image-card{
+            margin: 0;
+        }
+    }
+    &.style-3 {
+
+        .project-card {
+            @include rmaxwd(1199) {
+                margin-top: 24px;
+            }
+        }
+
+        .post-card {
+            margin-top: 0;
+        }
+    }
+}

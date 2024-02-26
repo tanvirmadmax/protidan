@@ -1,0 +1,50 @@
+.counter-area{
+    background-color: $primary-color;
+    padding-top: 197px;
+    padding-bottom: 90px;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    @include sm{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .counter-item{
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        @include xl{
+            gap: 12px;
+        }
+        .icon{
+            span{
+                font-size: 50px;
+                color: $white;
+                background-image: linear-gradient(330deg, #ED3B3B 13.97%, #000 163.51%);
+                width: 100px;
+                height: 100px;
+                align-items: center;
+                justify-content: center;
+                display: inline-flex;
+                border-radius:100%;
+                border-bottom: 1px solid $white;
+            }
+        }
+        .content{
+            font-family: $heading-font;
+            h2{ 
+                color: $white;
+                line-height: 60px;
+                font-size: 60px;
+                margin-bottom: 10px;
+                font-weight: normal;
+              
+            }
+            p{
+                color: $white;
+                font-size: 24px;
+                line-height: 35px;
+            }
+        }
+    }
+}

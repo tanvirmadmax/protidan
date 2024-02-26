@@ -1,0 +1,135 @@
+  // START:: LATEST BLOG
+  .latest-blog-area {
+    .blog-inner-wrapper {
+      margin-top: 33px;
+      .single-post {
+        .image {
+          margin-bottom: 0px;
+          overflow: hidden;
+          img {
+            width: 100%;
+            @include transition;
+
+            &:hover {
+              transform: scale(1.2);
+            }
+          }
+
+        }
+
+        .post-info {
+          padding: 0px 30px 40px 30px;
+          box-shadow: rgba(149, 157, 165, 0.1) 0px 8px 24px;
+
+          @include sm {
+            padding: 0px 5px 40px 5px;
+          }
+
+          .author-wrapper {
+            margin-bottom: 20px;
+            width: 100%;
+            display: flex;
+
+            .date {
+              width: 30%;
+              text-align: center;
+              margin-top: -48px;
+              transform: scale(1);
+
+              h6 {
+                color: $white;
+                background-color: $primary-color;
+                font-size: 30px;
+                font-weight: 500;
+                font-family: $heading-font;
+                line-height: auto;
+                padding: 10px;
+                margin: 0;
+              }
+
+              p {
+                font-size: 12px;
+                padding: 2px;
+                color: $white;
+                background-color: $black;
+                margin-bottom: 0;
+              }
+            }
+            .meta-tag {
+              width: 70%;
+              display: flex;
+              justify-content: space-between;
+              margin-left: 16px;
+              margin-top: 10px;
+              padding-left: 0;
+              margin-bottom: 0;
+              @include rmaxwd(991){
+                gap: 4px;
+              }
+
+              li {
+                display: flex;
+                align-items: center;
+                font-size: 14px;
+                font-weight: 600;
+                font-family: $body-font;
+                color: $text-color;
+                text-transform: capitalize;
+
+                span {
+                  font-size: 15px;
+                  color: $primary-color;
+                  margin-right: 10px;
+                  @include rmaxwd(991){
+                    margin-right: 4px;
+                  }
+                }
+              }
+            }
+          }
+
+          h3 {
+            font-size: 30px;
+            font-family: $heading-font;
+            line-height: 35px;
+            font-weight: 500;
+            color: $black;
+            margin-bottom: 23px;
+
+            @include sm {
+              font-size: 26px;
+              line-height: 30px;
+
+            }
+          }
+
+          .externel-link {
+            a {
+              font-family: $heading-font;
+              background-color: $text-silver;
+              padding: 15px 21px;
+              color: $black;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+
+              span {
+                font-size: 18px;
+                line-height: 24px;
+              }
+
+              i {
+                color: $primary-color;
+                font-size: 23px;
+                line-height: 23px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }

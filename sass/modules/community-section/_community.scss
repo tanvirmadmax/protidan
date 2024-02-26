@@ -1,0 +1,172 @@
+.community-section-area{
+    padding-top: 100px;
+    padding-bottom: 128px;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    @include sm{
+        padding: 60px 0;
+    }
+    .community-title{
+        h3{
+            color: $white;
+            margin-bottom: 0;
+        }
+        padding-bottom: 70px;
+        margin-bottom: 80px;
+        border-bottom: 1px solid $white;
+        @include sm{
+            margin-bottom: 60px;
+            padding-bottom: 60px;
+        }
+        .section-title{
+            .title{
+                br{
+                    @include lg{
+                        display: none;
+                    }
+                }
+            }
+        }
+        .community-section-btn{
+            display: flex;
+            justify-content: end;
+            align-items: end;
+            // height: 100%;
+            margin-bottom: 0px;
+            @include rmaxwd(991){
+                align-items: center;
+                justify-content: start;
+                margin-top: 20px;
+            }
+            @include sm{
+                // align-items: start;
+                justify-content: start;
+            }
+            .theme-btn{
+                // margin-bottom: 18px;
+            }
+        }
+    }
+    .community-overlay{
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        background-color: #000;
+        opacity: 70%;
+        z-index: -1;
+    }
+}
+.community-item{
+    display: flex;
+    gap: 50px;
+    @include xl{
+        gap: 20px;
+    }
+    @include lg{
+        flex-direction: column;
+        gap: 12px;
+    }
+    @include rmaxwd(991){
+        gap: 12px;
+    }
+    .icon{
+        font-size: 60px;
+        color: $primary-color;
+    }
+    .content{
+        color: $white;
+        .title{
+            color: $white;
+            font-size: 30px;
+            line-height: 35px;
+            font-family: $heading-font;
+            font-weight: normal;
+            margin-bottom: 19px;
+            letter-spacing: 3px;
+        }
+        .desc{
+            font-size: 16px;
+            line-height: 29px;
+            margin-bottom: 0;
+        }
+    }
+}
+
+// counter section
+.counter-area{
+    &.style-2{
+        margin-top: -68px;
+        background-color: transparent;
+        padding: 0;
+        
+        .counter-wrapper{
+            background-color: $primary-color;
+            padding: 64px 142px;
+            background-size: cover;
+            background-position: bottom;
+            background-repeat: no-repeat;
+            @include xl{
+                padding: 60px 100px;
+            }
+            @include lg{
+                padding: 42px;
+            }
+            @include md{
+                padding: 30px;
+            }
+            @include sm{
+                padding: 80px 30px;
+            }
+        }
+    }
+}
+.counter-item{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    @include xl{
+        gap: 12px;
+    }
+    @include lg{
+        gap: 0;
+    }
+    .icon{
+        span{
+            font-size: 50px;
+            color: $white;
+            background-image: linear-gradient(to top, #ED3B3B , #000000);
+            width: 100px;
+            height: 100px;
+            align-items: center;
+            justify-content: center;
+            display: inline-flex;
+            border-radius:100%;
+            -webkit-border-radius:100%;
+            -moz-border-radius:100%;
+            -ms-border-radius:100%;
+            -o-border-radius:100%;
+            border-bottom: 1px solid $white;
+        }
+    }
+    .content{
+        font-family: $heading-font;
+        h2{ 
+            color: $white;
+            line-height: 60px;
+            font-size: 60px;
+            margin-bottom: 10px;
+            font-weight: normal;
+          
+        }
+        p{
+            color: $white;
+            font-size: 24px;
+            line-height: 35px;
+            margin-bottom: 0;
+        }
+    }
+}

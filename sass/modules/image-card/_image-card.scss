@@ -1,0 +1,101 @@
+.image-card {
+    position: relative;
+    overflow: hidden;
+
+
+    .image-wrapper {
+        position: relative;
+        img{
+            @include rmaxwd(1399){
+                width: 100%;
+            }
+        }
+        .info-card {
+            position: absolute;
+            height: 100%;
+            left: 0;
+            margin: 50px;
+            bottom: -78%;
+            text-align: center;
+            border-radius: 289px;
+            background-color: $primary-color;
+            justify-content: start;
+            @include transition;
+            @include xl{
+                margin: 0;
+                bottom: -68%;
+                padding: 24px;
+            }
+            @include sm{
+                padding-top: 44px;
+                bottom: -60%;
+                margin: 0;
+            }
+            @include rmaxwd(1399){
+                justify-content: start;
+            }
+            .title,
+            .desc {
+                text-align: center;
+                @include transition;
+                br{
+                    display: block;
+                }
+            }
+            .desc{
+                visibility: hidden;
+                opacity: 0;
+                
+            }
+            
+        }
+    }
+
+    &:hover {
+        .image-wrapper {
+            .info-card {
+                bottom: 0;
+                margin: 0;
+                text-align: start;
+                border-radius: 0;
+                background-color: transparent;
+                @include transition;
+                @include sm{
+                    padding: 30px;
+                }
+                .title,
+                .desc {
+                    text-align: start;
+                    @include transition;
+                    // @include transition;
+                    br{
+                        display: none;
+                    }
+                }
+                .desc{
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    &.style-2 {
+        position: relative;
+    
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+        .info-card{
+            &.style-2 {
+                position: absolute;       
+            }
+        }
+    
+        &:hover {
+            .info-card {
+                transform: scale(1);
+            }
+        }
+    }
+}
