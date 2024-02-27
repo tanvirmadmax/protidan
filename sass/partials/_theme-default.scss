@@ -242,9 +242,9 @@ code {
 .wp-block-loginout a,
 input.theme-btn {
   display: inline-flex;
-  background-color: $primary-color;
+  background-color: transparent;
   color: #fff;
-  padding: 15px 25px;
+  padding: 17px 32px;
   font-family: $heading-font;
   font-size: 18px;
   font-style: normal;
@@ -259,7 +259,7 @@ input.theme-btn {
   gap: 10px;
   border-radius: 6px;
   overflow: hidden;
-  border: 1px solid transparent;
+  border: 1px solid $white;
 
   @include sm {
     font-size: 16px;

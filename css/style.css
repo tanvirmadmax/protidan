@@ -58,7 +58,7 @@ body {
   height: 100%;
   font-size: 18px;
   font-weight: 400;
-  font-family: "Manrope", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   color: #666666;
   vertical-align: baseline;
   line-height: 30px;
@@ -90,7 +90,7 @@ h4,
 h5,
 h6 {
   margin-top: 0;
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   color: #393d48;
   font-style: normal;
   transition: all 0.5s ease-out;
@@ -162,20 +162,20 @@ a:focus,
 }
 
 a:focus {
-  color: #151515;
+  color: #121212;
   text-decoration: none;
   transition: all 0.5s ease-out;
 }
 
 a,
 button {
-  color: #151515;
+  color: #121212;
   outline: medium none;
   transition: all 0.5s ease-out;
 }
 a:hover,
 button:hover {
-  color: #151515;
+  color: #121212;
   transition: all 0.5s ease-out;
 }
 
@@ -243,7 +243,7 @@ input:focus {
 }
 
 .page-bg {
-  background-color: #151515;
+  background-color: #121212;
 }
 
 .page-area {
@@ -291,10 +291,10 @@ code {
 .wp-block-loginout a,
 input.theme-btn {
   display: inline-flex;
-  background-color: #ED3B3B;
+  background-color: transparent;
   color: #fff;
-  padding: 15px 25px;
-  font-family: "Teko", sans-serif;
+  padding: 17px 32px;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -308,7 +308,7 @@ input.theme-btn {
   gap: 10px;
   border-radius: 6px;
   overflow: hidden;
-  border: 1px solid transparent;
+  border: 1px solid #ffffff;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .theme-btn,
@@ -332,7 +332,7 @@ input.theme-btn i {
 .wp-block-loginout a:hover,
 input.theme-btn:hover {
   color: #fff;
-  background-color: #151515;
+  background-color: #121212;
   border: 1px solid #ED3B3B;
 }
 .theme-btn:hover i,
@@ -360,7 +360,7 @@ input.theme-btn.simple-btn {
   background-color: #ED3B3B;
   color: #fff;
   padding: 15px 25px;
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
@@ -2464,7 +2464,7 @@ blockquote {
   }
 }
 blockquote p {
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 30px;
   font-weight: 400;
   line-height: 35px;
@@ -2482,7 +2482,7 @@ blockquote p a {
   text-decoration: underline;
 }
 blockquote footer {
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 16px;
   font-weight: 700;
   text-transform: capitalize;
@@ -3477,14 +3477,14 @@ body.admin-bar .header-menu-area.sticky_menu {
 .header-top .header-contact-info .contact-info-item .content p {
   color: #ffffff;
   margin-bottom: 0;
-  font-family: "Manrope", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: normal;
 }
 .header-top .header-contact-info .contact-info-item .content .title {
   color: #ffffff;
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 21px;
   font-weight: 700;
 }
@@ -3645,8 +3645,8 @@ body.admin-bar .header-menu-area.sticky_menu {
   text-transform: capitalize;
   transition: all 0.5s ease-out;
   position: relative;
-  color: #151515;
-  font-family: "Manrope", sans-serif;
+  color: #121212;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 16px;
   font-weight: 800;
   line-height: 22px;
@@ -3765,7 +3765,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   gap: 12px;
   padding: 30px;
   color: #ffffff;
-  font-family: "Manrope", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: normal;
@@ -3779,7 +3779,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   }
 }
 .header-btn:hover {
-  background-color: #151515;
+  background-color: #121212;
   color: #ffffff;
 }
 .header-btn .icon-wrapper .icon {
@@ -3799,7 +3799,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   color: #5e6f92;
 }
 .header-btn .content-wrapper .text {
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 18px;
   font-weight: 700;
   color: #393d48;
@@ -3893,7 +3893,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   text-transform: capitalize;
 }
 .header-area.style-2 .header-btn-area .header-btn.style-2 .content-wrapper .text {
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 21px;
   font-style: normal;
   font-weight: 700;
@@ -4002,7 +4002,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   justify-content: center;
 }
 .mobile-menu-bar a i {
-  color: #151515;
+  color: #121212;
   font-size: 36px;
 }
 
@@ -4075,7 +4075,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   color: #393d48;
   font-size: 16px;
   font-weight: 400;
-  font-family: "Manrope", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   width: 100%;
 }
 .menu-sidebar-area .menu-sidebar-content .menu-sidebar-single-widget .header-contact-info span.contact-info-item {
@@ -4088,7 +4088,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   color: #393d48;
   font-size: 16px;
   font-weight: 400;
-  font-family: "Manrope", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
 }
 .menu-sidebar-area .menu-sidebar-content .menu-sidebar-single-widget .header-contact-info span a:hover {
   color: #ED3B3B;
@@ -4401,90 +4401,26 @@ body.admin-bar .header-menu-area.sticky_menu {
     padding-top: 255px;
   }
 }
-.slider-area .single-slider .bg-shape {
+.slider-area .single-slider .overlay {
+  background-color: #000000;
+  opacity: 0.2;
   position: absolute;
-  left: 0;
   top: 0;
-  z-index: -1;
-}
-.slider-area .single-slider .bg-image {
-  position: absolute;
   left: 0;
-  top: 0;
-  z-index: -3;
-}
-.slider-area .single-slider .angle-shape {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  z-index: 0;
-}
-@media (max-width: 991px) {
-  .slider-area .single-slider .angle-shape {
-    display: none;
-  }
-}
-.slider-area .single-slider .shape {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-}
-@media (max-width: 1199px) {
-  .slider-area .single-slider .shape {
-    display: flex;
-    justify-content: end;
-  }
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .slider-area .single-slider .shape {
-    display: none;
-  }
-}
-@media (max-width: 1199px) {
-  .slider-area .single-slider .shape img {
-    width: 50%;
-    height: 50%;
-  }
+  width: 100%;
+  height: 100%;
 }
 .slider-area .single-slider .slider-content {
   position: relative;
+  text-align: center;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .slider-area .single-slider .slider-content {
     text-align: start;
   }
 }
-.slider-area .single-slider .slider-content .shape-1 {
-  position: absolute;
-  right: 234px;
-  top: -64px;
-}
-@media only screen and (min-width: 1200px) and (max-width: 1399px) {
-  .slider-area .single-slider .slider-content .shape-1 {
-    right: 108px;
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .slider-area .single-slider .slider-content .shape-1 {
-    right: 0;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .slider-area .single-slider .slider-content .shape-1 {
-    right: 120px;
-    top: -92px;
-    display: none;
-  }
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .slider-area .single-slider .slider-content .shape-1 {
-    right: 0;
-    top: -112px;
-    display: none;
-  }
-}
 .slider-area .single-slider .slider-content .slider-short-title {
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 20px;
   font-weight: 600;
   line-height: 30px;
@@ -4507,12 +4443,13 @@ body.admin-bar .header-menu-area.sticky_menu {
   }
 }
 .slider-area .single-slider .slider-content .slider-title {
-  font-family: "Teko", sans-serif;
-  font-weight: 600;
-  font-size: 100px;
+  font-family: "Vazirmatn", sans-serif;
+  font-size: 68px;
+  font-weight: 900;
   color: #ffffff;
-  line-height: 100px;
-  text-transform: uppercase;
+  line-height: 88px;
+  letter-spacing: 1.36px;
+  text-transform: capitalize;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .slider-area .single-slider .slider-content .slider-title {
@@ -4553,12 +4490,19 @@ body.admin-bar .header-menu-area.sticky_menu {
   display: inline-block;
   color: #ED3B3B;
   text-decoration: none;
-  border-bottom: 5px dashed #FE6809;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #121212;
+  padding: 10px 40px;
 }
 .slider-area .single-slider .slider-content .slider-short-desc {
-  font-size: 24px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 170%; /* 30.6px */
+  letter-spacing: 0.36px;
+  margin-top: 41px;
   color: #ffffff;
-  line-height: 36px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .slider-area .single-slider .slider-content .slider-short-desc {
@@ -4579,7 +4523,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   }
 }
 .slider-area .single-slider .slider-content .slider-btn-wrapper {
-  margin-top: 50px;
+  margin-top: 48px;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .slider-area .single-slider .slider-content .slider-btn-wrapper {
@@ -4794,7 +4738,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #151515;
+  background-color: #121212;
   margin-top: 30px;
   border-radius: 50%;
   flex-shrink: 0;
@@ -4805,12 +4749,12 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 
 .info-card.style-2 {
-  background: #151515;
+  background: #121212;
   padding: 35px 90px 30px 35px;
   z-index: 1;
   left: 20px;
   bottom: 20px;
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   transform: scale(0);
   transform-origin: bottom;
   transition: all 0.5s ease-out;
@@ -4923,15 +4867,15 @@ body.admin-bar .header-menu-area.sticky_menu {
   gap: 3px;
 }
 .icon-card .inner-wrapper .content .title {
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 30px;
   font-weight: 400;
   line-height: 35px;
-  color: #151515;
+  color: #121212;
   margin-bottom: 0;
 }
 .icon-card .inner-wrapper .content .desc {
-  font-family: "Manrope", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 29px;
@@ -5034,10 +4978,10 @@ body.admin-bar .header-menu-area.sticky_menu {
   height: auto;
 }
 .icon-card.style-2:hover .icon {
-  background-color: #151515;
+  background-color: #121212;
 }
 .icon-card.style-2:hover .content .title {
-  color: #151515;
+  color: #121212;
 }
 
 .icon-card.style-4 .inner-wrapper {
@@ -5066,14 +5010,14 @@ body.admin-bar .header-menu-area.sticky_menu {
   gap: 0;
 }
 .icon-card.style-4 .inner-wrapper .content .title {
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 22px;
   font-weight: 500;
   line-height: 36px;
-  color: #151515;
+  color: #121212;
 }
 .icon-card.style-4 .inner-wrapper .content .sub-title {
-  font-family: "Manrope", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 29px;
@@ -5081,13 +5025,13 @@ body.admin-bar .header-menu-area.sticky_menu {
   margin-bottom: 0;
 }
 .icon-card.style-4:hover .icon {
-  background-color: #151515;
+  background-color: #121212;
 }
 .icon-card.style-4:hover .icon i {
   color: #ffffff;
 }
 .icon-card.style-4:hover .content .title {
-  color: #151515;
+  color: #121212;
 }
 
 .about-image-card .main-img-wrapper {
@@ -5484,14 +5428,14 @@ body.admin-bar .header-menu-area.sticky_menu {
   background-color: #bfc5cb;
 }
 .about-info-card .about-info-content .quote-text .quote-text-meta .name {
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 16px;
   font-weight: 700;
   color: #393d48;
   font-style: normal;
 }
 .about-info-card .about-info-content .quote-text .quote-text-meta .designation {
-  font-family: "Manrope", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 16px;
   font-weight: 400;
 }
@@ -5653,7 +5597,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   font-weight: 700;
   color: #ffffff;
   line-height: 48px;
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   margin-bottom: 0;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -5700,7 +5644,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   width: 100%;
 }
 .promotional-banner-widget .promotional-bananer-content .content .text {
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 21px;
   font-weight: 700;
   color: #393d48;
@@ -5722,7 +5666,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   width: 100%;
   color: #1eae98;
   font-weight: 700;
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
 }
 .promotional-banner-widget.style-two .promotional-bananer-content .content .text {
   font-size: 24px;
@@ -5804,7 +5748,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   font-size: 40px;
 }
 .video-popup-card .video-desc p {
-  font-family: "Manrope", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 29px;
@@ -5892,7 +5836,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   flex-direction: column;
 }
 .counter-card .counter-item .number {
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
@@ -5912,7 +5856,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 .counter-card .counter-item .title {
   margin: 0;
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -6591,7 +6535,7 @@ button.testimonial-arrow-btn:hover i {
 }
 .accordion .accordion-item .accordion-button {
   padding: 20px 40px;
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 20px;
   font-weight: 600;
   color: #1F1F1F;
@@ -6608,11 +6552,11 @@ button.testimonial-arrow-btn:hover i {
   color: #FE6809;
 }
 .accordion .accordion-item .accordion-button.collapsed {
-  color: #151515;
+  color: #121212;
   background-color: #F2F3F6;
 }
 .accordion .accordion-item .accordion-button.collapsed:after {
-  color: #151515;
+  color: #121212;
 }
 .accordion .accordion-item .accordion-button:after {
   content: "\f22c";
@@ -6999,7 +6943,7 @@ button.testimonial-arrow-btn:hover i {
   margin-bottom: 25px;
 }
 .blog-details-wrapper .single-post-item .blog-post-tag .post-tag-list a {
-  font-family: "Manrope", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 29px;
@@ -7078,7 +7022,7 @@ button.testimonial-arrow-btn:hover i {
   margin-top: 0;
 }
 .single-post-item.format-quote blockquote cite a {
-  font-family: "Manrope", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 16px;
   font-weight: 600;
   text-transform: capitalize;
@@ -7126,7 +7070,7 @@ button.testimonial-arrow-btn:hover i {
 }
 .single-post-item .post-content p {
   margin-bottom: 0;
-  font-family: "Manrope", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 32px;
@@ -7148,7 +7092,7 @@ button.testimonial-arrow-btn:hover i {
   margin-bottom: unset;
 }
 .single-post-item .post-content blockquote p {
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 30px;
   font-weight: 400;
   line-height: 35px;
@@ -7201,7 +7145,7 @@ button.testimonial-arrow-btn:hover i {
 .single-post-item .social-share .social-share-title {
   font-size: 16px;
   font-weight: 700;
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   color: #393d48;
   margin-right: 5px;
   text-transform: uppercase;
@@ -7212,11 +7156,11 @@ button.testimonial-arrow-btn:hover i {
 }
 .single-post-item .blog-post-tag > span,
 .single-post-item .blog-post-cat > span {
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 30px;
   font-weight: 600;
   line-height: normal;
-  color: #151515;
+  color: #121212;
   margin-bottom: 0;
   margin-right: 40px;
   text-transform: capitalize;
@@ -7243,8 +7187,8 @@ button.testimonial-arrow-btn:hover i {
 .single-post-item .blog-post-tag .post-cat-list a,
 .single-post-item .blog-post-cat .post-tag-list a,
 .single-post-item .blog-post-cat .post-cat-list a {
-  color: #151515;
-  font-family: "Teko", sans-serif;
+  color: #121212;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 20px;
   font-weight: 500;
   line-height: 28px;
@@ -7395,11 +7339,11 @@ button.testimonial-arrow-btn:hover i {
   padding: 4px 16px;
   background-color: #BBB8FF;
   border-radius: 50px;
-  font-family: "Manrope", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 27px;
-  color: #151515;
+  color: #121212;
   transition: all 0.5s ease-out;
 }
 .single-post-item .content-header .tag-wrapper .tag.purple {
@@ -7409,7 +7353,7 @@ button.testimonial-arrow-btn:hover i {
   background-color: #FFCEC2;
 }
 .single-post-item .content-header .tag-wrapper .tag:hover {
-  background-color: #151515;
+  background-color: #121212;
   color: #FFF0D8;
 }
 .single-post-item .content-header span {
@@ -7491,12 +7435,12 @@ button.testimonial-arrow-btn:hover i {
   font-weight: 400;
   line-height: 35px;
   margin: 0;
-  color: #151515;
+  color: #121212;
 }
 .author-info .author-text p {
   margin-top: 4px;
   margin-bottom: 0;
-  font-family: "Manrope", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 29px;
@@ -7514,7 +7458,7 @@ button.testimonial-arrow-btn:hover i {
 }
 .author-info .author-social-profiles a {
   font-size: 18px;
-  color: #151515;
+  color: #121212;
   transition: all 0.5s ease-out;
   width: 40px;
   height: 40px;
@@ -7523,17 +7467,17 @@ button.testimonial-arrow-btn:hover i {
   justify-content: center;
   background-color: transparent;
   border-radius: 50px;
-  border: 1px solid #151515;
+  border: 1px solid #121212;
 }
 .author-info .author-social-profiles a:hover {
   transition: all 0.5s ease-out;
-  background-color: #151515;
+  background-color: #121212;
   color: #ffffff;
 }
 .author-info .author-post a {
   font-size: 16px;
   font-weight: 700;
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   color: #393d48;
   border-bottom: 2px solid #FE6809;
   margin-top: 30px;
@@ -7644,7 +7588,7 @@ button.testimonial-arrow-btn:hover i {
 }
 .blog-post-nav .post-navigation .text span {
   font-size: 14px;
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   display: block;
@@ -7812,7 +7756,7 @@ button.testimonial-arrow-btn:hover i {
   font-size: 21px;
   line-height: 28px;
   font-weight: 700;
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   margin: 0;
   color: #393d48;
   transition: all 0.5s ease-out;
@@ -8137,7 +8081,7 @@ button.testimonial-arrow-btn:hover i {
   color: #393d48;
   font-size: 18px;
   font-weight: 700;
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
 }
 .skill-progressbar .progressbar-number {
   width: 100%;
@@ -8160,7 +8104,7 @@ button.testimonial-arrow-btn:hover i {
   letter-spacing: 0px;
   font-weight: 400;
   text-transform: none;
-  font-family: "Manrope", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   color: #666666;
 }
 .skill-progressbar .progress-content-outter {
@@ -8196,7 +8140,7 @@ button.testimonial-arrow-btn:hover i {
   flex-direction: column;
 }
 .price-card .card-title .sub-title {
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -8210,7 +8154,7 @@ button.testimonial-arrow-btn:hover i {
   font-size: 30px;
   line-height: 30px;
   color: #393d48;
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   margin-bottom: 0;
 }
 .price-card .price {
@@ -8240,7 +8184,7 @@ button.testimonial-arrow-btn:hover i {
   transition: all 0.5s ease-out;
 }
 .price-card .price .price-heading {
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 48px;
@@ -8252,7 +8196,7 @@ button.testimonial-arrow-btn:hover i {
   margin-bottom: 0;
 }
 .price-card .price .price-heading .currency {
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -8262,7 +8206,7 @@ button.testimonial-arrow-btn:hover i {
   align-self: flex-start;
 }
 .price-card .price .price-heading .under-dot {
-  font-family: "Manrope", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -8272,7 +8216,7 @@ button.testimonial-arrow-btn:hover i {
   align-self: end;
 }
 .price-card .price .price-desc {
-  font-family: "Manrope", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
@@ -8305,7 +8249,7 @@ button.testimonial-arrow-btn:hover i {
   color: #bbc7cf;
 }
 .price-card .list .price-list-item .text {
-  font-family: "Manrope", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-weight: 400;
   font-size: 18px;
   color: #5e6f92;
@@ -8495,7 +8439,7 @@ button.testimonial-arrow-btn:hover i {
   line-height: 30px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   margin-bottom: 0;
 }
 .section-title .short-title:before {
@@ -8529,8 +8473,8 @@ button.testimonial-arrow-btn:hover i {
   font-style: normal;
   font-weight: 600;
   line-height: 60px;
-  font-family: "Teko", sans-serif;
-  color: #151515;
+  font-family: "Vazirmatn", sans-serif;
+  color: #121212;
   margin-bottom: 0;
   text-transform: capitalize;
 }
@@ -8562,7 +8506,7 @@ button.testimonial-arrow-btn:hover i {
 .section-title .desc {
   font-size: 16px;
   font-weight: 400;
-  font-family: "Manrope", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   color: #666666;
   margin-bottom: 0;
   margin-top: 15px;
@@ -8632,7 +8576,7 @@ button.testimonial-arrow-btn:hover i {
 
 .page-heading h3,
 .page-heading .page-title {
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 50px;
   color: #ffffff;
   margin-top: 20px;
@@ -8681,7 +8625,7 @@ button.testimonial-arrow-btn:hover i {
   color: #ffffff;
 }
 .breadcrumb-list ul li a {
-  font-family: "Manrope", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 16px;
   text-align: center;
   color: #ffffff;
@@ -8893,7 +8837,7 @@ button.testimonial-arrow-btn:hover i {
   display: inline-block;
   margin-right: 50px;
   color: #393d48;
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   display: inline-block;
   font-size: 21px;
   line-height: 20px;
@@ -9010,7 +8954,7 @@ button.testimonial-arrow-btn:hover i {
 }
 .time-card-wrapper .time-card-item .time-card-desc .title h2 {
   margin: 0;
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 21px;
   line-height: 60px;
   font-weight: 700;
@@ -9021,7 +8965,7 @@ button.testimonial-arrow-btn:hover i {
 }
 .time-card-wrapper .time-card-item .time-card-desc .desc p {
   margin: 0;
-  font-family: "Manrope", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 18px;
   line-height: 30px;
   font-weight: 400;
@@ -9379,8 +9323,8 @@ button.testimonial-arrow-btn:hover i {
 .widget .wp-block-search__label {
   display: flex;
   align-items: center;
-  color: #151515;
-  font-family: "Teko", sans-serif;
+  color: #121212;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 36px;
   font-weight: 700;
   line-height: 46px;
@@ -9532,7 +9476,7 @@ button.testimonial-arrow-btn:hover i {
   padding: 12px 32px;
   text-align: center;
   font-weight: 500;
-  font-family: "Manrope", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   text-transform: capitalize;
   position: relative;
   z-index: 1;
@@ -9575,8 +9519,8 @@ button.testimonial-arrow-btn:hover i {
   font-weight: 700;
   line-height: 46px;
   margin-bottom: 30px;
-  color: #151515;
-  font-family: "Teko", sans-serif;
+  color: #121212;
+  font-family: "Vazirmatn", sans-serif;
 }
 .widget .wp-block-search input,
 .widget .search-form input {
@@ -9634,7 +9578,7 @@ button.testimonial-arrow-btn:hover i {
 }
 .widget .tagcloud a,
 .widget .wp-block-tag-cloud a {
-  color: #151515;
+  color: #121212;
   background-color: #ffffff;
   display: flex;
   padding: 1px 16px;
@@ -9730,7 +9674,7 @@ button.testimonial-arrow-btn:hover i {
 .widget.widget_categories ul li, .widget.widget_archive ul li {
   display: inline-block;
   width: 100%;
-  color: #151515;
+  color: #121212;
 }
 .widget.widget_categories ul li.cat-item, .widget.widget_archive ul li.cat-item {
   text-align: right;
@@ -9739,11 +9683,11 @@ button.testimonial-arrow-btn:hover i {
 }
 .widget.widget_categories ul li a, .widget.widget_archive ul li a {
   float: left;
-  font-family: "Manrope", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 32px;
-  color: #151515;
+  color: #121212;
 }
 .widget.widget_categories ul {
   margin-top: -6px;
@@ -9937,18 +9881,18 @@ button.testimonial-arrow-btn:hover i {
   }
 }
 .widget_latest_post ul li .latest-post-desc .latest-post-title {
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
   margin-bottom: 0;
 }
 .widget_latest_post ul li .latest-post-desc .latest-post-title a {
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
-  color: #151515;
+  color: #121212;
   position: relative;
   text-transform: unset;
   transition: all 0.5s ease-out;
@@ -10015,7 +9959,7 @@ button.testimonial-arrow-btn:hover i {
   padding-top: 50px;
   padding-bottom: 50px;
   text-align: center;
-  background-color: #151515;
+  background-color: #121212;
 }
 .widget_promotion .wp-block-heading {
   width: 100%;
@@ -10031,7 +9975,7 @@ button.testimonial-arrow-btn:hover i {
   color: #393d48;
   padding: 12px 104px;
   font-weight: 600;
-  font-family: "Manrope", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   text-transform: capitalize;
   position: relative;
   z-index: 1;
@@ -10062,7 +10006,7 @@ button.testimonial-arrow-btn:hover i {
 .widget.widget_quick_info ul li {
   display: inline-block;
   width: 100%;
-  color: #151515;
+  color: #121212;
 }
 .widget.widget_quick_info .widget-contact-info ul li {
   display: flex;
@@ -10111,7 +10055,7 @@ button.testimonial-arrow-btn:hover i {
   gap: 16px;
   flex-shrink: 0;
   color: #393d48;
-  font-family: "Manrope", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 18px;
   font-weight: 700;
   width: 100%;
@@ -10144,7 +10088,7 @@ button.testimonial-arrow-btn:hover i {
 .widget_service_promotion {
   padding: 44px 40px;
   text-align: center;
-  background-color: #151515;
+  background-color: #121212;
   position: relative;
   overflow: hidden;
 }
@@ -10163,7 +10107,7 @@ button.testimonial-arrow-btn:hover i {
 }
 .widget_service_promotion .widget-subtitle p {
   color: #FE6809;
-  font-family: "Manrope", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 16px;
   line-height: 60px;
   font-weight: 700;
@@ -10178,7 +10122,7 @@ button.testimonial-arrow-btn:hover i {
 }
 .widget_service_promotion .promotion-card h4 {
   color: #ffffff;
-  font-family: "Manrope", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 24px;
   line-height: 36px;
   font-weight: 700;
@@ -10212,7 +10156,7 @@ button.testimonial-arrow-btn:hover i {
   margin: 0;
   text-align: start;
   color: #ffffff;
-  font-family: "Manrope", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 16px;
   line-height: 30px;
   font-weight: 400;
@@ -10221,7 +10165,7 @@ button.testimonial-arrow-btn:hover i {
   margin: 0;
   text-align: start;
   color: #ffffff;
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 21px;
   line-height: 30px;
   font-weight: 700;
@@ -10249,7 +10193,7 @@ button.testimonial-arrow-btn:hover i {
 }
 .widget_service_brochura .widget-title-wrapper .widget-subtitle {
   color: #FE6809;
-  font-family: "Manrope", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
@@ -10257,7 +10201,7 @@ button.testimonial-arrow-btn:hover i {
 }
 .widget_service_brochura .widget-title-wrapper .widget-title {
   color: #393d48;
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 24px;
   line-height: 36px;
   font-weight: 700;
@@ -10272,7 +10216,7 @@ button.testimonial-arrow-btn:hover i {
 }
 .widget_service_brochura .button-wrapper .btn-text {
   color: #ffffff;
-  font-family: "Manrope", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 700;
@@ -10335,7 +10279,7 @@ button.testimonial-arrow-btn:hover i {
   font-size: 21px;
   margin-bottom: 5px;
   font-weight: 700;
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   color: #393d48;
 }
 .wp-block-comments .wp-block-comment-template li .wp-block-columns .wp-block-comment-edit-link a {
@@ -10346,7 +10290,7 @@ button.testimonial-arrow-btn:hover i {
   color: #9ba8c3;
   font-size: 16px;
   font-weight: 400;
-  font-family: "Manrope", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
 }
 .wp-block-comments .wp-block-comment-template li .wp-block-columns .wp-block-comment-reply-link a {
   border-radius: 6px;
@@ -10406,12 +10350,12 @@ button.testimonial-arrow-btn:hover i {
   position: relative;
 }
 .latest-comments li .comments-box .comments-text .avatar-name h5 {
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  color: #151515;
+  color: #121212;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -10421,7 +10365,7 @@ button.testimonial-arrow-btn:hover i {
   color: #666666;
   font-size: 16px;
   font-weight: 400;
-  font-family: "Manrope", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .latest-comments li .comments-box .comments-text .avatar-name span {
@@ -10432,7 +10376,7 @@ button.testimonial-arrow-btn:hover i {
 .latest-comments li .comments-box .comments-text .comment-reply-link {
   display: inline-flex;
   align-items: center;
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 300;
@@ -10504,7 +10448,7 @@ ul.children {
 }
 .post-comments-title h2 small {
   font-size: 16px;
-  font-family: "Manrope", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   color: #ED3B3B;
 }
 
@@ -10563,7 +10507,7 @@ ul.children {
   gap: 12px;
   font-size: 16px;
   font-weight: 400;
-  font-family: "Manrope", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
 }
 .comment-respond .comment-form-cookies-consent {
   display: none;
@@ -10586,7 +10530,7 @@ ul.children {
   font-size: 16px;
   font-weight: 400;
   background-color: #ffffff;
-  font-family: "Manrope", sans-serif !important;
+  font-family: "Vazirmatn", sans-serif !important;
 }
 .comment-respond *::-webkit-input-placeholder {
   color: #778196;
@@ -10619,7 +10563,7 @@ ul.children {
   font-size: 16px;
   font-weight: 400;
   background-color: #ffffff;
-  font-family: "Manrope", sans-serif !important;
+  font-family: "Vazirmatn", sans-serif !important;
   height: 192px;
   margin-bottom: 12px;
 }
@@ -10795,7 +10739,7 @@ ul.children {
   line-height: 32px;
   font-weight: 700;
   color: #ffffff;
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   margin: 0;
 }
 .team-member-card .content-wrapper .content .desc {
@@ -10803,7 +10747,7 @@ ul.children {
   line-height: 28px;
   font-weight: 400;
   color: #c7cdda;
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   margin: 0;
 }
 .team-member-card .content-wrapper .social {
@@ -10962,7 +10906,7 @@ ul.children {
   backdrop-filter: blur(15px);
   text-align: center;
   padding: 14px;
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   transform: scale(0);
   -webkit-transform: scale(0);
   -moz-transform: scale(0);
@@ -11015,7 +10959,7 @@ ul.children {
   background-color: #ED3B3B;
 }
 .team-member .member-information ul li a i {
-  font-family: "Manrope", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
 }
 .team-member:hover .member-information {
   transform: scale(1);
@@ -11289,7 +11233,7 @@ ul.children {
 }
 .testimonial-area .testimonial-info .testimonial-wrapper .testimonial-item .rating-box .rating-icon span i {
   font-size: 20px;
-  font-family: "Manrope", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   line-height: 20px;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
@@ -11300,16 +11244,16 @@ ul.children {
 .testimonial-area .testimonial-info .testimonial-wrapper .testimonial-item .rating-box .rating-rate h4 {
   font-size: 30px;
   line-height: 40px;
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-weight: 500;
   margin-bottom: 0;
 }
 .testimonial-area .testimonial-info .testimonial-wrapper .testimonial-item .description p {
   font-size: 24px;
   line-height: 40px;
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   margin-bottom: 17px;
-  color: #151515;
+  color: #121212;
   letter-spacing: 1.2px;
 }
 .testimonial-area .testimonial-info .testimonial-wrapper .testimonial-item .description p span {
@@ -11359,15 +11303,15 @@ ul.children {
 .testimonial-area .testimonial-info .testimonial-wrapper .testimonial-item .testimonial-profile-box .profile-left .designation h5 {
   font-size: 24px;
   font-weight: 500;
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   line-height: 30px;
-  color: #151515;
+  color: #121212;
   margin-bottom: 2px;
 }
 .testimonial-area .testimonial-info .testimonial-wrapper .testimonial-item .testimonial-profile-box .profile-left .designation p {
   font-size: 15px;
   color: #ED3B3B;
-  font-family: "Manrope", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   line-height: 24px;
   margin-bottom: 0;
 }
@@ -11623,7 +11567,7 @@ ul.children {
   display: flex;
 }
 .contact-area .meta-user .signature .name span {
-  font-family: "Manrope", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 29px;
@@ -11666,7 +11610,7 @@ ul.children {
   font-size: 30px;
   font-weight: 600;
   line-height: 40px;
-  color: #151515;
+  color: #121212;
   margin-bottom: 32px;
 }
 .contact-area .comment-respond input {
@@ -12751,7 +12695,7 @@ ul.children {
   gap: 12px;
   font-size: 16px;
   font-weight: 400;
-  font-family: "Manrope", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
 }
 .contact-form-area.style-one .comment-respond-contact .comment-form-cookies-consent {
   display: none;
@@ -12766,7 +12710,7 @@ ul.children {
   padding-bottom: 30px;
   height: 60px;
   width: 100%;
-  color: #151515;
+  color: #121212;
   opacity: 1;
   border-bottom: 1px solid #BBBBBB !important;
   font-size: 16px;
@@ -12774,39 +12718,39 @@ ul.children {
   line-height: 29px;
   letter-spacing: 3.2px;
   background-color: #ffffff;
-  font-family: "Manrope", sans-serif !important;
+  font-family: "Vazirmatn", sans-serif !important;
 }
 .contact-form-area.style-one .comment-respond-contact *::-webkit-input-placeholder {
-  color: #151515;
+  color: #121212;
 }
 .contact-form-area.style-one .comment-respond-contact *:-moz-placeholder {
-  color: #151515;
+  color: #121212;
   opacity: 1;
 }
 .contact-form-area.style-one .comment-respond-contact *::-moz-placeholder {
-  color: #151515;
+  color: #121212;
   opacity: 1;
 }
 .contact-form-area.style-one .comment-respond-contact *:-ms-input-placeholder {
-  color: #151515;
+  color: #121212;
 }
 .contact-form-area.style-one .comment-respond-contact *::-ms-input-placeholder {
-  color: #151515;
+  color: #121212;
 }
 .contact-form-area.style-one .comment-respond-contact *::placeholder {
-  color: #151515;
+  color: #121212;
 }
 .contact-form-area.style-one .comment-respond-contact textarea {
   resize: vertical;
   width: 100%;
-  color: #151515;
+  color: #121212;
   border-bottom: 1px solid #bbb !important;
   font-size: 16px;
   font-weight: 400;
   line-height: 29px;
   letter-spacing: 3.2px;
   background-color: #ffffff;
-  font-family: "Manrope", sans-serif !important;
+  font-family: "Vazirmatn", sans-serif !important;
   height: 110px;
   margin-bottom: 12px;
 }
@@ -12912,7 +12856,7 @@ ul.children {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #151515;
+  color: #121212;
   transition: all 0.5s ease-out;
 }
 .contact-form-area.style-one .contact_social_profile a:hover i {
@@ -12923,7 +12867,7 @@ ul.children {
   font-size: 24px;
   line-height: 40px;
   text-align: center;
-  color: #151515 !important;
+  color: #121212 !important;
   transition: all 0.5s ease-out;
 }
 
@@ -13290,7 +13234,7 @@ ul.children {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #151515;
+  background-color: #121212;
 }
 @media (max-width: 767px) {
   .footer .footer-sec {
@@ -13299,7 +13243,7 @@ ul.children {
 }
 
 .footer-widget-title {
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 21px;
   line-height: 26px;
   color: #ffffff;
@@ -13984,7 +13928,7 @@ ul.children {
   color: #ED3B3B;
 }
 .s-bottom-text button:hover {
-  background-color: #151515;
+  background-color: #121212;
   color: #ffffff;
 }
 
@@ -14125,7 +14069,7 @@ ul.children {
   left: 0;
   width: 6.5rem;
   height: 6.5rem;
-  color: #151515;
+  color: #121212;
   border: 0.55rem solid #ED3B3B;
   border-radius: 50%;
   animation: pulseBorder 2s linear infinite;
@@ -14646,7 +14590,7 @@ ul.children {
   padding: 0rem;
 }
 .project-section .projects .icon-box i {
-  background: #151515;
+  background: #121212;
   color: #ffffff;
   padding: 10px 20px;
   border-radius: 50%;
@@ -14870,7 +14814,7 @@ ul.children {
   text-align: center;
 }
 .service-details .right-content .content-title {
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 50px;
   font-weight: 600;
   line-height: 60px;
@@ -14931,7 +14875,7 @@ ul.children {
   transition: all 0.5s ease-out;
 }
 .service-details .list-item-wrapper .icon-box .icon-title {
-  font-family: "Teko", sans-serif !important;
+  font-family: "Vazirmatn", sans-serif !important;
   font-size: 20px;
   font-weight: 600;
   line-height: 30px;
@@ -15036,7 +14980,7 @@ ul.children {
   color: #ED3B3B;
 }
 .icon-card.style-five .content {
-  font-family: "Manrope", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 29px;
@@ -15099,12 +15043,12 @@ ul.children {
   list-style: none;
   display: flex;
   align-items: center;
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 30px;
   letter-spacing: 2.4px;
-  color: #151515;
+  color: #121212;
   transition: all 0.5s ease-out;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
@@ -15184,7 +15128,7 @@ ul.children {
   border-bottom: 1px solid #ffffff;
 }
 .counter-area .counter-item .content {
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
 }
 .counter-area .counter-item .content h2 {
   color: #ffffff;
@@ -15221,7 +15165,7 @@ ul.children {
   }
 }
 .business-growth-area .content-wrapper .desc {
-  font-family: "Manrope", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 29px;
@@ -15283,13 +15227,13 @@ ul.children {
   color: #fff;
   font-weight: 400;
   z-index: 10;
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 16px;
 }
 .business-growth-area .image-wrapper .certified .rounded-text svg {
   width: 225px;
   height: 225px;
-  border: 2px dashed #151515;
+  border: 2px dashed #121212;
   border-radius: 50%;
 }
 .business-growth-area .image-wrapper .certified .rounded-text svg g {
@@ -15405,8 +15349,8 @@ ul.children {
   padding: 8px 32px;
   border: 1px solid #E7E7E7;
   border-radius: 8px;
-  color: #151515;
-  font-family: "Teko", sans-serif;
+  color: #121212;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 32px;
@@ -15577,7 +15521,7 @@ ul.children {
 .brand-logo-slider-area .brand-log-slider-wrapper .brand-logo-slider-one .logo-slide h3 {
   font-size: 100px;
   line-height: 100px;
-  color: #151515;
+  color: #121212;
   text-transform: uppercase;
   display: inline-block;
   margin-left: 80px;
@@ -15636,7 +15580,7 @@ ul.children {
 }
 .brand-logo-slider-area .brand-log-slider-wrapper .brand-logo-slider-one.style-two .logo-slide h3 {
   color: transparent;
-  -webkit-text-stroke: 1px #151515;
+  -webkit-text-stroke: 1px #121212;
   font-family: fantasy;
 }
 .brand-logo-slider-area .brand-log-slider-wrapper .brand-logo-slider-one.style-two .logo-slide h3:nth-child(odd) {
@@ -15719,7 +15663,7 @@ ul.children {
   background-color: #ED3B3B;
   font-size: 30px;
   font-weight: 500;
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   line-height: auto;
   padding: 10px;
   margin: 0;
@@ -15728,7 +15672,7 @@ ul.children {
   font-size: 12px;
   padding: 2px;
   color: #ffffff;
-  background-color: #151515;
+  background-color: #121212;
   margin-bottom: 0;
 }
 .latest-blog-area .blog-inner-wrapper .single-post .post-info .author-wrapper .meta-tag {
@@ -15750,7 +15694,7 @@ ul.children {
   align-items: center;
   font-size: 14px;
   font-weight: 600;
-  font-family: "Manrope", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   color: #666666;
   text-transform: capitalize;
 }
@@ -15766,10 +15710,10 @@ ul.children {
 }
 .latest-blog-area .blog-inner-wrapper .single-post .post-info h3 {
   font-size: 30px;
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   line-height: 35px;
   font-weight: 500;
-  color: #151515;
+  color: #121212;
   margin-bottom: 23px;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
@@ -15779,10 +15723,10 @@ ul.children {
   }
 }
 .latest-blog-area .blog-inner-wrapper .single-post .post-info .externel-link a {
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   background-color: #F2F2F6;
   padding: 15px 21px;
-  color: #151515;
+  color: #121212;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -15893,7 +15837,7 @@ ul.children {
   color: #ffffff;
   font-size: 30px;
   line-height: 35px;
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-weight: normal;
   margin-bottom: 19px;
   letter-spacing: 3px;
@@ -15969,7 +15913,7 @@ ul.children {
   border-bottom: 1px solid #ffffff;
 }
 .counter-item .content {
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
 }
 .counter-item .content h2 {
   color: #ffffff;
@@ -16086,17 +16030,17 @@ ul.children {
   }
 }
 .about-agency-area .about-agency-info .agency-progress-wrapper .skill-progressbar .progress-inner .progress-inner-item .skill-title {
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 20px;
   font-weight: lighter;
   line-height: 35px;
-  color: #151515;
+  color: #121212;
 }
 .about-agency-area .about-agency-info .agency-progress-wrapper .skill-progressbar .progress-inner .progress-inner-item .progressbar-number .progress-number-count .progress-percent {
   font-weight: 600;
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 20px;
-  color: #151515;
+  color: #121212;
 }
 .about-agency-area .about-agency-info .agency-progress-wrapper .skill-progressbar .progress-inner .progress-content-outter .progress-content {
   background-color: #ED3B3B;
@@ -16190,7 +16134,7 @@ ul.children {
   transform: rotateY(360deg);
 }
 .community-item.style-two .icon {
-  background-color: #151515;
+  background-color: #121212;
   width: 71px;
   height: 71px;
   border-radius: 5px;
@@ -16206,10 +16150,10 @@ ul.children {
   transition: all 0.5s ease-out;
 }
 .community-item.style-two .title {
-  color: #151515;
+  color: #121212;
   font-size: 30px;
   line-height: 35px;
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-weight: 400;
   margin-bottom: 0;
 }
@@ -16246,7 +16190,7 @@ ul.children {
   }
 }
 .our-services-item .stack-text h2 {
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 100px;
   line-height: normal;
   text-align: right;
@@ -16281,7 +16225,7 @@ ul.children {
   margin-bottom: 30px;
 }
 .our-services-item .content p {
-  font-family: "Manrope", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   line-height: 29px;
   font-size: 16px;
   margin: 0px;
@@ -16289,20 +16233,20 @@ ul.children {
 .our-services-item .title-wrapper .title {
   font-size: 30px;
   line-height: 35px;
-  font-family: "Teko", sans-serif;
-  color: #151515;
+  font-family: "Vazirmatn", sans-serif;
+  color: #121212;
   font-weight: 400;
   margin-bottom: 30px;
 }
 .our-services-item .title-wrapper .icon {
   font-size: 34px;
-  color: #151515;
+  color: #121212;
 }
 .our-services-item:hover {
   background-color: #ED3B3B;
 }
 .our-services-item:hover .icon span {
-  background-color: #151515;
+  background-color: #121212;
   color: #ffffff;
 }
 .our-services-item:hover .content p {
@@ -16416,17 +16360,17 @@ ul.children {
   }
 }
 .about-agency-area .about-agency-info .agency-progress-wrapper .skill-progressbar .progress-inner .progress-inner-item .skill-title {
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 20px;
   font-weight: lighter;
   line-height: 35px;
-  color: #151515;
+  color: #121212;
 }
 .about-agency-area .about-agency-info .agency-progress-wrapper .skill-progressbar .progress-inner .progress-inner-item .progressbar-number .progress-number-count .progress-percent {
   font-weight: 600;
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 20px;
-  color: #151515;
+  color: #121212;
 }
 .about-agency-area .about-agency-info .agency-progress-wrapper .skill-progressbar .progress-inner .progress-content-outter .progress-content {
   background-color: #ED3B3B;
@@ -16523,15 +16467,15 @@ ul.children {
   }
 }
 .agency-benefits-content-wrapper .content .title {
-  font-family: "Teko", sans-serif;
-  color: #151515;
+  font-family: "Vazirmatn", sans-serif;
+  color: #121212;
   font-size: 30px;
   font-weight: 400;
   line-height: 35px;
   text-transform: capitalize;
 }
 .agency-benefits-content-wrapper .content .desc {
-  font-family: "Manrope", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 16px;
   font-weight: normal;
   line-height: 29px;
@@ -16551,10 +16495,10 @@ ul.children {
   margin-bottom: 30px;
 }
 .about-img-two.style-2 .title h3 {
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 30px;
   font-weight: 500;
-  color: #151515;
+  color: #121212;
   padding-bottom: 18px;
 }
 .about-img-two.style-2 .counter-item {
@@ -16596,7 +16540,7 @@ ul.children {
 .project-gallery-area .project-gallery-controls button {
   background-color: transparent;
   color: #5D666F;
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 20px;
   font-weight: 500;
   line-height: 30px;
@@ -16604,7 +16548,7 @@ ul.children {
   padding: 0px 40px;
 }
 .project-gallery-area .project-gallery-controls button:hover {
-  color: #151515;
+  color: #121212;
 }
 
 .project-details .image-wrapper img {
@@ -16623,7 +16567,7 @@ footer .footer-area .widget {
   background-color: transparent;
 }
 footer .footer-area .widget .contact-email h5 {
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 30px;
   font-weight: 600;
   line-height: 40px;
@@ -16632,14 +16576,14 @@ footer .footer-area .widget .contact-email h5 {
 }
 footer .footer-area .widget .contact-email p {
   margin-bottom: 0;
-  font-family: "Manrope", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   color: #ED3B3B;
   font-size: 14px;
   font-weight: 400;
   line-height: 29px;
 }
 footer .footer-area .widget h4 {
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 30px;
   font-weight: 400;
   line-height: 35px;
@@ -16650,7 +16594,7 @@ footer .footer-area .widget ul li {
   padding: 10px 0px;
 }
 footer .footer-area .widget ul li a {
-  font-family: "Manrope", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 29px;
@@ -16669,7 +16613,7 @@ footer .footer-area .widget form .single-input {
   position: relative;
 }
 footer .footer-area .widget form .single-input input {
-  font-family: "Teko", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 23px;
@@ -16712,13 +16656,13 @@ footer .footer-area .widget.logo-area {
   }
 }
 footer .copyfight-footer {
-  background-color: #151515;
+  background-color: #121212;
   padding: 15px 0px;
 }
 footer .copyfight-footer p {
   margin: 0;
   text-align: center;
-  font-family: "Manrope", sans-serif;
+  font-family: "Vazirmatn", sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 29px;
