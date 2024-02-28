@@ -6,72 +6,6 @@
   @include xl{
     background-color: $white;
   }
-  &.style-2 {
-    .header-menu-area {
-      background-color: $white;
-      &.sticky_menu{
-        .main-menu{
-          >ul{
-            >li{
-              >a{
-                padding: 32px;
-                @media only screen and (min-width: 1400px) and (max-width: 1600px){
-                  padding: 28px 20px;
-                }
-                @include rmaxwd(1399){
-                  padding: 32px 24px;
-                }
-                &:after{
-                  right: 16px;
-                  @media only screen and (min-width: 1400px) and (max-width: 1600px){
-                    right: 4px;
-                  }
-                  @include rmaxwd(1399){
-                    right: 10px;
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-
-    .logo {
-      height: 132px;
-      @include transition;
-      @include sm{
-        height: 100px;
-      }
-    }
-
-    .menu-wrapper {
-      background-color: transparent;
-    }
-    .main-menu{
-      >ul{
-        >li{
-          >a{
-            padding: 55px 32px;
-            @media only screen and (min-width: 1400px) and (max-width: 1600px){
-              padding: 28px 20px;
-            }
-            @include xl{
-              padding: 55px 24px;
-            }
-            &:after{
-              @media only screen and (min-width: 1400px) and (max-width: 1600px){
-                right: 4px;
-              }
-              @include xl{
-                right: 10px;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
 }
 .full-width-visible{
   display: none;
@@ -91,7 +25,7 @@
 .logo {
   position: relative;
   z-index: 999;
-  height: 120px;
+  height: 100px;
   display: flex;
   align-items: center;
   @include transition;
@@ -156,7 +90,8 @@
 }
 
 .header-top {
-  background-color: transparent;
+  background-color: $black;
+  padding: 8px 96px;
 
   &.sticky-top {
     display: none;
@@ -184,7 +119,6 @@
   .header-contact-info {
     display: flex;
     align-items: center;
-    padding: 6px 0;
     gap: 0 40px;
     flex-wrap: wrap;
     @include xl{
@@ -195,24 +129,19 @@
       align-items: center;
       gap: 20px;
       position: relative;
-
-      &:after {
-        content: "";
-        width: 1px;
-        height: 46px;
-        background-color: $white;
-        margin-left: 20px;
-      }
-
-      &:last-child {
-        &:after {
-          display: none;
-        }
+      line-height:21px;
+      a{
+        color: $white;
+        font-family: $body-font;
+        font-size: 14px;
+        font-weight: 400;
+        line-height:21px;
+        letter-spacing: 0.28px;
       }
 
       i {
-        font-size: 36px;
-        color: $primary-color;
+        font-size: 14px;
+        color: $white;
       }
 
       .content {
@@ -237,6 +166,56 @@
       }
     }
   }
+  .list-item{
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    li{
+      display: flex;
+      align-items: center;
+      font-family: $body-font;
+      font-size: 14px;
+      font-weight: 500;
+      line-height:  21px;
+      color: $white;
+
+      &:after {
+        content: "";
+        width: 1px;
+        height: 15px;
+        background-color: $white;
+        margin-left: 20px;
+        display: inline-flex;
+        align-items: center;
+      }
+
+      &:last-child {
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+  .header-top-btn{
+    a{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 8px;
+      color: $white;
+      border: 1px solid #828282;
+      border-radius: 4px;
+      font-family: $heading-font;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 19px;
+      letter-spacing: 0.28px;
+      i{
+        font-size: 14px;
+      }
+    }
+  }
 }
 
 // Start Header Nav
@@ -245,8 +224,9 @@
   z-index: 999;
   transition: all 0.4s ease 0s;
   background-color: transparent;
+  padding: 0 96px;
   @include rmaxwd(1199){
-    background-color: $white;
+    // background-color: $white;
   }
   .custom-container{
     @include rmaxwd(1199){
@@ -262,12 +242,12 @@
     transition: all 0.4s ease 0s;
     .full-width-hidden{
       @include rmaxwd(1399){
-        display: none !important;
+        // display: none !important;
       }
     }
     .full-width-visible{
       @include rmaxwd(1399){
-        display: block !important;
+        // display: block !important;
 
       }
     }
@@ -280,7 +260,7 @@
     position: fixed;
     z-index: 9999;
     box-shadow: 0 7px 24px 0 rgba(0, 0, 0, 0.05);
-    background: #fff;
+    background: $black;
     @include transition;
 
     .logo {
@@ -309,7 +289,7 @@
       ul {
         li {
           a{
-            padding: 32px 18px;
+            // color: $black;
             &:after{
               right: 0;
             }
@@ -336,19 +316,17 @@
       background-color: transparent;
     }
   }
-
-
 }
 
 
 .menu-wrapper {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  background-color: $white;
+  justify-content: end;
+  gap: 48px;
+  // background-color: $white;
   border-radius: 5px;
   @include rmaxwd(1399){
-    justify-content: end;
   }
   .menu{
     @include rmaxwd(991){
@@ -388,10 +366,12 @@
         >a {
           &:after {
             position: absolute;
-            content: "\2b";
+            content: "\F22C";
+            font-family: $font-bootstrap;
             top: 50%;
-            right: 16px;
+            right: 0;
             transform: translate(0, -50%);
+            @include transition;
             @include xl{
               right: 0;
             }
@@ -430,16 +410,17 @@
 
       a {
         display: block;
-        padding: 28px 32px;
+        padding: 16px 24px;
         text-decoration: none;
         text-transform: capitalize;
         @include transition;
         position: relative;
-        color: $black;
+        color: $white;
         font-family: $body-font;
         font-size: 16px;
-        font-weight: 800;
-        line-height: 22px;
+        font-weight: 500;
+        line-height: 21px;
+        letter-spacing: 0.32px;
         text-transform: uppercase;
         @include xl{
           padding: 46px 20px;
@@ -461,6 +442,13 @@
           transition: all 300ms ease;
           opacity: 1;
           transform: scaleY(1);
+        }
+        >a{
+          &:after{
+            transform: rotate(180deg);
+            top: 25%;
+            @include transition;
+          }
         }
       }
 
@@ -573,15 +561,16 @@
   align-items: center;
   justify-content: center;
   gap: 12px;
-  padding: 30px;
-  color: $white;
+  padding: 16px 24px;
+  color: $black;
   font-family: $body-font;
   font-size: 16px;
-  font-weight: 700;
-  line-height: normal;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0.32px;
   text-transform: uppercase;
   background-color: $primary-color;
-  border-radius: 0 4px 4px 0;
+  border-radius: 4px;
 
   @media only screen and (max-width: 1399px) {
     display: none;
