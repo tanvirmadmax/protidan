@@ -1,0 +1,135 @@
+// About-us area
+.about-us-area{
+    &.style-1{
+        .image-wrapper{
+            height: 100%;
+            position: relative;
+            .image{
+                height: 100%;
+                img{
+                    height: 100%;
+                }
+            }
+            .voucher-wrapper{
+                .certified {
+                    z-index: 5;
+                    position: absolute;
+                    top: 31px;
+                    left: 80px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: $primary-color;
+                    width: 212px;
+                    height: 212px;
+                    border-radius: 100px;
+                    @include xl{
+                      left: 8px;
+                    }
+                    @include lg{
+                      left: 10px;
+                    }
+                    @include sm{
+                      top: 168px;
+                      left: 102px;
+                    }
+                    .rounded-text {
+                      width: 188px;
+                      height: 180px;
+                      text-transform: uppercase;
+                      transform: rotate(-95deg);
+                      color: #fff;
+                      font-weight: 400;
+                      z-index: 10;
+                      font-family: $heading-font;
+                      font-size: 14px;
+                      svg {
+                        width: 188px;
+                        height: 180px;
+                        // border: 2px dashed $black;
+                        border-radius: 50%;
+                        g {
+                          transform: translate(-10px, -10px);
+                          letter-spacing: 7px;
+                        }
+                      }
+                    }
+              
+                    i,img {
+                      color: #080f10;
+                      font-size: 34px;
+                      position: absolute;
+                    }
+              
+                    .rotating {
+                      animation: rotating 12s linear infinite;
+                    }
+                    @keyframes rotating {
+                        from {
+                          transform: rotate(360deg);
+                        }
+                  
+                        to {
+                          transform: rotate(0deg);
+                        }
+                      }
+                  }
+                .voucher{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 32px;
+                    background-color: $bg-color;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    padding: 64px 45px;
+                    transform: translate(-80px, 80px);
+                    .title{
+                        font-family: $heading-font;
+                        font-size: 51px;
+                        color: $white;
+                        font-weight: 800;
+                        line-height: 66px;
+                        letter-spacing: 1.02px;
+                        text-transform: capitalize;
+                        text-align: center;
+                        margin-bottom: 0;
+                    }
+                    .meta-user{
+                        ul{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            list-style: none;
+                            padding-left: 0;
+                            margin-bottom: 0;
+                            li{
+                                margin-left: -20px;
+                                border-radius: 50px;
+                                overflow: hidden;
+                                border: 1px solid $white;
+                                img{
+                                    border-radius: 50px;
+                                    filter: grayscale(1);
+                                }
+                                &:first-child{
+                                    margin-left: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .content-wrapper{
+            padding-left: 40px;
+            padding-right: 40px;
+            .list-item{
+                margin-top: 32px;
+            }
+            .theme-btn-wrapper{
+                margin-top: 64px;
+            }
+        }
+    }
+}

@@ -284,50 +284,12 @@ input.theme-btn {
     &:focus {
       color: $white;
     }
-}
-
-.theme-btn-secondary{
-  display: inline-flex;
-  background-color: $primary-color;
-  color: #fff;
-  padding: 15px 25px;
-  font-family: $heading-font;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 1.8px;
-  text-transform: uppercase;
-  position: relative;
-  z-index: 1;
-  @include transition;
-  align-items: center;
-  gap: 10px;
-  border-radius: 6px;
-  overflow: hidden;
-  border: 1px solid transparent;
-
-  @include sm {
-    font-size: 16px;
-  }
-
-  &:hover {
-    color: #000;
-    background-color: transparent;
-    border: 1px solid $primary-color;
-    i{
-      transform: rotate(-35deg);
-      margin-left: 10px;
-      margin-right: -10px;
-      @include transition;
+    &.style-2{
+      background-color: $black;
+      color: $white;
     }
-  }
-
-  &:focus {
-    color: $white;
-  }
-
 }
+
 .wp-block-loginout {
   a {
     position: relative;
