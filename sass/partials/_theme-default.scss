@@ -60,8 +60,8 @@ h2 {
 }
 
 h3 {
-  font-size: 30px;
-  line-height: 35px;
+  font-size: 40px;
+  line-height: 68px;
   font-weight: 400;
 }
 
@@ -238,63 +238,52 @@ code {
   color: $orange-color;
 }
 
-.theme-btn,
+.theme-btn-wrapper{
+  display: flex;
+}
+.theme-btn ,
 .wp-block-loginout a,
 input.theme-btn {
-  display: inline-flex;
-  background-color: transparent;
-  color: #fff;
-  padding: 17px 32px;
-  font-family: $heading-font;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 1.8px;
-  text-transform: uppercase;
-  position: relative;
-  z-index: 1;
-  @include transition;
-  align-items: center;
-  gap: 10px;
-  border-radius: 6px;
-  overflow: hidden;
-  border: 1px solid $white;
-
-  @include sm {
+    padding: 16px 24px;
+    font-family: $body-font;
+    color: $gray-4;
     font-size: 16px;
-  }
-
-  i {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    font-size: 16px;
-    margin-right: 0;
+    font-weight: 500;
+    line-height:  21px;
+    letter-spacing: 0.32px;
+    text-transform: uppercase;
+    border: 1px solid $gray-3;
+    border-radius: 4px;
     @include transition;
-  }
-
-  &:hover {
-    color: #fff;
-    background-color: $black;
-    border: 1px solid $primary-color;
-    i{
-      transform: rotate(-35deg);
-      margin-left: 10px;
-      margin-right: -10px;
+  
+    @include sm {
+      font-size: 16px;
+    }
+  
+    i {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 16px;
+      margin-right: 0;
       @include transition;
     }
-  }
-
-  &:focus {
-    color: $white;
-  }
-
-  &.simple-btn {
-    padding-left: 36px;
-    padding-right: 36px;
-  }
+  
+    &:hover {
+      color: $black;
+      background-color: $primary-color;
+      i{
+        transform: rotate(-35deg);
+        margin-left: 10px;
+        margin-right: -10px;
+        @include transition;
+      }
+    }
+  
+    &:focus {
+      color: $white;
+    }
 }
 
 .theme-btn-secondary{

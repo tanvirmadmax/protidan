@@ -28,7 +28,7 @@
     @include transition;
     font-size: 18px;
     font-weight: 500;
-    border: 1px solid $gray-300;
+    border: 1px solid $gray-3;
     text-transform: capitalize;
 
     @include rmaxwd(767) {
@@ -94,7 +94,7 @@
     @include transition;
     font-size: 18px;
     font-weight: 500;
-    border: 1px solid $gray-300;
+    border: 1px solid $gray-3;
     text-transform: capitalize;
 
     @include rmaxwd(767) {

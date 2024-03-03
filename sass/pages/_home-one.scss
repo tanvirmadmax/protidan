@@ -1,6 +1,9 @@
 // Service-area style-1
 .service-area{
     &.style-1{
+        margin-top: -96px;
+        position: relative;
+        z-index: 10;
         .section-title{
             margin-bottom: 60px;
             @include sm{

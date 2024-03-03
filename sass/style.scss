@@ -78,30 +78,15 @@
 
 // 5.Info Card
 @import "modules/info-card/info-card";
-@import "modules/info-card/info-card-two";
-// @import "modules/info-card/info-card-three";
-// @import "modules/info-card/info-card-four";
-// @import "modules/info-card/info-card-slider-controls";
 
 // 6.Icon Card
 @import "modules/icon-card/icon-card";
-@import "modules/icon-card/icon-card-two";
-// @import "modules/icon-card/icon-card-three";
-@import "modules/icon-card/icon-card-four";
 
 // 7. About Image Card
 @import "modules/about-image-card/about-image-card";
-@import "modules/about-image-card/about-image-card-two";
-@import "modules/about-image-card/about-image-card-three";
 
 // 8. About Info Card
 @import "modules/about-info-card/about-info-card";
-@import "modules/about-info-card/about-info-card-two";
-@import "modules/about-info-card/about-info-card-three";
-
-// 9. Promotional Card
-@import "modules/promotional/promotional-banner";
-@import "modules/promotional/promotional-banner-style-two";
 
 // 10. Video Popup Card
 @import "modules/video-popup-card";
@@ -111,11 +96,6 @@
 @import "modules/counter/counter-card-two";
 @import "modules/counter/counter-card-three";
 
-// 12. Process Step Card
-@import "modules/process-step/process-step";
-@import "modules/process-step/process-step-two";
-@import "modules/testimonial/testimonial-card";
-
 // 13. Testimonial Card
 @import "modules/testimonial/testimonial-card-two";
 @import "modules/testimonial/testimonial-card-three";
@@ -123,31 +103,12 @@
 
 // 14. Accordion Card
 @import "modules/accordion/accordion";
-@import "modules/accordion/accordion-style-two";
-@import "modules/accordion/accordion-style-three";
-@import "modules/accordion/accordion-style-four";
-
-// 15. Client Logo Card
-@import "modules/client-logo/client-logo";
-@import "modules/client-logo/client-logo-two";
 
 // 16. Post Card
 @import "modules/post-card/post-card";
-@import "modules/post-card/post-card-one";
-@import "modules/post-card/post-card-two";
-@import "modules/post-card/post-card-three";
-@import "modules/post-card/post-card-four";
-
-// 17. Skill Progress Card
-@import "modules/skill-progress";
 
 // 18. Price Card
 @import "modules/price-card";
-
-// 19. Call To Action Card
-@import "modules/call-to-action-card";
-@import "modules/triangle-shape-card";
-
 
 // 20. Title Card
 @import "modules/title-section";
@@ -158,9 +119,6 @@
 // 22. Paginations
 @import "modules/paginations";
 @import "modules/nav-tabs";
-
-// 23. Timeline Card
-@import "modules/time-card";
 
 // 24. Project Details
 @import "pages/project-details";
@@ -208,24 +166,13 @@
 @import "partials/footer";
 @import "partials/footer-two";
 @import "partials/footer-three";
-@import "masirul";
 
 
 // Service-area
 @import "modules/service-area/service-area-one";
 
-// Analysis-area
-@import "modules/analysis-area/analysis-area";
-
 // Counter-area
 @import "modules/counter/counter-area";
 
-// Growth-area
-@import "modules/business-growth/business-growth";
-
-// Project-area
-@import "modules/project-area/project-area.scss";
-
 // Image-card
 @import "modules/image-card/image-card";
-@import "solayman";

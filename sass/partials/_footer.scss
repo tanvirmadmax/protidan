@@ -489,7 +489,7 @@
     flex-grow: 1;
 
     input {
-      color: $black-300;
+      color: $black-3;
       height: 72px;
       padding: 0 30px;
       font-size: 18px;
@@ -498,29 +498,29 @@
     }
 
     *::-webkit-input-placeholder {
-      color: $black-300;
+      color: $black-3;
     }
 
     *:-moz-placeholder {
-      color: $black-300;
+      color: $black-3;
       opacity: 1;
     }
 
     *::-moz-placeholder {
-      color: $black-300;
+      color: $black-3;
       opacity: 1;
     }
 
     *:-ms-input-placeholder {
-      color: $black-300;
+      color: $black-3;
     }
 
     *::-ms-input-placeholder {
-      color: $black-300;
+      color: $black-3;
     }
 
     *::placeholder {
-      color: $black-300;
+      color: $black-3;
     }
   }
 
