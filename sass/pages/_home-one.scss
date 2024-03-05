@@ -20,6 +20,17 @@
         background-repeat: no-repeat;
     }
 }
+// Cayses-area
+.causes-area{
+    &.style-1{
+        .section-title-wrapper{
+            margin-bottom: 72px;
+        }
+        .theme-btn-wrapper{
+            align-items: end;
+        }
+    }
+}
 .testimonial-area{
     position: relative;
     padding-bottom: 96px;

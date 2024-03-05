@@ -5259,70 +5259,63 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 
 .counter-card {
-  z-index: 1;
-  position: relative;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 60px;
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .counter-card {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .counter-card {
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 50px;
-  }
-}
-.counter-card .counter-item {
   display: flex;
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  position: relative;
-  text-align: center;
 }
-.counter-card .counter-item .counter-title {
+.counter-card .image-wrapper {
+  position: relative;
+}
+.counter-card .image-wrapper .tag {
+  padding: 8px 16px;
   display: flex;
   align-items: center;
+  justify-content: center;
+  background-color: #FF9A62;
+  color: #31373f;
+  border-radius: 4px;
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0.32px;
+}
+.counter-card .image-wrapper .image img {
   width: 100%;
-  gap: 12px;
-  flex-direction: column;
+  height: 100%;
 }
-.counter-card .counter-item .number {
-  font-family: "Vazirmatn", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 60px;
-  text-align: center;
-  color: #FE6809;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
+.counter-card .content-wrapper {
+  padding: 24px;
+  background-color: transparent;
+  border: 1px solid #828282;
+  border-top: 0;
 }
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .counter-card .counter-item .number {
-    font-size: 36px;
-    line-height: 40px;
-  }
-}
-.counter-card .counter-item .title {
-  margin: 0;
-  font-family: "Vazirmatn", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 36px;
+.counter-card .content-wrapper .title {
+  margin-bottom: 10px;
   color: #ffffff;
 }
-.counter-card .counter-item .text {
-  margin: 0;
-  color: #c7cdda;
+.counter-card .content-wrapper .skill-progressbar {
+  margin-bottom: 24px;
+}
+.counter-card .content-wrapper .desc-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+  color: #ffffff;
+}
+.counter-card .content-wrapper .desc-wrapper p {
+  margin-bottom: 0;
+  color: #ffffff;
+  font-family: "Vazirmatn", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 31px;
+}
+.counter-card .content-wrapper .theme-btn-wrapper .theme-btn {
+  display: flex;
+  align-items: start;
 }
 
 .counter-card.style-two {
@@ -6731,8 +6724,6 @@ button.testimonial-arrow-btn:hover i {
   gap: 0px;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  text-align: center;
   z-index: 2;
   position: relative;
 }
@@ -9213,6 +9204,13 @@ ul.children {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.causes-area.style-1 .section-title-wrapper {
+  margin-bottom: 72px;
+}
+.causes-area.style-1 .theme-btn-wrapper {
+  align-items: end;
 }
 
 .testimonial-area {

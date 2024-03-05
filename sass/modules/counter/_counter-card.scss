@@ -1,66 +1,66 @@
-.counter-card {
-  z-index: 1;
-  position: relative;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 60px;
+.counter-card{
+  display: flex;
+  flex-direction: column;
 
-  @include md {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  @include sm {
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 50px;
-  }
-
-  .counter-item {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  .image-wrapper{
     position: relative;
-    text-align: center;
-
-    .counter-title {
-      display: flex;
-      align-items: center;
-      width: 100%;
-      gap: 12px;
-      flex-direction: column;
-    }
-
-
-    .number {
-      font-family: $heading-font;
-      font-style: normal;
-      font-weight: 700;
-      font-size: 48px;
-      line-height: 60px;
-      text-align: center;
-      color: $orange-color;
+    .tag{
+      padding: 8px 16px;
       display: flex;
       align-items: center;
       justify-content: center;
-      margin: 0;
-
-      @include sm {
-        font-size: 36px;
-        line-height: 40px;
+      background-color: $primary-color;
+      color: $black-2;
+      border-radius: 4px;
+      position: absolute;
+      top: 24px;
+      left: 24px;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 27px;
+      letter-spacing: 0.32px;
+    }
+    .image{
+      img{
+        width: 100%;
+        height: 100%;
       }
     }
-    .title {
-      margin: 0;
-      font-family: $heading-font;
-      font-style: normal;
-      font-weight: 700;
-      font-size: 24px;
-      line-height: 36px;
+  }
+  .content-wrapper{
+    padding: 24px;
+    background-color: transparent;
+    border: 1px solid $gray-3;
+    border-top: 0;
+    .title{
+      margin-bottom: 10px;
       color: $white;
     }
-    .text {
-      margin: 0;
-      color: $white-100;
+    .skill-progressbar{
+      margin-bottom: 24px;
+    }
+    .desc-wrapper{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 32px;
+      color: $white;
+      p{
+        margin-bottom: 0;
+        color: $white;
+        font-family: $body-font;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 31px;
+
+      }
+    }
+    .theme-btn-wrapper{
+      // display: flex;
+      .theme-btn{
+        display: flex;
+        align-items: start;
+      }
     }
   }
 }
