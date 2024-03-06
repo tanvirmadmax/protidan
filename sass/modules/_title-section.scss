@@ -79,16 +79,16 @@
     margin-bottom: 0;
   }
   &.style-2{
-    justify-content: start;
-    align-items: start;
-    text-align: start;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     .short-title{
-      &:before{
-        margin: 0;
+      img{
+        left: 0;
       }
-      &:after{
-        margin-left: 28px;
-      }
+    }
+    .desc{
+      margin-top: 0;
     }
   }
 }

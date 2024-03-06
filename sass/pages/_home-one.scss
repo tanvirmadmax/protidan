@@ -31,6 +31,14 @@
         }
     }
 }
+// Team-area style-1
+.team-area{
+    &.style-1{
+        .section-title-wrapper{
+            margin-bottom: 60px;
+        }
+    }
+}
 .testimonial-area{
     position: relative;
     padding-bottom: 96px;
