@@ -5135,7 +5135,6 @@ body.admin-bar .header-menu-area.sticky_menu {
 
 .video-popup-card {
   position: relative;
-  padding: 10px;
   background-color: transparent;
   overflow: hidden;
   text-align: right;
@@ -5154,14 +5153,14 @@ body.admin-bar .header-menu-area.sticky_menu {
   }
 }
 .video-popup-card .video-popup-btn {
-  border: 2px dashed #ffffff;
-  padding: 10px;
-  width: 150px;
-  height: 150px;
+  padding: 24px;
+  width: 124px;
+  height: 124px;
   border-radius: 50%;
   display: flex;
   justify-content: end;
   align-items: center;
+  border: 1px solid #ffffff;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .video-popup-card .video-popup-btn {
@@ -5176,9 +5175,9 @@ body.admin-bar .header-menu-area.sticky_menu {
   }
 }
 .video-popup-card .video-popup-btn a {
-  width: 130px;
-  height: 130px;
-  background: #ED3B3B;
+  width: 74px;
+  height: 74px;
+  background: #FF9A62;
   opacity: 0.7;
   border-radius: 50%;
   background-size: cover;
@@ -5190,72 +5189,20 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .video-popup-card .video-popup-btn a {
-    width: 100px;
-    height: 100px;
+    width: 65px;
+    height: 65px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .video-popup-card .video-popup-btn a {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
   }
 }
 .video-popup-card .video-popup-btn a i {
-  color: #ffffff;
-  font-size: 40px;
-}
-.video-popup-card .video-desc p {
-  font-family: "Vazirmatn", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 29px;
-  margin-bottom: 0;
-  color: #ffffff;
-}
-.video-popup-card.style-two {
-  padding: 0;
-  margin-bottom: -78px;
-  box-shadow: none;
-}
-@media (max-width: 991px) {
-  .video-popup-card.style-two {
-    margin-bottom: 80px;
-  }
-}
-.video-popup-card.style-two .video-popup-btn a {
-  width: 100px;
-  height: 100px;
-  background-color: rgba(255, 103, 49, 0.84);
-  background-image: none;
-}
-.video-popup-card.style-three {
-  overflow: visible;
-  padding: 0;
-  box-shadow: none;
-}
-.video-popup-card.style-three .video-popup-image {
-  border-radius: 12px;
-  overflow: hidden;
-}
-.video-popup-card.style-three .video-popup-btn {
-  left: 0;
-}
-@media (max-width: 1199px) {
-  .video-popup-card.style-three .video-popup-btn {
-    left: 50%;
-  }
-}
-.video-popup-card.style-three .video-popup-btn a {
-  width: 135px;
-  height: 135px;
-  background: rgb(227, 0, 8);
-  background: linear-gradient(45deg, rgb(227, 0, 8) 0%, rgb(250, 174, 0) 100%);
-}
-@media (max-width: 767px) {
-  .video-popup-card.style-three .video-popup-btn a {
-    width: 80px;
-    height: 80px;
-  }
+  color: #121212;
+  font-size: 24px;
+  line-height: 20px;
 }
 
 .counter-card {
@@ -9167,6 +9114,16 @@ ul.children {
 
 .team-area.style-1 .section-title-wrapper {
   margin-bottom: 60px;
+}
+
+.image-card-area .image-wrapper {
+  position: relative;
+}
+.image-card-area .image-wrapper .video-popup-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .testimonial-area {

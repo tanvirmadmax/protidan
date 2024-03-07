@@ -1,6 +1,5 @@
 .video-popup-card {
   position: relative;
-  padding: 10px;
   background-color: transparent;
   overflow: hidden;
   text-align: right;
@@ -16,14 +15,14 @@
     align-items: start;
   }
   .video-popup-btn {
-    border: 2px dashed $white;
-    padding: 10px;
-    width: 150px;
-    height: 150px;
+    padding: 24px;
+    width: 124px;
+    height: 124px;
     border-radius: 50%;
     display: flex;
     justify-content: end;
     align-items: center;
+    border: 1px solid $white;
     @include md {
       width: 120px;
       height: 120px;
@@ -33,9 +32,9 @@
       height: 100px;
     }
     a {
-      width: 130px;
-      height: 130px;
-      background: #ED3B3B;
+      width: 74px;
+      height: 74px;
+      background: $primary-color;
       opacity: 0.7;
       border-radius: 50%;
       background-size: cover;
@@ -47,75 +46,20 @@
 
 
       @include md {
-        width: 100px;
-        height: 100px;
+        width: 65px;
+        height: 65px;
       }
       @include sm {
-        width: 80px;
-        height: 80px;
+        width: 70px;
+        height: 70px;
       }
 
       i {
-        color: $white;
-        font-size: 40px;
+        color: $black;
+        font-size: 24px;
+        line-height: 20px;
       }
     }
   }
-  .video-desc{
-    p{
-      font-family: $body-font;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 29px;
-      margin-bottom: 0;
-      color: $white;
-    }
 
-  }
-
-  // Style Two
-  &.style-two {
-    padding: 0;
-    margin-bottom: -78px;
-    box-shadow: none;
-
-    @include rmaxwd(991) {
-      margin-bottom: 80px;
-    }
-
-    .video-popup-btn {
-      a {
-        width: 100px;
-        height: 100px;
-        background-color: rgba(255, 103, 49, 0.84);
-        background-image: none;
-      }
-    }
-  }
-  &.style-three {
-    overflow: visible;
-    padding: 0;
-    box-shadow: none;
-
-    .video-popup-image {
-      border-radius: 12px;
-      overflow: hidden;
-    }
-    .video-popup-btn {
-      left: 0;
-      @include rmaxwd(1199) {
-        left: 50%;
-      }
-      a {
-        width: 135px;
-        height: 135px;
-        @include gradient-color-red;
-
-        @include rmaxwd(767) {
-          width: 80px;
-          height: 80px;
-        }
-      }
-    }
-  }
 }
