@@ -43,6 +43,18 @@
 .image-card-area{
     .image-wrapper{
         position: relative;
+        &:after{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #1212124D;
+        }
+        img{
+            filter: grayscale(0.5);
+        }
         .video-popup-card{
             position: absolute;
             top: 50%;
