@@ -384,7 +384,10 @@ input.theme-btn {
 }
 
 .custom-container {
-  margin: 0 80px;
+  max-width: 1920px;
+  width: 100%;
+  padding: 0 12px;
+  margin: 0 auto;
 }
 
 /* Deafult Margin & Padding */
@@ -4674,159 +4677,48 @@ body.admin-bar .header-menu-area.sticky_menu {
 
 .icon-card {
   position: relative;
-  margin-top: 60px;
   overflow: hidden;
-}
-.icon-card.style-1 .inner-wrapper {
-  border: 1px solid #E3DBD8;
-  transition: all 0.5s ease-out;
-}
-.icon-card.style-1 .inner-wrapper:before {
-  content: "";
-  width: 112px;
-  height: 45px;
-  position: absolute;
-  left: -4px;
-  top: -24px;
-  background-color: white;
-  transform: skewY(-20deg);
-  z-index: 3;
-  border-bottom: 1px solid #E3DBD8;
-}
-.icon-card.style-1 .inner-wrapper:after {
-  content: "";
-  width: 112px;
-  height: 45px;
-  position: absolute;
-  right: -4px;
-  top: -24px;
-  background-color: white;
-  transform: skewY(20deg);
-  z-index: 3;
-  border-bottom: 1px solid #E3DBD8;
-}
-.icon-card .inner-wrapper {
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
   text-align: center;
-  align-items: center;
-  gap: 20px;
-  padding: 20px 30px 26px 30px;
-  position: relative;
+  flex-direction: column;
+  gap: 32px;
+  height: 100%;
+  background-color: #121212;
 }
-@media only screen and (min-width: 1200px) and (max-width: 1399px) {
-  .icon-card .inner-wrapper {
-    padding: 24px;
-  }
-}
-.icon-card .inner-wrapper .icon {
-  width: 86px;
-  height: 86px;
-  border-radius: 5px;
-  background-color: #FF9A62;
-  padding: 18px;
+.icon-card .icon {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #232323;
 }
-.icon-card .inner-wrapper .icon i {
-  color: #ffffff;
-  font-size: 50px;
+.icon-card .icon i {
+  font-size: 60px;
 }
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .icon-card .inner-wrapper .icon i {
-    font-size: 40px;
-  }
-}
-.icon-card .inner-wrapper .content {
+.icon-card .content {
   display: flex;
+  align-items: center;
+  gap: 8px;
   flex-direction: column;
-  gap: 3px;
 }
-.icon-card .inner-wrapper .content .title {
-  font-family: "Vazirmatn", sans-serif;
-  font-size: 30px;
-  font-weight: 400;
-  line-height: 35px;
-  color: #121212;
+.icon-card .content .title {
+  color: #ffffff;
+  letter-spacing: 0.48px;
   margin-bottom: 0;
 }
-.icon-card .inner-wrapper .content .desc {
+.icon-card .content .desc {
   font-family: "Vazirmatn", sans-serif;
   font-size: 16px;
-  font-weight: 400;
-  line-height: 29px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
+  color: #FF9A62;
   margin-bottom: 0;
-  height: 58px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .icon-card .inner-wrapper .content .desc {
-    line-height: 24px;
-  }
-}
-.icon-card .image-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  visibility: hidden;
-  opacity: 0;
-  transform: translateY(100%);
-  transition: all 0.5s ease-out;
-}
-.icon-card .image-wrapper img {
-  width: 100%;
-  height: 100%;
-}
-.icon-card .image-wrapper .image-text {
-  display: flex;
-  justify-content: space-between;
-  background-color: #FF9A62;
-  padding: 10px 22px;
-  margin-right: 52px;
-  z-index: 1;
-  position: relative;
-  visibility: hidden;
-  opacity: 0;
-  transform: translateX(-100%);
-  transition: all 0.5s ease-out;
-}
-.icon-card .image-wrapper .image-text .title {
-  color: #ffffff;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: normal;
-  margin-bottom: 0;
-}
-.icon-card .image-wrapper .image-text a i {
-  color: #ffffff;
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .icon-card {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
-.icon-card:hover .inner-wrapper:before, .icon-card:hover .inner-wrapper:after {
-  visibility: hidden;
-  opacity: 0;
-  border-color: transparent;
-  transition: all 0.5s ease-out;
-}
-.icon-card:hover .image-wrapper {
-  height: 100%;
-  visibility: visible;
-  opacity: 1;
-  transform: translateY(0);
-  transition: all 0.5s ease-out;
-}
-.icon-card:hover .image-wrapper .image-text {
-  transform: translateY(-100%);
-  visibility: visible;
-  opacity: 1;
-  transition: all 0.5s ease-out;
 }
 
 .about-image-card .main-img-wrapper {
@@ -11815,6 +11707,10 @@ ul.children {
   position: relative;
   overflow: hidden;
   cursor: pointer;
+}
+.image-card img {
+  max-width: 480px;
+  max-height: 480px;
 }
 .image-card .icon-wrapper {
   position: absolute;

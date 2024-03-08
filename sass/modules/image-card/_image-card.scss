@@ -2,6 +2,10 @@
     position: relative;
     overflow: hidden;
     cursor: pointer;
+    img{
+        max-width: 480px;
+        max-height: 480px;
+    }
     .icon-wrapper{
         position: absolute;
         top: 0;
