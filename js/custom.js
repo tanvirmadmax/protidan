@@ -138,200 +138,6 @@
             ],
         });
 
-        /*
-       Info Card Slider
-       ============================*/
-        $("#info_card_slider_wrapper").slick({
-            slidesToShow: 3,
-            infinite: true,
-            autoplay: true,
-            draggable: true,
-            arrows: true,
-            slidesToScroll: 1,
-            loop: true,
-            dots: false,
-            speed: 1500,
-            prevArrow:
-                "<button type='button' class='info-card-arrow-btn prev-btn'><i class='fa-solid fa-angle-left'></i></button>",
-            nextArrow:
-                "<button type='button' class='info-card-arrow-btn next-btn'><i class='fa-solid fa-angle-right'></i></button>",
-            responsive: [
-                {
-                    breakpoint: 992,
-                    settings: {
-                        slidesToShow: 2,
-                    },
-                },
-                {
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 1,
-                    },
-                },
-            ],
-        });
-
-        /*
-       Team Slider
-       ============================*/
-        $("#team_slider_wrapper").slick({
-            slidesToShow: 3,
-            infinite: true,
-            autoplay: true,
-            draggable: true,
-            arrows: false,
-            slidesToScroll: 1,
-            loop: true,
-            dots: true,
-            speed: 1500,
-            responsive: [
-                {
-                    breakpoint: 992,
-                    settings: {
-                        slidesToShow: 2,
-                    },
-                },
-                {
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 1,
-                    },
-                },
-            ],
-        });
-        $(".project-area-slider").slick({
-            slidesToShow: 4,
-            infinite: true,
-            autoplay: true,
-            draggable: true,
-            arrows: false,
-            slidesToScroll: 1,
-            loop: true,
-            dots: false,
-            speed: 1500,
-            responsive: [
-                {
-                    breakpoint: 1399,
-                    settings: {
-                        slidesToShow: 3,
-                    },
-                },
-                {
-                    breakpoint: 1199,
-                    settings: {
-                        slidesToShow: 2,
-                    },
-                },
-                {
-                    breakpoint: 991,
-                    settings: {
-                        slidesToShow: 1,
-                    },
-                },
-                {
-                    breakpoint: 576,
-                    settings: {
-                        slidesToShow: 1,
-                        // dots: true,
-                    },
-                },
-            ],
-        });
-        $(".recent-project-gallery-slider").slick({
-            slidesToShow: 4,
-            infinite: true,
-            autoplay: true,
-            draggable: true,
-            arrows: false,
-            slidesToScroll: 1,
-            loop: true,
-            dots: false,
-            speed: 1500,
-            responsive: [
-                {
-                    breakpoint: 1399,
-                    settings: {
-                        slidesToShow: 3,
-                    },
-                },
-                {
-                    breakpoint: 1199,
-                    settings: {
-                        slidesToShow: 2,
-                    },
-                },
-                {
-                    breakpoint: 991,
-                    settings: {
-                        slidesToShow: 1,
-                    },
-                },
-                {
-                    breakpoint: 576,
-                    settings: {
-                        slidesToShow: 1,
-                    },
-                },
-            ],
-        });
-
-
-        /*
-       Testimonial Slider
-       ============================*/
-        $("#home3_testimonial").slick({
-            slidesToShow: 2,
-            infinite: true,
-            autoplay: true,
-            draggable: true,
-            arrows: true,
-            slidesToScroll: 1,
-            loop: true,
-            dots: true,
-            speed: 1500,
-            prevArrow:
-                "<button type='button' class='testimonial-arrow-btn prev-btn'><i class='fa-solid fa-angle-left'></i></button>",
-            nextArrow:
-                "<button type='button' class='testimonial-arrow-btn next-btn'><i class='fa-solid fa-angle-right'></i></button>",
-            responsive: [
-                {
-                    breakpoint: 1023,
-                    settings: {
-                        autoplay: true,
-                        slidesToShow: 1,
-                    },
-                }
-            ],
-        });
-
-
-        /*
-       Testimonial Slider
-       ============================*/
-        $("#testimonial_two").slick({
-            slidesToShow: 2,
-            infinite: true,
-            autoplay: true,
-            draggable: true,
-            arrows: true,
-            slidesToScroll: 1,
-            loop: true,
-            dots: true,
-            speed: 1500,
-            prevArrow:
-                "<button type='button' class='testimonial-arrow-btn prev-btn'><i class='fa-solid fa-angle-left'></i></button>",
-            nextArrow:
-                "<button type='button' class='testimonial-arrow-btn next-btn'><i class='fa-solid fa-angle-right'></i></button>",
-            responsive: [
-                {
-                    breakpoint: 1200,
-                    settings: {
-                        autoplay: true,
-                        slidesToShow: 1,
-                    },
-                }
-            ],
-        });
 
         $('#trigger_testimonial_prev').on('click', function () {
             $('.testimonial-slider-wrapper .prev-btn').trigger('click');
@@ -340,82 +146,6 @@
             $('.testimonial-slider-wrapper .next-btn').trigger('click');
         });
 
-        $("#testimonial_three").slick({
-            slidesToShow: 1,
-            infinite: true,
-            autoplay: true,
-            draggable: true,
-            arrows: true,
-            slidesToScroll: 1,
-            loop: true,
-            dots: true,
-            speed: 1500,
-            prevArrow:
-                "<button type='button' class='testimonial-arrow-btn prev-btn'><i class='fa-solid fa-angle-left'></i></button>",
-            nextArrow:
-                "<button type='button' class='testimonial-arrow-btn next-btn'><i class='fa-solid fa-angle-right'></i></button>",
-            responsive: [
-                {
-                    breakpoint: 767,
-                    settings: {
-                        autoplay: true,
-                    },
-                },
-            ],
-        });
-
-        /*
-       Related Portfolio Slider
-       ============================*/
-        $("#related_portfolio").slick({
-            slidesToShow: 3,
-            infinite: true,
-            autoplay: true,
-            draggable: true,
-            arrows: true,
-            slidesToScroll: 1,
-            loop: true,
-            dots: false,
-            speed: 1500,
-            prevArrow:
-                "<button type='button' class='portfolio-arrow-btn prev-btn'><i class='fa-solid fa-angle-left'></i></button>",
-            nextArrow:
-                "<button type='button' class='portfolio-arrow-btn next-btn'><i class='fa-solid fa-angle-right'></i></button>",
-            responsive: [
-                {
-                    breakpoint: 767,
-                    settings: {
-                        slidesToShow: 1,
-                    },
-                },
-                {
-                    breakpoint: 460,
-                    settings: {
-                        slidesToShow: 1,
-                    },
-                },
-            ],
-        });
-
-
-        /*
-       Post Gallery Slider
-       ============================*/
-        $(".post-gallery").slick({
-            slidesToShow: 1,
-            infinite: true,
-            autoplay: true,
-            draggable: true,
-            arrows: true,
-            slidesToScroll: 1,
-            loop: true,
-            dots: false,
-            speed: 300,
-            prevArrow:
-                "<button type='button' class='post-gallery-btn prev-btn'><i class='fa fa-arrow-left'></i></button>",
-            nextArrow:
-                "<button type='button' class='post-gallery-btn next-btn'><i class='bi bi-arrow-right'></i></button>",
-        });
         /*
        Client Logo Slider
        ============================*/
@@ -544,82 +274,6 @@
         });
 
 
-
-        /* Home page testimonial
-        ==================================*/
-        $('.testimonial-wrapper').slick({
-            // dots: true,
-            infinite: true,
-            speed: 500,
-            autoplay: true,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            prevArrow:
-            "<button type='button' class='testimonial-btn prev'><i class='bi bi-arrow-left'></i></button>",
-            nextArrow:
-            "<button type='button' class='testimonial-btn next'><i class='bi bi-arrow-right'></i></button>",
-            responsive: [
-                {
-                    breakpoint: 767,
-                    settings: {
-                        slidesToShow: 1,
-                        arrows: false,
-                        dots: true,
-                    },
-                },
-            ],
-        });
-
-        /* Team member slider
-        ============================*/
-        $(".team-slider-wrapper").slick({
-            slidesToShow: 3,
-            infinite: true,
-            autoplay: true,
-            draggable: true,
-            arrows: false,
-            slidesToScroll: 1,
-            loop: true,
-            dots: true,
-            speed: 1500,
-            prevArrow: "",
-            nextArrow: "",
-            responsive: [
-                {
-                    breakpoint: 1200,
-                    settings: {
-                        slidesToShow: 3,
-                    },
-                },
-                {
-                    breakpoint: 992,
-                    settings: {
-                        slidesToShow: 3,
-                    },
-                },
-                {
-                    breakpoint: 991,
-                    settings: {
-                        slidesToShow: 2,
-                    },
-                },
-                {
-                    breakpoint: 767,
-                    settings: {
-                        slidesToShow: 2,
-                    },
-                },
-                {
-                    breakpoint: 460,
-                    settings: {
-                        slidesToShow: 1,
-                    },
-                },
-            ],
-        });
-
-
-
         $('.isotope-grid').isotope({
             itemSelector: '.isotope-item',
             layoutMode: 'fitRows'
@@ -644,53 +298,75 @@
             $(this).addClass("active");
         });
 
-
-
-
-
-        // SERVICE DETAILS JQUERY PLUGIN- masirul
-        // faq area start
-
-        const accordionItemHeaders = document.querySelectorAll(
-            ".accordion-item-header"
-        );
-
-        accordionItemHeaders.forEach((accordionItemHeader) => {
-            accordionItemHeader.addEventListener("click", (event) => {
-                // Uncomment in case you only want to allow for the display of only one collapsed item at a time!
-
-                const currentlyActiveAccordionItemHeader = document.querySelector(
-                    ".accordion-item-header.active"
-                );
-                if (
-                    currentlyActiveAccordionItemHeader &&
-                    currentlyActiveAccordionItemHeader !== accordionItemHeader
-                ) {
-                    currentlyActiveAccordionItemHeader.classList.toggle("active");
-                    currentlyActiveAccordionItemHeader.nextElementSibling.style.maxHeight = 0;
-                }
-                accordionItemHeader.classList.toggle("active");
-                const accordionItemBody = accordionItemHeader.nextElementSibling;
-                if (accordionItemHeader.classList.contains("active")) {
-                    accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
-                } else {
-                    accordionItemBody.style.maxHeight = 0;
-                }
-            });
-        });
-
-        // faq area end
-
-        /* Home page brand logo slider testimonial
-     ===========================================*/
-        // let copy = document.querySelector(".logo-slide").cloneNode(true);
-        // document.querySelector(".slide-one").appendChild(copy);
-        // let copytwo = document.querySelector(".logo-slide").cloneNode(true);
-        // document.querySelector(".slide-two").appendChild(copytwo);
-
         // mixitup 
         var containerEl = document.querySelector('.project-gallery-wrapper');
         // var mixer = mixitup(containerEl);
+
+         // donate-form
+         const defaultValue = "$100";
+            $("#donate-input-field").val(defaultValue);
+            $(".value.active").removeClass("active");
+            $(".value:contains(" + defaultValue + ")").addClass("active");
+            $(".value").click(function () {
+                $(".value").removeClass("active");
+                $(this).addClass("active");
+                const selectedValueText = $(this).text();
+                $("#donate-input-field").val(selectedValueText);
+            });
+
+            $("#custom-amount").click(function (e) {
+                e.preventDefault();
+                $("#donate-input-field").focus();
+                $("#donate-input-field2").val("skdf");
+                $(".value").removeClass("active");
+                return false;
+            });
+
+            // Donation- Details : Donate Form
+             const defaultValue2 = "$250";
+            $("#donate-input-field2").val(defaultValue2);
+            $(".value.active-field").removeClass("active-field");
+            $(".value:contains(" + defaultValue2 + ")").addClass("active-field");
+            $(".value").click(function () {
+                $(".value").removeClass("active-field");
+                $(this).addClass("active-field");
+                const selectedValueText2 = $(this).text();
+                $("#donate-input-field2").val(selectedValueText2);
+            });
+
+            $("#custom-amount").click(function (e) {
+                e.preventDefault();
+                $("#donate-input-field2").focus();
+                $(".value").removeClass("active-field");
+                return false;
+            });
+
+             /*
+        Skill Progress Bar Js
+        ============================*/
+        $('.causes-area, .donate-area').each(function() {
+            let section = $(this);
+            section.one('inview', function(event, isInView) {
+                if (isInView) {
+                    section.find('.progress-inner').each(function() {
+                        $(this).find('.progress-content').animate({
+                            width: $(this).attr('data-percentage')
+                        }, 2000);
+                        $(this).find('.progress-number-count').animate(
+                            {
+                                left: $(this).attr('data-percentage')
+                            },
+                            {
+                                duration: 2000,
+                                step: function(now) {
+                                    let data = Math.round(now);
+                                    $(this).find('.progress-percent').html(data + '%');
+                                }
+                            });
+                        });
+                    }
+                });
+            });
 
     });
 })(jQuery);

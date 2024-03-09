@@ -42,8 +42,9 @@
 // Image-card-area
 .image-card-area{
     .image-wrapper{
-        position: relative;
-        &:after{
+            position: relative; 
+            height: 100%;
+            &:after{
             content: "";
             position: absolute;
             top: 0;
@@ -54,6 +55,7 @@
         }
         img{
             filter: grayscale(0.5);
+            height: 100%;
         }
         .video-popup-card{
             position: absolute;
@@ -375,6 +377,16 @@
         }
     }
 
+}
+
+// Donate area
+.donate-area{
+    .section-title{
+        .theme-btn{
+            color: #5E5E5E;
+            margin-top: 48px;
+        }
+    }
 }
 
 // Contact-area
