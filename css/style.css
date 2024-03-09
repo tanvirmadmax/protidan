@@ -5531,10 +5531,10 @@ button.testimonial-arrow-btn:hover i {
 }
 
 .accordion .accordion-item {
-  background-color: #F2F3F6;
+  background-color: #ffffff;
   margin: 16px 0;
-  border-radius: 8px;
-  border: 1px solid #E1E2E7;
+  border-radius: 0;
+  border: 1px solid #BDBDBD;
   overflow: hidden;
   box-shadow: none;
 }
@@ -5545,39 +5545,41 @@ button.testimonial-arrow-btn:hover i {
   border-bottom: 1px solid #E1E2E7;
 }
 .accordion .accordion-item .accordion-button {
-  padding: 20px 40px;
+  padding: 40px 28px;
+  padding-bottom: 16px;
   font-family: "Vazirmatn", sans-serif;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 600;
-  color: #1F1F1F;
-  line-height: 30px;
-  letter-spacing: 0em;
+  color: #121212;
+  line-height: 33px;
+  letter-spacing: 0.48px;
   text-align: left;
   display: flex;
   align-items: center;
   position: relative;
   cursor: pointer;
   background-color: #ffffff;
-  border: none;
+  border-bottom: 1px solid #BDBDBD;
   box-shadow: none;
-  color: #FE6809;
 }
 .accordion .accordion-item .accordion-button.collapsed {
   color: #121212;
-  background-color: #F2F3F6;
+  background-color: transparent;
+  padding-bottom: 40px;
+  border-bottom: transparent;
 }
 .accordion .accordion-item .accordion-button.collapsed:after {
-  color: #121212;
+  content: "";
 }
 .accordion .accordion-item .accordion-button:after {
-  content: "\f22c";
+  content: "\f63b";
   font-family: bootstrap-icons;
   background-image: none;
-  color: #FE6809;
+  color: #121212;
 }
 .accordion .accordion-item .accordion-body {
   background-color: #ffffff;
-  padding: 0 40px 20px 40px;
+  padding: 16px 40px 40px;
   transition: all 0.5s ease-out;
 }
 
@@ -9373,6 +9375,10 @@ ul.children {
 .donate-area .section-title .theme-btn {
   color: #5E5E5E;
   margin-top: 48px;
+}
+
+.faq-area .section-title-wrapper {
+  margin-bottom: 72px;
 }
 
 .contact-area {
