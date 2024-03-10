@@ -149,8 +149,8 @@
         /*
        Client Logo Slider
        ============================*/
-        $(".client-logo-slider-wrapper").slick({
-            slidesToShow: 5,
+        $(".brand-slider").slick({
+            slidesToShow: 7,
             infinite: true,
             autoplay: true,
             draggable: true,
