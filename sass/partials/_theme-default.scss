@@ -243,6 +243,12 @@ code {
 }
 .theme-btn{
   display: flex;
+  &.style-2{
+    a{
+      background-color: $black;
+      color: $white;
+    }
+  }
 }
 .theme-btn a,
 .wp-block-loginout a,
@@ -289,10 +295,6 @@ input.theme-btn {
     }
   
     &:focus {
-      color: $white;
-    }
-    &.style-2{
-      background-color: $black;
       color: $white;
     }
 }
