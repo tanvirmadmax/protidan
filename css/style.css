@@ -304,6 +304,9 @@ input.theme-btn {
   text-transform: uppercase;
   border: 1px solid #828282;
   border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: all 0.5s ease-out;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
@@ -9381,6 +9384,10 @@ ul.children {
   margin-bottom: 72px;
 }
 
+.brand-area .brand-slider {
+  padding: 0 96px;
+}
+
 .contact-area {
   position: relative;
 }
@@ -12262,4 +12269,78 @@ ul.children {
   background-color: #ffffff;
   color: #31373f;
   border-color: #ffffff;
+}
+
+.event-card .image-wrapper {
+  position: relative;
+}
+.event-card .image-wrapper .date {
+  padding: 21px 13px;
+  position: absolute;
+  top: 0;
+  left: 32px;
+  background-color: #FF9A62;
+  text-align: center;
+}
+.event-card .image-wrapper .date .title {
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: 0.76px;
+  color: #121212;
+}
+.event-card .image-wrapper .date .desc {
+  font-family: "Vazirmatn", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  color: #121212;
+}
+.event-card .content-wrapper {
+  padding: 42px 78px 32px 32px;
+  border: 1px solid #BDBDBD;
+  border-left: transparent;
+}
+.event-card .content-wrapper .meta {
+  margin-bottom: 16px;
+}
+.event-card .content-wrapper .meta ul {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding-left: 0;
+}
+.event-card .content-wrapper .meta ul li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0.28px;
+  text-transform: uppercase;
+  color: #121212;
+}
+.event-card .content-wrapper .meta ul li i {
+  color: #FF9A62;
+}
+.event-card .content-wrapper .title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 34px;
+  letter-spacing: 0.48px;
+  margin-bottom: 8px;
+  color: #121212;
+}
+.event-card .content-wrapper .desc {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0.32px;
+}
+.event-card .content-wrapper .theme-btn {
+  margin-top: 32px;
 }/*# sourceMappingURL=style.css.map */
