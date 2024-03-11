@@ -402,6 +402,15 @@
         padding: 0 96px;
     }
 }
+// Event-area
+.event-area{
+    .event-card-wrapper{
+        margin-top: 60px;
+        .event-card{
+            margin-top: 32px;
+        }
+    }
+}
 // Contact-area
 .contact-area {
     position: relative;

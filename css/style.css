@@ -291,7 +291,11 @@ code {
   display: flex;
 }
 
-.theme-btn,
+.theme-btn {
+  display: flex;
+}
+
+.theme-btn a,
 .wp-block-loginout a,
 input.theme-btn {
   padding: 16px 24px;
@@ -310,13 +314,13 @@ input.theme-btn {
   transition: all 0.5s ease-out;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  .theme-btn,
+  .theme-btn a,
   .wp-block-loginout a,
   input.theme-btn {
     font-size: 16px;
   }
 }
-.theme-btn i,
+.theme-btn a i,
 .wp-block-loginout a i,
 input.theme-btn i {
   display: inline-flex;
@@ -327,13 +331,13 @@ input.theme-btn i {
   margin-right: 0;
   transition: all 0.5s ease-out;
 }
-.theme-btn:hover,
+.theme-btn a:hover,
 .wp-block-loginout a:hover,
 input.theme-btn:hover {
   color: #121212;
   background-color: #FF9A62;
 }
-.theme-btn:hover i,
+.theme-btn a:hover i,
 .wp-block-loginout a:hover i,
 input.theme-btn:hover i {
   transform: rotate(-35deg);
@@ -341,12 +345,12 @@ input.theme-btn:hover i {
   margin-right: -10px;
   transition: all 0.5s ease-out;
 }
-.theme-btn:focus,
+.theme-btn a:focus,
 .wp-block-loginout a:focus,
 input.theme-btn:focus {
   color: #ffffff;
 }
-.theme-btn.style-2,
+.theme-btn a.style-2,
 .wp-block-loginout a.style-2,
 input.theme-btn.style-2 {
   background-color: #121212;
@@ -4454,6 +4458,8 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 .slider-area .single-slider .slider-content .slider-btn-wrapper {
   margin-top: 48px;
+  display: flex;
+  justify-content: center;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .slider-area .single-slider .slider-content .slider-btn-wrapper {
@@ -9388,6 +9394,13 @@ ul.children {
   padding: 0 96px;
 }
 
+.event-area .event-card-wrapper {
+  margin-top: 60px;
+}
+.event-area .event-card-wrapper .event-card {
+  margin-top: 32px;
+}
+
 .contact-area {
   position: relative;
 }
@@ -12271,8 +12284,14 @@ ul.children {
   border-color: #ffffff;
 }
 
+.event-card {
+  display: flex;
+  align-items: center;
+}
 .event-card .image-wrapper {
   position: relative;
+  max-width: 526px;
+  flex-shrink: 0;
 }
 .event-card .image-wrapper .date {
   padding: 21px 13px;
@@ -12300,7 +12319,7 @@ ul.children {
   color: #121212;
 }
 .event-card .content-wrapper {
-  padding: 42px 78px 32px 32px;
+  padding: 42px 78px 40px 32px;
   border: 1px solid #BDBDBD;
   border-left: transparent;
 }
@@ -12312,6 +12331,7 @@ ul.children {
   align-items: center;
   gap: 24px;
   padding-left: 0;
+  margin-bottom: 16px;
 }
 .event-card .content-wrapper .meta ul li {
   display: flex;
@@ -12343,4 +12363,6 @@ ul.children {
 }
 .event-card .content-wrapper .theme-btn {
   margin-top: 32px;
+  align-items: start;
+  justify-content: start;
 }/*# sourceMappingURL=style.css.map */

@@ -373,7 +373,8 @@
       }
       .slider-btn-wrapper {
         margin-top: 48px;
-
+        display: flex;
+        justify-content: center;
         @include sm {
           margin-top: 30px;
         }

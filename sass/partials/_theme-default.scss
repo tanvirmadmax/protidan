@@ -241,7 +241,10 @@ code {
 .theme-btn-wrapper{
   display: flex;
 }
-.theme-btn ,
+.theme-btn{
+  display: flex;
+}
+.theme-btn a,
 .wp-block-loginout a,
 input.theme-btn {
     padding: 16px 24px;
@@ -257,6 +260,7 @@ input.theme-btn {
     display: flex;
     align-items: center;
     justify-content: center;
+    // flex-shrink: 0;
     @include transition;
   
     @include sm {

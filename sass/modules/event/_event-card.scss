@@ -1,6 +1,10 @@
 .event-card{
+    display: flex;
+    align-items: center;
     .image-wrapper{
         position: relative;
+        max-width: 526px;
+        flex-shrink: 0;
         img{
             // width: 100%;
         }
@@ -31,7 +35,7 @@
         }
     }
     .content-wrapper{
-        padding: 42px 78px 32px 32px;
+        padding: 42px 78px 40px 32px;
         border: 1px solid $gray-50;
         border-left: transparent;
         .meta{
@@ -41,6 +45,7 @@
                 align-items: center;
                 gap: 24px;
                 padding-left: 0;
+                margin-bottom: 16px;
 
                 li{
                     display: flex;
@@ -74,6 +79,8 @@
         }
         .theme-btn{
             margin-top: 32px;
+            align-items: start;
+            justify-content: start;
         }
     }
 }
