@@ -256,10 +256,6 @@
 .single-post-item {
   background-color: $white;
   overflow: hidden;
-  margin-bottom: 80px;
-  @include sm{
-    margin-bottom: 60px;
-  }
 
   &:hover {
 

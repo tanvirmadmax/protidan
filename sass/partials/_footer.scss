@@ -50,12 +50,13 @@
 
 .footer-widget-title {
   font-family: $heading-font;
-  font-size: 21px;
-  line-height: 26px;
+  font-size: 16px;
   color: $white;
-  position: relative;
-  margin-bottom: 26px;
-  font-weight: 700;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
+  margin-bottom: 35px;
 }
 
 .footer-widget {
@@ -183,6 +184,10 @@
 
   // Footer Contact Widget
   .footer-widget-contact {
+    padding-left: 40px;
+    .footer-widget-title{
+      text-align: end;
+    }
     p {
       color: $white-100;
     }
@@ -194,9 +199,10 @@
         margin-bottom: 16px;
         display: flex;
         align-items: center;
-        // justify-content: center;
+        justify-content: end;
         line-height: 24px;
         gap: 20px;
+        text-align: end;
 
         &:first-child {
           align-items: flex-start;
@@ -212,11 +218,14 @@
 
         .contact-icon {
           color: $white;
-          border-radius: 50px;
           float: left;
           display: flex;
           align-items: center;
+          justify-content: center;
           flex-shrink: 0;
+          width: 48px;
+          height: 48px;
+          border: 1px solid #4F4F4F;
         }
 
         .contact-text {
@@ -237,10 +246,11 @@
           span,
           p,
           a {
-            color: $white-100;
-            font-size: 18px;
-            line-height: 24px;
-            display: inline-block;
+            color: $gray-50;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 27px;
+            letter-spacing: 0.32px;
             width: 100%;
             margin-bottom: 0;
             @include transition;

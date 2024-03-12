@@ -5815,14 +5815,8 @@ button.testimonial-arrow-btn:hover i {
 .single-post-item {
   background-color: #ffffff;
   overflow: hidden;
-  margin-bottom: 80px;
   /* Quote Format Post */
   /* Sticky Post */
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .single-post-item {
-    margin-bottom: 60px;
-  }
 }
 .single-post-item:hover .post-thumbnail img,
 .single-post-item:hover .post-video img,
@@ -11038,12 +11032,13 @@ ul.children {
 
 .footer-widget-title {
   font-family: "Vazirmatn", sans-serif;
-  font-size: 21px;
-  line-height: 26px;
+  font-size: 16px;
   color: #ffffff;
-  position: relative;
-  margin-bottom: 26px;
-  font-weight: 700;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
+  margin-bottom: 35px;
 }
 
 .footer-widget {
@@ -11135,6 +11130,12 @@ ul.children {
   transition: all 0.5s ease-out;
   color: #FF9A62;
 }
+.footer-widget .footer-widget-contact {
+  padding-left: 40px;
+}
+.footer-widget .footer-widget-contact .footer-widget-title {
+  text-align: end;
+}
 .footer-widget .footer-widget-contact p {
   color: #c7cdda;
 }
@@ -11145,8 +11146,10 @@ ul.children {
   margin-bottom: 16px;
   display: flex;
   align-items: center;
+  justify-content: end;
   line-height: 24px;
   gap: 20px;
+  text-align: end;
 }
 .footer-widget .footer-widget-contact .footer-contact ul li:first-child {
   align-items: flex-start;
@@ -11159,11 +11162,14 @@ ul.children {
 }
 .footer-widget .footer-widget-contact .footer-contact ul li .contact-icon {
   color: #ffffff;
-  border-radius: 50px;
   float: left;
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border: 1px solid #4F4F4F;
 }
 .footer-widget .footer-widget-contact .footer-contact ul li .contact-text {
   color: #c7cdda;
@@ -11178,10 +11184,11 @@ ul.children {
 .footer-widget .footer-widget-contact .footer-contact ul li .contact-text span,
 .footer-widget .footer-widget-contact .footer-contact ul li .contact-text p,
 .footer-widget .footer-widget-contact .footer-contact ul li .contact-text a {
-  color: #c7cdda;
-  font-size: 18px;
-  line-height: 24px;
-  display: inline-block;
+  color: #BDBDBD;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0.32px;
   width: 100%;
   margin-bottom: 0;
   transition: all 0.5s ease-out;
