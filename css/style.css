@@ -11016,6 +11016,25 @@ ul.children {
     padding-top: 60px;
   }
 }
+.footer .btn-wrapper {
+  margin: 72px 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .btn-wrapper:before, .footer .btn-wrapper:after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #4F4F4F;
+}
+.footer .btn-wrapper .theme-btn {
+  z-index: 1;
+  background-color: transparent;
+  padding: 0 32px;
+  flex-shrink: 0;
+}
 
 .footer-widget-title {
   font-family: "Vazirmatn", sans-serif;
@@ -11051,9 +11070,6 @@ ul.children {
   .footer-widget .widget-instagram-feed {
     width: 170px;
   }
-}
-.footer-widget .footer-widget-info {
-  padding-right: 30px;
 }
 @media (max-width: 1199px) {
   .footer-widget .footer-widget-info {

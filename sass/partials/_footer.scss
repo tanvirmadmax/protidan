@@ -20,15 +20,32 @@
       padding-top: 60px;
     }
   }
-
-  //footer Background
-  // .footer-bg {
-  //   position: absolute;
-  //   bottom: 30px;
-  //   left: 50%;
-  //   transform: translateX(-50%);
-  //   z-index: -1;
-  // }
+  .btn-wrapper{
+    margin: 72px 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:before,
+      &:after{
+        content: "";
+        width: 100%;
+        height: 1px;
+        background-color: #4F4F4F;
+      }
+    // .divider{
+    //   width: 100%;
+    //   height: 1px;
+    //   background-color: #4F4F4F;
+    //   position: absolute;
+    // }
+    .theme-btn{
+      z-index: 1;
+      background-color: transparent;
+      padding: 0 32px;
+      flex-shrink: 0;
+    }
+  }
 }
 
 .footer-widget-title {
@@ -80,7 +97,7 @@
 
   // Footer Info Widget
   .footer-widget-info {
-    padding-right: 30px;
+    // padding-right: 30px;
 
     @include rmaxwd(1199) {
       padding-right: 0;
@@ -177,6 +194,7 @@
         margin-bottom: 16px;
         display: flex;
         align-items: center;
+        // justify-content: center;
         line-height: 24px;
         gap: 20px;
 
