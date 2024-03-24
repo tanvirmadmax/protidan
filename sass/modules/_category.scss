@@ -1,0 +1,29 @@
+.category-item{
+    display: inline-flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    padding: 68px 80px;
+    background-color: $black;
+    .icon{
+        width: 130px;
+        height: 130px;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $bg-color;
+        font-size: 64px;
+        color: $primary-color;
+    }
+    .content{
+        text-align: center;
+        .title{
+            color: $white;
+        }
+        .desc{
+            color: $primary-color;
+        }
+    }
+}

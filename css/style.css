@@ -115,7 +115,7 @@ h3 {
 }
 
 h4 {
-  font-size: 30px;
+  font-size: 28px;
   line-height: 40px;
   font-weight: 500;
 }
@@ -9328,6 +9328,11 @@ ul.children {
   margin-bottom: 72px;
 }
 
+.categories-area .card-wrapper {
+  display: flex;
+  gap: 0.5px;
+}
+
 .our-services-area {
   background-repeat: no-repeat;
   background-position: center;
@@ -12245,4 +12250,34 @@ ul.children {
   margin-top: 40px;
   align-items: start;
   justify-content: start;
+}
+
+.category-item {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  padding: 68px 80px;
+  background-color: #121212;
+}
+.category-item .icon {
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #232323;
+  font-size: 64px;
+  color: #FF9A62;
+}
+.category-item .content {
+  text-align: center;
+}
+.category-item .content .title {
+  color: #ffffff;
+}
+.category-item .content .desc {
+  color: #FF9A62;
 }/*# sourceMappingURL=style.css.map */
