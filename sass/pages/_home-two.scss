@@ -2,7 +2,11 @@
 .categories-area{
   .card-wrapper{
     display: flex;
-    gap: 0.5px;
+    gap: 1px;
+    @include rmaxwd(1199) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 }
 

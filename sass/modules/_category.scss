@@ -4,8 +4,22 @@
     gap: 16px;
     justify-content: center;
     align-items: center;
-    padding: 68px 80px;
+    padding: 68px;
     background-color: $black;
+    width: 100%;
+    @include rwd(1400){
+        padding: 40px;
+    }
+    @include xl{
+        padding: 40px 24px;
+    }
+    @include rmaxwd(1199){
+        width: unset;
+        padding: 40px;
+    }
+    @include xs{
+        width: 100%;
+    }
     .icon{
         width: 130px;
         height: 130px;

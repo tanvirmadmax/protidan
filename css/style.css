@@ -4473,8 +4473,13 @@ body.admin-bar .header-menu-area.sticky_menu {
   position: relative;
 }
 .slider-area.style-2 .single-slider {
-  padding-top: 266px;
-  padding-bottom: 173px;
+  padding-top: 166px;
+  padding-bottom: 140px;
+}
+@media (max-width: 1199px) {
+  .slider-area.style-2 .single-slider {
+    height: auto;
+  }
 }
 .slider-area.style-2 .slider-content {
   text-align: start;
@@ -9330,7 +9335,13 @@ ul.children {
 
 .categories-area .card-wrapper {
   display: flex;
-  gap: 0.5px;
+  gap: 1px;
+}
+@media (max-width: 1199px) {
+  .categories-area .card-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .our-services-area {
@@ -12258,8 +12269,30 @@ ul.children {
   gap: 16px;
   justify-content: center;
   align-items: center;
-  padding: 68px 80px;
+  padding: 68px;
   background-color: #121212;
+  width: 100%;
+}
+@media (min-width: 1400px) {
+  .category-item {
+    padding: 40px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .category-item {
+    padding: 40px 24px;
+  }
+}
+@media (max-width: 1199px) {
+  .category-item {
+    width: unset;
+    padding: 40px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 350px) {
+  .category-item {
+    width: 100%;
+  }
 }
 .category-item .icon {
   width: 130px;

@@ -2,8 +2,11 @@
   &.style-2 {
     position: relative;
     .single-slider{
-      padding-top: 266px;
-      padding-bottom: 173px;
+      padding-top: 166px;
+      padding-bottom: 140px;
+      @include rmaxwd(1199){
+        height: auto;
+      }
     }
     .slider-content{
       text-align: start;
