@@ -1,6 +1,6 @@
 // Categories-area
-.categories-area{
-  .card-wrapper{
+.categories-area {
+  .card-wrapper {
     display: flex;
     gap: 1px;
     @include rmaxwd(1199) {
@@ -52,16 +52,52 @@
         @include rmaxwd(651) {
           padding-top: 100px;
         }
-
       }
     }
   }
 }
 
-.image-card-area{
-  &.style-2{
-    .content-wrapper{
+.image-card-area {
+  &.style-2 {
+    .content-wrapper {
       top: 148px;
+      .inner-wrapper {
+        .shape {
+          position: absolute;
+          left: -100px;
+          top: 30%;
+        }
+      }
+      .theme-btn {
+        margin-top: 48px;
+      }
+    }
+    .image-wrapper {
+      margin-left: 90px;
+      margin-right: -50%;
+      &:after {
+        display: none;
+      }
+      img {
+        filter: none;
+      }
+    }
+  }
+}
+
+// Donate-area Style-2
+.donate-area {
+  &.style-2 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .image-wrapper {
+      margin-left: -50%;
+      margin-bottom: -25%;
+      margin-right: -20%;
+    }
+    .donate-form {
+      border-radius: 0;
     }
   }
 }
