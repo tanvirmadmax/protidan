@@ -161,9 +161,8 @@ input:focus {
   outline: none;
 }
 
-
-.background-black {
-  background-color: #151515;
+.bg-black {
+  background-color: #121212;
 }
 
 .bg-light-black {
@@ -210,7 +209,6 @@ input:focus {
 
 .page-area,
 .blog-area {
-
   @include rmaxwd(991) {
     padding-top: 100px;
     padding-bottom: 52px;
@@ -238,13 +236,13 @@ code {
   color: $orange-color;
 }
 
-.theme-btn-wrapper{
+.theme-btn-wrapper {
   display: flex;
 }
-.theme-btn{ 
+.theme-btn {
   display: flex;
-  &.style-2{
-    a{
+  &.style-2 {
+    a {
       background-color: $black;
       color: $white;
     }
@@ -253,50 +251,50 @@ code {
 .theme-btn a,
 .wp-block-loginout a,
 input.theme-btn {
-    padding: 16px 24px;
-    font-family: $body-font;
-    color: $gray-4;
+  padding: 16px 24px;
+  font-family: $body-font;
+  color: $gray-4;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
+  border: 1px solid $gray-3;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // flex-shrink: 0;
+  @include transition;
+
+  @include sm {
     font-size: 16px;
-    font-weight: 500;
-    line-height:  21px;
-    letter-spacing: 0.32px;
-    text-transform: uppercase;
-    border: 1px solid $gray-3;
-    border-radius: 4px;
-    display: flex;
+  }
+
+  i {
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    // flex-shrink: 0;
+    color: #fff;
+    font-size: 16px;
+    margin-right: 0;
     @include transition;
-  
-    @include sm {
-      font-size: 16px;
-    }
-  
+  }
+
+  &:hover {
+    color: $black;
+    background-color: $primary-color;
     i {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      color: #fff;
-      font-size: 16px;
-      margin-right: 0;
+      transform: rotate(-35deg);
+      margin-left: 10px;
+      margin-right: -10px;
       @include transition;
     }
-  
-    &:hover {
-      color: $black;
-      background-color: $primary-color;
-      i{
-        transform: rotate(-35deg);
-        margin-left: 10px;
-        margin-right: -10px;
-        @include transition;
-      }
-    }
-  
-    &:focus {
-      color: $white;
-    }
+  }
+
+  &:focus {
+    color: $white;
+  }
 }
 
 .wp-block-loginout {
@@ -328,7 +326,6 @@ input.theme-btn {
   .icon {
     float: right;
   }
-
 }
 
 input.theme-btn {

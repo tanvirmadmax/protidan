@@ -56,7 +56,6 @@
 
 @import "custom_font";
 
-
 // 1.Preloader
 @import "modules/preeloader";
 
@@ -74,7 +73,6 @@
 @import "modules/slider/slider-style-one";
 @import "modules/slider/slider-style-two";
 @import "modules/slider/slider-style-three";
-
 
 // 5.Info Card
 @import "modules/info-card/info-card";
@@ -97,6 +95,7 @@
 @import "modules/counter/counter-card-three";
 
 // 13. Testimonial Card
+@import "modules/testimonial/testimonial-card";
 @import "modules/testimonial/testimonial-card-two";
 @import "modules/testimonial/testimonial-card-three";
 @import "modules/testimonial/testimonial-slider-controls";
@@ -167,7 +166,6 @@
 @import "partials/footer-two";
 @import "partials/footer-three";
 
-
 // Service-area
 @import "modules/service-area/service-area-one";
 
@@ -181,4 +179,3 @@
 @import "modules/event/event-card";
 @import "modules/post-card/single-post-item";
 @import "modules/category";
-
