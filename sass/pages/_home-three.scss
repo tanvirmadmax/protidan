@@ -39,6 +39,18 @@
     }
   }
 }
+
+// Cayses-area
+.causes-area {
+  &.style-2 {
+    .section-title-wrapper {
+      margin-bottom: 72px;
+    }
+    .theme-btn-wrapper {
+      align-items: end;
+    }
+  }
+}
 // Why Choose Area
 .feature-area {
   &.style-2 {

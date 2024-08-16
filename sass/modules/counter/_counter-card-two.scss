@@ -1,52 +1,34 @@
 .counter-card {
-  &.style-two {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
-
-
-    @include md {
-      grid-template-columns: repeat(2, 1fr);
+  &.style-2 {
+    .image-wrapper {
+      position: relative;
+      .tag {
+        background-color: $second-primary-color;
+        color: $black;
+      }
+      .image {
+        img {
+        }
+      }
     }
-    @include sm {
-      grid-template-columns: repeat(1, 1fr);
-    }
-    .counter-item {
-      text-align: left;
+    .content-wrapper {
+      border-color: $gray-4;
 
-      @include md {
-        text-align: center;
+      .title {
+        color: $black;
       }
-
-
-      .counter-title {
-        flex-direction: row;
-        gap: 30px;
-
-        @include md {
-          flex-direction: column;
-          gap: 20px;
+      .desc-wrapper {
+        color: $black;
+        span {
+          color: $gray-3;
+        }
+        p {
+          color: $black;
         }
       }
-      .counter-content {
-        width: 100%;
-        .text {
-          br {
-            @include rmaxwd(280) {
-              display: none;
-            }
-          }
-        }
-      }
-      .number {
-        font-size: 90px;
-
-        @include md {
-          font-size: 48px;
-          line-height: 50px;
-        }
-        @include sm {
-          font-size: 48px;
-          line-height: 50px;
+      .theme-btn {
+        a {
+          color: $black;
         }
       }
     }

@@ -214,6 +214,10 @@ input:focus {
   background-color: #121212;
 }
 
+.bg-2 {
+  background-color: #f6f9ff;
+}
+
 .bg-light-black {
   background-color: rgb(49, 55, 63);
 }
@@ -291,9 +295,6 @@ code {
   display: flex;
 }
 
-.theme-btn {
-  display: flex;
-}
 .theme-btn.style-2 a {
   background-color: #121212;
   color: #ffffff;
@@ -312,7 +313,7 @@ input.theme-btn {
   text-transform: uppercase;
   border: 1px solid #828282;
   border-radius: 4px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   transition: all 0.5s ease-out;
@@ -5028,66 +5029,36 @@ body.admin-bar .header-menu-area.sticky_menu {
   font-weight: 600;
   line-height: 31px;
 }
-.counter-card .content-wrapper .theme-btn-wrapper .theme-btn {
+.counter-card .content-wrapper .theme-btn {
   display: flex;
   align-items: start;
   color: #ffffff;
 }
 
-.counter-card.style-two {
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
+.counter-card.style-2 .image-wrapper {
+  position: relative;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .counter-card.style-two {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.counter-card.style-2 .image-wrapper .tag {
+  background-color: #ff5e54;
+  color: #121212;
 }
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .counter-card.style-two {
-    grid-template-columns: repeat(1, 1fr);
-  }
+.counter-card.style-2 .content-wrapper {
+  border-color: #bdbdbd;
 }
-.counter-card.style-two .counter-item {
-  text-align: left;
+.counter-card.style-2 .content-wrapper .title {
+  color: #121212;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .counter-card.style-two .counter-item {
-    text-align: center;
-  }
+.counter-card.style-2 .content-wrapper .desc-wrapper {
+  color: #121212;
 }
-.counter-card.style-two .counter-item .counter-title {
-  flex-direction: row;
-  gap: 30px;
+.counter-card.style-2 .content-wrapper .desc-wrapper span {
+  color: #828282;
 }
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .counter-card.style-two .counter-item .counter-title {
-    flex-direction: column;
-    gap: 20px;
-  }
+.counter-card.style-2 .content-wrapper .desc-wrapper p {
+  color: #121212;
 }
-.counter-card.style-two .counter-item .counter-content {
-  width: 100%;
-}
-@media (max-width: 280px) {
-  .counter-card.style-two .counter-item .counter-content .text br {
-    display: none;
-  }
-}
-.counter-card.style-two .counter-item .number {
-  font-size: 90px;
-}
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .counter-card.style-two .counter-item .number {
-    font-size: 48px;
-    line-height: 50px;
-  }
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .counter-card.style-two .counter-item .number {
-    font-size: 48px;
-    line-height: 50px;
-  }
+.counter-card.style-2 .content-wrapper .theme-btn a {
+  color: #121212;
 }
 
 .counter-card.style-three {
@@ -9446,6 +9417,13 @@ ul.children {
   }
 }
 
+.causes-area.style-2 .section-title-wrapper {
+  margin-bottom: 72px;
+}
+.causes-area.style-2 .theme-btn-wrapper {
+  align-items: end;
+}
+
 .feature-area.style-2 {
   margin-top: -65px;
   position: relative;
@@ -11161,6 +11139,15 @@ ul.children {
   height: 8px;
   background-color: #ff9a62;
   width: 0%;
+}
+.skill-progressbar.style-2 .progress-number-count {
+  color: #121212;
+}
+.skill-progressbar.style-2 .progress-content-outter {
+  background-color: #bdbdbd;
+}
+.skill-progressbar.style-2 .progress-content {
+  background-color: #ff5e54;
 }
 
 .donation-area.style-1 {

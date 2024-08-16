@@ -164,6 +164,9 @@ input:focus {
 .bg-black {
   background-color: #121212;
 }
+.bg-2 {
+  background-color: #f6f9ff;
+}
 
 .bg-light-black {
   background-color: rgb(49, 55, 63);
@@ -240,7 +243,6 @@ code {
   display: flex;
 }
 .theme-btn {
-  display: flex;
   &.style-2 {
     a {
       background-color: $black;
@@ -261,7 +263,7 @@ input.theme-btn {
   text-transform: uppercase;
   border: 1px solid $gray-3;
   border-radius: 4px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   // flex-shrink: 0;
