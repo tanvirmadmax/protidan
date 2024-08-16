@@ -1,86 +1,114 @@
-.event-card{
-    display: flex;
-    align-items: center;
-    .image-wrapper{
-        position: relative;
-        max-width: 526px;
-        flex-shrink: 0;
-        img{
-            // width: 100%;
-        }
-        .date{
-            padding: 21px 13px;
-            position: absolute;
-            top: 0;
-            left: 32px;
-            background-color: $primary-color;
-            text-align: center;
-            .title{
-                font-size: 38px;
-                font-weight: 700;
-                line-height: 38px; 
-                letter-spacing: 0.76px;
-                color: $black;
-            }
-            .desc{
-                font-family: $body-font;
-                font-size: 16px;
-                font-weight: 500;
-                line-height: 18px;
-                letter-spacing: 0.32px;
-                text-transform: uppercase;
-                margin-bottom: 0;
-                color: $black;
-            }
-        }
+.event-card {
+  display: flex;
+  align-items: center;
+  &:hover {
+    .image-wrapper {
+      .arrow_button {
+        background-color: $primary-color;
+        border-color: $primary-color;
+      }
     }
-    .content-wrapper{
-        padding: 42px 78px 40px 32px;
-        border: 1px solid $gray-50;
-        border-left: transparent;
-        .meta{
-            margin-bottom: 16px;
-            ul{
-                display: flex;
-                align-items: center;
-                gap: 24px;
-                padding-left: 0;
-                margin-bottom: 16px;
+  }
+  .image-wrapper {
+    position: relative;
+    max-width: 526px;
+    flex-shrink: 0;
+    img {
+      // width: 100%;
+    }
+    .date {
+      padding: 21px 13px;
+      position: absolute;
+      top: 0;
+      left: 32px;
+      background-color: $primary-color;
+      text-align: center;
+      .title {
+        font-size: 38px;
+        font-weight: 700;
+        line-height: 38px;
+        letter-spacing: 0.76px;
+        color: $black;
+      }
+      .desc {
+        font-family: $body-font;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 18px;
+        letter-spacing: 0.32px;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        color: $black;
+      }
+    }
+    .arrow_button {
+      width: 64px;
+      height: 64px;
+      border-radius: 50px;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translate(50%, -50%);
+      border: 1px solid $gray-4;
+      background-color: $white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @include transition;
+    }
+  }
+  .content-wrapper {
+    padding: 42px 78px 40px 32px;
+    border: 1px solid $gray-50;
+    border-left: transparent;
+    .meta {
+      margin-bottom: 16px;
+      ul {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        padding-left: 0;
+        margin-bottom: 16px;
 
-                li{
-                    display: flex;
-                    align-items: center;
-                    gap: 8px;
-                    font-size: 14px;
-                    font-weight: 400;
-                    line-height: 21px; 
-                    letter-spacing: 0.28px;
-                    text-transform: uppercase;
-                    color: $black;
-                    i{
-                        color: $primary-color;
-                    }
-                }
-            }
+        li {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 21px;
+          letter-spacing: 0.28px;
+          text-transform: uppercase;
+          color: $black;
+          i {
+            color: $primary-color;
+          }
         }
-        .title{
-            font-size: 24px;
-            font-weight: 600;
-            line-height:34px;
-            letter-spacing: 0.48px;
-            margin-bottom: 8px;
-            color: $black;
-        }
-        .desc{
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 27px;
-            letter-spacing: 0.32px;
-        }
-        .theme-btn{
-            margin-top: 32px;
-            align-items: start;
-            justify-content: start;
-        }
+      }
     }
+    .title {
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 34px;
+      letter-spacing: 0.48px;
+      margin-bottom: 8px;
+      color: $black;
+    }
+    .desc {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 27px;
+      letter-spacing: 0.32px;
+    }
+    .theme-btn {
+      margin-top: 32px;
+      align-items: start;
+      justify-content: start;
+    }
+  }
+  &.style-2 {
+    .content-wrapper {
+      padding: 76px 80px;
+    }
+  }
 }
