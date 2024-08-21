@@ -1,18 +1,17 @@
 // About Us Area
 .about-us-area {
-  &.style-3 {
-    padding-top: 138px;
-    padding-bottom: 144px;
-
-    @include rmaxwd(991) {
-      padding: 100px 0;
-    }
-    @include rmaxwd(767) {
-      padding: 70px 0;
-    }
+  &.style-4 {
     .content-wrapper {
       .category-item {
         margin-top: 30px;
+        .icon {
+          color: $second-primary-color;
+        }
+        .content {
+          .desc {
+            color: $second-primary-color;
+          }
+        }
       }
       .theme-btn {
         &.style-2 {
@@ -22,19 +21,6 @@
             margin-top: 32px;
           }
         }
-      }
-    }
-    .section-title {
-      &.another-title {
-        display: none;
-        margin-bottom: 30px;
-
-        @include rmaxwd(991) {
-          display: block !important;
-        }
-      }
-      @include rmaxwd(991) {
-        display: none;
       }
     }
   }
@@ -62,6 +48,45 @@
       background-color: $black-50;
       border-radius: 8px;
       overflow: hidden;
+    }
+  }
+}
+// image-card-area
+.image-card-area {
+  &.style-3 {
+    .image-wrapper {
+      .video-popup-btn {
+        a {
+          background-color: $second-primary-color;
+        }
+      }
+    }
+    .image-card {
+      .icon-wrapper {
+        &:before {
+          background-color: $second-primary-color;
+        }
+      }
+    }
+    .icon-card {
+      .content {
+        .desc {
+          color: $second-primary-color;
+        }
+      }
+    }
+    .content-wrapper {
+      top: 148px;
+      .inner-wrapper {
+        .shape {
+          position: absolute;
+          left: -100px;
+          top: 30%;
+        }
+      }
+      .theme-btn {
+        margin-top: 48px;
+      }
     }
   }
 }

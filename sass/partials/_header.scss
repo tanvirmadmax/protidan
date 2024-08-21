@@ -3,18 +3,18 @@
   width: 100%;
   z-index: 10;
   @include transition;
-  @include xl{
+  @include xl {
     background-color: $white;
   }
 }
-.full-width-visible{
+.full-width-visible {
   display: none;
-  .header-btn{
-    &.style-2{
+  .header-btn {
+    &.style-2 {
       padding: 16px 30px;
       border-radius: 5px;
-      .content-wrapper{
-        span{
+      .content-wrapper {
+        span {
           color: $white;
         }
       }
@@ -29,7 +29,7 @@
   display: flex;
   align-items: center;
   @include transition;
-  @include lg{
+  @include lg {
     height: 84px;
   }
   @include md {
@@ -72,19 +72,19 @@
 }
 
 // search-btn
-.search-field{
+.search-field {
   visibility: hidden;
   opacity: 0;
   display: none;
-  &.active{
+  &.active {
     visibility: visible;
     opacity: 1;
     display: block;
   }
 }
-.search-icon{
+.search-icon {
   display: block;
-  &.active{
+  &.active {
     display: none;
   }
 }
@@ -121,7 +121,7 @@
     align-items: center;
     gap: 0 40px;
     flex-wrap: wrap;
-    @include xl{
+    @include xl {
       gap: 24px;
     }
     .contact-info-item {
@@ -129,13 +129,13 @@
       align-items: center;
       gap: 20px;
       position: relative;
-      line-height:21px;
-      a{
+      line-height: 21px;
+      a {
         color: $white;
         font-family: $body-font;
         font-size: 14px;
         font-weight: 400;
-        line-height:21px;
+        line-height: 21px;
         letter-spacing: 0.28px;
       }
 
@@ -166,7 +166,7 @@
       }
     }
   }
-  .list-item{
+  .list-item {
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
@@ -174,13 +174,13 @@
     align-items: center;
     justify-content: center;
     gap: 16px;
-    li{
+    li {
       display: flex;
       align-items: center;
       font-family: $body-font;
       font-size: 14px;
       font-weight: 500;
-      line-height:  21px;
+      line-height: 21px;
       color: $white;
 
       &:after {
@@ -200,8 +200,8 @@
       }
     }
   }
-  .header-top-btn{
-    a{
+  .header-top-btn {
+    a {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -215,7 +215,7 @@
       font-weight: 400;
       line-height: 19px;
       letter-spacing: 0.28px;
-      i{
+      i {
         font-size: 14px;
       }
     }
@@ -229,14 +229,14 @@
   transition: all 0.4s ease 0s;
   background-color: transparent;
   padding: 0 96px;
-  @include rmaxwd(1199){
+  @include rmaxwd(1199) {
     // background-color: $white;
   }
-  .custom-container{
-    @include rmaxwd(1199){
+  .custom-container {
+    @include rmaxwd(1199) {
       margin: 0 24px;
     }
-    @include sm{
+    @include sm {
       margin: 0 12px;
     }
   }
@@ -244,15 +244,14 @@
     width: 100%;
     z-index: 999;
     transition: all 0.4s ease 0s;
-    .full-width-hidden{
-      @include rmaxwd(1399){
+    .full-width-hidden {
+      @include rmaxwd(1399) {
         // display: none !important;
       }
     }
-    .full-width-visible{
-      @include rmaxwd(1399){
+    .full-width-visible {
+      @include rmaxwd(1399) {
         // display: block !important;
-
       }
     }
   }
@@ -292,14 +291,14 @@
     .main-menu {
       ul {
         li {
-          a{
+          a {
             // color: $black;
-            &:after{
+            &:after {
               right: 0;
             }
           }
           &.active {
-            >a {
+            > a {
               &:after {
                 // bottom: 20px;
               }
@@ -316,12 +315,11 @@
         }
       }
     }
-    .menu-wrapper{
+    .menu-wrapper {
       background-color: transparent;
     }
   }
 }
-
 
 .menu-wrapper {
   display: flex;
@@ -330,10 +328,10 @@
   gap: 48px;
   // background-color: $white;
   border-radius: 5px;
-  @include rmaxwd(1399){
+  @include rmaxwd(1399) {
   }
-  .menu{
-    @include rmaxwd(991){
+  .menu {
+    @include rmaxwd(991) {
       display: none !important;
     }
   }
@@ -354,20 +352,20 @@
       &.active {
         position: relative;
 
-        >a {
+        > a {
           color: $primary-color;
         }
       }
-      &:last-child{
-        a{
+      &:last-child {
+        a {
           padding-right: 0;
-          @include lg{
+          @include lg {
             padding-right: 16px;
           }
         }
       }
       &.dropdown {
-        >a {
+        > a {
           &:after {
             position: absolute;
             content: "\F22C";
@@ -376,10 +374,10 @@
             right: 0;
             transform: translate(0, -50%);
             @include transition;
-            @include xl{
+            @include xl {
               right: 0;
             }
-            @include lg{
+            @include lg {
               right: 0;
             }
           }
@@ -390,7 +388,7 @@
         &.submenu {
           li {
             &.active {
-              >a {
+              > a {
                 position: relative;
                 z-index: 2;
                 color: $white;
@@ -426,13 +424,13 @@
         line-height: 21px;
         letter-spacing: 0.32px;
         text-transform: uppercase;
-        @include xl{
+        @include xl {
           padding: 46px 20px;
         }
-        @include lg{
+        @include lg {
           padding: 32px 18px;
         }
-        @media only screen and (min-width: 1400px) and (max-width: 1600px){
+        @media only screen and (min-width: 1400px) and (max-width: 1600px) {
           padding: 28px 30px;
         }
         &:hover {
@@ -441,14 +439,14 @@
       }
 
       &:hover {
-        >ul {
+        > ul {
           visibility: visible;
           transition: all 300ms ease;
           opacity: 1;
           transform: scaleY(1);
         }
-        >a{
-          &:after{
+        > a {
+          &:after {
             transform: rotate(180deg);
             top: 25%;
             @include transition;
@@ -499,7 +497,7 @@
           line-height: 120%;
           padding: 10px 20px;
           color: $secondary-color;
-          border-bottom: 1px solid $gray-200;
+          border-bottom: 1px solid $gray-2;
           margin-left: 0;
           font-size: 16px;
 
@@ -537,20 +535,19 @@
   animation-name: slideUpIn;
 }
 
-
 // Header Button Area
 .header-btn-area {
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 0 5px 5px 0;
-  @include rmaxwd(1399){
+  @include rmaxwd(1399) {
     display: none;
   }
-  
+
   .search-btn {
     padding: 30px;
-    border-left: 1px solid #E3E3E3;
+    border-left: 1px solid #e3e3e3;
     line-height: 22px;
     display: inline-block;
 
@@ -579,7 +576,7 @@
   @media only screen and (max-width: 1399px) {
     display: none;
   }
-  &:hover{
+  &:hover {
     background-color: $black;
     color: $white;
   }
@@ -660,7 +657,7 @@
     }
 
     .search-form {
-      background: #FFFFFF;
+      background: #ffffff;
       box-shadow: 0px 30px 70px rgba(208, 225, 242, 0.3);
       border-radius: 50px;
       padding: 15px 30px;
@@ -690,5 +687,4 @@
       }
     }
   }
-
 }

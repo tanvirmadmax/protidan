@@ -29,6 +29,10 @@
       .theme-btn {
         a {
           color: $black;
+          &:hover {
+            background-color: $second-primary-color !important;
+            border-color: transparent;
+          }
         }
       }
     }

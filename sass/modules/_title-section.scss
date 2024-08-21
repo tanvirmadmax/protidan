@@ -17,7 +17,7 @@
     letter-spacing: 0.8px;
     color: $primary-color;
     margin-bottom: 16px;
-    background-position: center;   
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -26,7 +26,7 @@
     width: 100%;
     height: 100%;
     z-index: 10;
-    img{
+    img {
       position: absolute;
       left: -20px;
       top: 0;
@@ -44,7 +44,7 @@
     font-size: 51px;
     color: $black;
     font-weight: 800;
-    line-height: 66px; 
+    line-height: 66px;
     letter-spacing: 1.02px;
     text-transform: capitalize;
     margin-bottom: 0;
@@ -60,7 +60,7 @@
       font-size: 40px;
       line-height: 48px;
     }
-    @media only screen and (min-width: 0px) and (max-width: 439px){
+    @media only screen and (min-width: 0px) and (max-width: 439px) {
       br {
         display: none;
       }
@@ -78,17 +78,22 @@
     margin-top: 24px;
     margin-bottom: 0;
   }
-  &.style-2{
+  &.style-2 {
     justify-content: center;
     align-items: center;
     text-align: center;
-    .short-title{
-      img{
+    .short-title {
+      img {
         left: 0;
       }
     }
-    .desc{
+    .desc {
       margin-top: 0;
+    }
+  }
+  &.style-3 {
+    .short-title {
+      color: $second-primary-color;
     }
   }
 }

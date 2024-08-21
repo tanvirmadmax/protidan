@@ -3511,7 +3511,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   line-height: 120%;
   padding: 10px 20px;
   color: #393d48;
-  border-bottom: 1px solid #f5f5f5;
+  border-bottom: 1px solid #4f4f4f;
   margin-left: 0;
   font-size: 16px;
 }
@@ -3552,7 +3552,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 .header-btn-area .search-btn {
   padding: 30px;
-  border-left: 1px solid #E3E3E3;
+  border-left: 1px solid #e3e3e3;
   line-height: 22px;
   display: inline-block;
 }
@@ -3652,7 +3652,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   color: #ffffff;
 }
 .search-form-wrapper .search-form-inner .search-form {
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 30px 70px rgba(208, 225, 242, 0.3);
   border-radius: 50px;
   padding: 15px 30px;
@@ -5060,6 +5060,10 @@ body.admin-bar .header-menu-area.sticky_menu {
 .counter-card.style-2 .content-wrapper .theme-btn a {
   color: #121212;
 }
+.counter-card.style-2 .content-wrapper .theme-btn a:hover {
+  background-color: #ff5e54 !important;
+  border-color: transparent;
+}
 
 .counter-card.style-three {
   display: flex;
@@ -6068,7 +6072,7 @@ button.testimonial-arrow-btn:hover i {
 }
 .single-post-item .content-header .tag-wrapper .tag {
   padding: 4px 16px;
-  background-color: #BBB8FF;
+  background-color: #bbb8ff;
   border-radius: 50px;
   font-family: "Vazirmatn", sans-serif;
   font-size: 16px;
@@ -6078,14 +6082,14 @@ button.testimonial-arrow-btn:hover i {
   transition: all 0.5s ease-out;
 }
 .single-post-item .content-header .tag-wrapper .tag.purple {
-  background-color: #BBB8FF;
+  background-color: #bbb8ff;
 }
 .single-post-item .content-header .tag-wrapper .tag.reddish {
-  background-color: #FFCEC2;
+  background-color: #ffcec2;
 }
 .single-post-item .content-header .tag-wrapper .tag:hover {
   background-color: #121212;
-  color: #FFF0D8;
+  color: #fff0d8;
 }
 .single-post-item .content-header span {
   font-size: 16px;
@@ -6121,7 +6125,7 @@ button.testimonial-arrow-btn:hover i {
 }
 
 .author-info {
-  background-color: #f5f5f5;
+  background-color: #4f4f4f;
   padding: 20px;
   display: flex;
   justify-content: center;
@@ -6567,6 +6571,9 @@ button.testimonial-arrow-btn:hover i {
 }
 .section-title.style-2 .desc {
   margin-top: 0;
+}
+.section-title.style-3 .short-title {
+  color: #ff5e54;
 }
 
 .page-breadcrumb-area {
@@ -9351,16 +9358,6 @@ ul.children {
 .image-card-area.style-2 .content-wrapper .theme-btn {
   margin-top: 48px;
 }
-.image-card-area.style-2 .image-wrapper {
-  margin-left: 90px;
-  margin-right: -50%;
-}
-.image-card-area.style-2 .image-wrapper:after {
-  display: none;
-}
-.image-card-area.style-2 .image-wrapper img {
-  filter: none;
-}
 
 .donate-area.style-2 {
   background-position: center;
@@ -9380,41 +9377,19 @@ ul.children {
   color: #bdbdbd;
 }
 
-.about-us-area.style-3 {
-  padding-top: 138px;
-  padding-bottom: 144px;
-}
-@media (max-width: 991px) {
-  .about-us-area.style-3 {
-    padding: 100px 0;
-  }
-}
-@media (max-width: 767px) {
-  .about-us-area.style-3 {
-    padding: 70px 0;
-  }
-}
-.about-us-area.style-3 .content-wrapper .category-item {
+.about-us-area.style-4 .content-wrapper .category-item {
   margin-top: 30px;
 }
-.about-us-area.style-3 .content-wrapper .theme-btn.style-2 a {
+.about-us-area.style-4 .content-wrapper .category-item .icon {
+  color: #ff5e54;
+}
+.about-us-area.style-4 .content-wrapper .category-item .content .desc {
+  color: #ff5e54;
+}
+.about-us-area.style-4 .content-wrapper .theme-btn.style-2 a {
   background-color: #ff5e54;
   border-color: transparent;
   margin-top: 32px;
-}
-.about-us-area.style-3 .section-title.another-title {
-  display: none;
-  margin-bottom: 30px;
-}
-@media (max-width: 991px) {
-  .about-us-area.style-3 .section-title.another-title {
-    display: block !important;
-  }
-}
-@media (max-width: 991px) {
-  .about-us-area.style-3 .section-title {
-    display: none;
-  }
 }
 
 .causes-area.style-2 .section-title-wrapper {
@@ -9433,6 +9408,27 @@ ul.children {
   background-color: #2c3237;
   border-radius: 8px;
   overflow: hidden;
+}
+
+.image-card-area.style-3 .image-wrapper .video-popup-btn a {
+  background-color: #ff5e54;
+}
+.image-card-area.style-3 .image-card .icon-wrapper:before {
+  background-color: #ff5e54;
+}
+.image-card-area.style-3 .icon-card .content .desc {
+  color: #ff5e54;
+}
+.image-card-area.style-3 .content-wrapper {
+  top: 148px;
+}
+.image-card-area.style-3 .content-wrapper .inner-wrapper .shape {
+  position: absolute;
+  left: -100px;
+  top: 30%;
+}
+.image-card-area.style-3 .content-wrapper .theme-btn {
+  margin-top: 48px;
 }
 
 .why-choose-us-area.style-2 {
@@ -11346,50 +11342,45 @@ ul.children {
   }
 }
 .donate-form.style-2 {
-  border-radius: 50px 50px 50px 0px;
-  background-color: #393d48;
+  background-color: #232323;
 }
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .donate-form.style-2 {
-    border-radius: 20px 20px 20px 0px;
-  }
+.donate-form.style-2 .progress-content-outter .progress-content {
+  background-color: #ff5e54;
 }
-.donate-form.style-2 .value:before {
-  position: absolute;
-  width: 0;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background: #ffffff !important;
-  content: "";
-  transition: all 0.5s ease-out;
-  z-index: -1;
-  border-color: #ffffff !important;
+.donate-form.style-2 .progress-content-outter .circle {
+  background-color: #ff5e54;
 }
-.donate-form.style-2 .value.active {
-  background-color: #ffffff !important;
-  color: #31373f !important;
-  border-color: #ffffff !important;
+.donate-form.style-2 .input-icon {
+  background-color: #ff5e54;
 }
-.donate-form.style-2 .value:hover {
-  border-color: #ffffff !important;
-  color: #31373f !important;
+.donate-form.style-2 .value-list .value {
+  border-color: #4f4f4f;
+  color: #bdbdbd;
 }
-.donate-form.style-2 .value:hover:before {
-  width: 100%;
-  transition: all 0.5s ease-out;
+.donate-form.style-2 .value-list .value:hover {
+  border-color: #ff5e54;
+  color: #ffffff;
+}
+.donate-form.style-2 .value-list .value:hover:before {
+  background: #ff5e54;
+  border-color: #ff5e54;
+}
+.donate-form.style-2 .value-list .value.active {
+  background-color: #4f4f4f;
+  color: #ffffff !important;
 }
 .donate-form .theme-btn.style-1 {
   padding: 17px 32px !important;
 }
-.donate-form .theme-btn.style-2 {
+.donate-form .theme-btn.style-2 a {
   padding: 16px 24px !important;
-  background-color: #ff9a62;
+  background-color: #ff5e54;
   color: #121212;
+  border-color: transparent;
 }
-.donate-form .theme-btn.style-2:hover {
+.donate-form .theme-btn.style-2 a:hover {
   color: #ffffff !important;
-  background-color: transparent;
+  border-color: transparent;
 }
 .donate-form .sub-title {
   font-family: "Vazirmatn", sans-serif;
@@ -11545,10 +11536,10 @@ ul.children {
   border-radius: 4px;
   color: #ffffff;
   font-family: "Vazirmatn", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
-  line-height: 130%; /* 23.4px */
-  letter-spacing: 0.36px;
+  line-height: 21px;
+  letter-spacing: 0.32px;
   text-align: center;
   transition: all 0.5s ease-out;
   position: relative;
