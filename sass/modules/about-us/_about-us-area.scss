@@ -1,203 +1,204 @@
 // About-us area
-.about-us-area{
-  .image-wrapper{
+.about-us-area {
+  .image-wrapper {
     height: 100%;
     position: relative;
-    .image{
+    .image {
+      height: 100%;
+      img {
         height: 100%;
-        img{
-            height: 100%;
-        }
+      }
     }
-    
-    .voucher{
-        display: flex;
-        flex-direction: column;
-        gap: 32px;
-        background-color: $bg-color;
+
+    .voucher {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      background-color: $bg-color;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      padding: 64px 45px;
+      transform: translate(-80px, 80px);
+      .title {
+        font-family: $heading-font;
+        font-size: 51px;
+        color: $white;
+        font-weight: 800;
+        line-height: 66px;
+        letter-spacing: 1.02px;
+        text-transform: capitalize;
+        text-align: center;
+        margin-bottom: 0;
+      }
+      .certified {
+        z-index: 0;
         position: absolute;
-        left: 0;
-        bottom: 0;
-        padding: 64px 45px;
-        transform: translate(-80px, 80px);
-        .title{
-            font-family: $heading-font;
-            font-size: 51px;
-            color: $white;
-            font-weight: 800;
-            line-height: 66px;
-            letter-spacing: 1.02px;
-            text-transform: capitalize;
-            text-align: center;
-            margin-bottom: 0;
-        }
-        .certified {
-          z-index: 0;
-          position: absolute;
-          top: 0;
-          right: 0;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          background-color: $primary-color;
-          width: 212px;
-          height: 212px;
-          border-radius: 100%;
-          transform: translate(50%, -50%);
-          @include xl{
-            left: 8px;
-          }
-          @include lg{
-            left: 10px;
-          }
-          @include sm{
-            top: 168px;
-            left: 102px;
-          }
-          .rounded-text {
-            width: 210px;
-            height: 207px;
-            text-transform: uppercase;
-            transform: rotate(-95deg);
-            color: #4F4F4F;
-            font-weight: 400;
-            z-index: 10;
-            font-family: $heading-font;
-            font-size: 16px;
-            svg {
-              width: 202px;
-              height: 202px;
-              g {
-                transform: translate(6px, 3px);
-                letter-spacing: 12px;
-              }
-            }
-          }
-    
-          i,img {
-            color: #080f10;
-            font-size: 34px;
-            position: absolute;
-          }
-    
-          .rotating {
-            animation: rotating 12s linear infinite;
-          }
-          @keyframes rotating {
-              from {
-                transform: rotate(360deg);
-              }
-        
-              to {
-                transform: rotate(0deg);
-              }
-            }
-        }
-    }
-}
-  .meta-user{
-    ul{
+        top: 0;
+        right: 0;
         display: flex;
         align-items: center;
         justify-content: center;
-        list-style: none;
-        padding-left: 0;
-        margin-bottom: 0;
-        li{
-            margin-left: -20px;
-            border-radius: 50px;
-            overflow: hidden;
-            border: 1px solid $white;
-            img{
-                border-radius: 50px;
-                filter: grayscale(1);
-            }
-            &:first-child{
-                margin-left: 0;
-            }
+        background-color: $primary-color;
+        width: 212px;
+        height: 212px;
+        border-radius: 100%;
+        transform: translate(50%, -50%);
+        @include xl {
+          left: 8px;
         }
-    }
-}
-    &.style-1{
-        .content-wrapper{
-            padding-left: 40px;
-            padding-right: 40px;
-            .list-item{
-                margin-top: 32px;
-            }
-            .theme-btn-wrapper{
-                margin-top: 64px;
-            }
+        @include lg {
+          left: 10px;
         }
-    }
-    &.style-2{
-      .image-wrapper{
-        .voucher{
-          gap: 0;
-          .desc{
-            margin-bottom: 0;
-            font-size: 28px;
-            font-weight: 600;
-            letter-spacing: 0.56px;
-            color: $white;
+        @include sm {
+          top: 168px;
+          left: 102px;
+        }
+        .rounded-text {
+          width: 210px;
+          height: 207px;
+          text-transform: uppercase;
+          transform: rotate(-95deg);
+          color: #4f4f4f;
+          font-weight: 400;
+          z-index: 10;
+          font-family: $heading-font;
+          font-size: 16px;
+          svg {
+            width: 202px;
+            height: 202px;
+            g {
+              transform: translate(6px, 3px);
+              letter-spacing: 12px;
+            }
+          }
+        }
+
+        i,
+        img {
+          color: #080f10;
+          font-size: 34px;
+          position: absolute;
+        }
+
+        .rotating {
+          animation: rotating 12s linear infinite;
+        }
+        @keyframes rotating {
+          from {
+            transform: rotate(360deg);
+          }
+
+          to {
+            transform: rotate(0deg);
           }
         }
       }
-      .meta-user{
-        margin-top: 55px;
-        .desc{
-          font-size: 24px;
+    }
+  }
+  .meta-user {
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 0;
+      li {
+        margin-left: -20px;
+        border-radius: 50px;
+        overflow: hidden;
+        border: 1px solid $white;
+        img {
+          border-radius: 50px;
+          filter: grayscale(1);
+        }
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+  &.style-1 {
+    .content-wrapper {
+      padding-left: 40px;
+      padding-right: 40px;
+      .list-item {
+        margin-top: 32px;
+      }
+      .theme-btn-wrapper {
+        margin-top: 64px;
+      }
+    }
+  }
+  &.style-2 {
+    .image-wrapper {
+      .voucher {
+        gap: 0;
+        .desc {
+          margin-bottom: 0;
+          font-size: 28px;
           font-weight: 600;
-          letter-spacing: 0.48px;
-          color: $black;
-        }
-        ul{
-          justify-content: start;
-          margin-top: 24px;
-        }
-      }
-      .content-wrapper{
-        .list-item{
-          margin-top: 22px;
-        }
-        .meta-counter-wrapper{
-          display: flex;
-          gap: 48px;
-          .counter-wrapper{
-            max-width: 230px;
-            padding: 28px;
-            background-color: #F4F4F4;
-            display: flex;
-            flex-direction: column;
-            gap: 24px;
-            text-align: center;
-          }
-          .single-counter{
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-            .title{
-              margin-bottom: 0;
-              font-size: 24px;
-              font-weight: 600;
-              line-height: 34px;
-              letter-spacing: 0.48px;
-              color: $black;
-            }
-            .desc{
-              margin-bottom: 0;
-              font-size: 16px;
-              font-weight: 400;
-              line-height: 27px;
-              letter-spacing: 0.32px;
-            }
-          }
-          .divider{
-            width: 100%;
-            height: 1px;
-            background-color: $gray-50;
-          }
+          letter-spacing: 0.56px;
+          color: $white;
         }
       }
     }
+    .meta-user {
+      margin-top: 55px;
+      .desc {
+        font-size: 24px;
+        font-weight: 600;
+        letter-spacing: 0.48px;
+        color: $black;
+      }
+      ul {
+        justify-content: start;
+        margin-top: 24px;
+      }
+    }
+    .content-wrapper {
+      .list-item {
+        margin-top: 22px;
+      }
+      .meta-counter-wrapper {
+        display: flex;
+        gap: 48px;
+        .counter-wrapper {
+          max-width: 230px;
+          padding: 28px;
+          background-color: #f4f4f4;
+          display: flex;
+          flex-direction: column;
+          gap: 24px;
+          text-align: center;
+        }
+        .single-counter {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+          .title {
+            margin-bottom: 0;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 34px;
+            letter-spacing: 0.48px;
+            color: $black;
+          }
+          .desc {
+            margin-bottom: 0;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 27px;
+            letter-spacing: 0.32px;
+          }
+        }
+        .divider {
+          width: 100%;
+          height: 1px;
+          background-color: $gray-50;
+        }
+      }
+    }
+  }
 }

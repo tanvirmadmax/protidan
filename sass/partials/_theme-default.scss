@@ -286,6 +286,7 @@ input.theme-btn {
   &:hover {
     color: $black;
     background-color: $primary-color;
+    border-color: transparent;
     i {
       transform: rotate(-35deg);
       margin-left: 10px;
