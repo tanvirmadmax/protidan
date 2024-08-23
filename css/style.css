@@ -11712,6 +11712,31 @@ ul.children {
 .event-card.style-2 .content-wrapper {
   padding: 76px 80px;
 }
+.event-card.style-3 .image-wrapper {
+  max-width: 250px;
+  max-height: 266px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.event-card.style-3 .image-wrapper img {
+  width: 250px;
+  height: 266px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.event-card.style-3 .content-wrapper {
+  padding: 36px 24px;
+}
+.event-card.style-3 .content-wrapper .meta ul li i {
+  color: #ff5e54;
+}
+.event-card.style-3 .theme-btn a {
+  color: #121212;
+}
+.event-card.style-3 .theme-btn a:hover {
+  background-color: #ff5e54;
+  border-color: transparent;
+}
 
 .single-post-item {
   background-color: transparent;

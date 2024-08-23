@@ -111,4 +111,31 @@
       padding: 76px 80px;
     }
   }
+  &.style-3 {
+    .image-wrapper {
+      max-width: 250px;
+      max-height: 266px;
+      object-fit: cover;
+      img {
+        width: 250px;
+        height: 266px;
+        object-fit: cover;
+      }
+    }
+    .content-wrapper {
+      padding: 36px 24px;
+      .meta ul li i {
+        color: $second-primary-color;
+      }
+    }
+    .theme-btn {
+      a {
+        color: $black;
+        &:hover {
+          background-color: $second-primary-color;
+          border-color: transparent;
+        }
+      }
+    }
+  }
 }
