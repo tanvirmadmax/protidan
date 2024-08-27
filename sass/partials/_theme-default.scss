@@ -255,13 +255,13 @@ code {
 input.theme-btn {
   padding: 16px 24px;
   font-family: $body-font;
-  color: $gray-4;
+  color: $black-3;
   font-size: 16px;
   font-weight: 500;
   line-height: 21px;
   letter-spacing: 0.32px;
   text-transform: uppercase;
-  border: 1px solid $gray-3;
+  border: 1px solid $black-3;
   border-radius: 4px;
   display: inline-flex;
   align-items: center;
@@ -342,4 +342,8 @@ input.theme-btn {
   width: 100%;
   padding: 0 12px;
   margin: 0 auto;
+}
+
+.mt-72 {
+  margin-top: 72px;
 }

@@ -29,6 +29,141 @@
     .theme-btn-wrapper {
       align-items: end;
     }
+    .slick-slide {
+      margin: 0 10px;
+    }
+
+    /* the parent */
+    .slick-list {
+      margin: 0 -10px;
+    }
+    .counter-card-wrapper {
+      position: relative;
+
+      button.slider-arrow-btn {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        transition: 0.3s;
+        z-index: 99;
+        background-color: $white;
+        border: 1px solid $gray-3;
+        cursor: pointer;
+        top: 50%;
+        transform: translateY(-50%);
+        overflow: hidden;
+
+        &:before {
+          position: absolute;
+          width: 0;
+          height: 100%;
+          left: 0;
+          top: 0;
+          background: $primary-color;
+          content: "";
+          @include transition;
+          z-index: -1;
+        }
+        @include rmaxwd(767) {
+          width: 40px;
+          height: 40px;
+        }
+        &.prev-btn {
+          left: 0;
+          transform: translate(-50%, -50%);
+        }
+        &.next-btn {
+          right: 0;
+          transform: translate(50%, -50%);
+        }
+        i {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: $black;
+          font-size: 21px;
+          line-height: 21px;
+          font-weight: 500;
+          @include transition;
+        }
+        &:hover {
+          @include transition;
+          border-color: $orange-color;
+
+          &:before {
+            width: 100%;
+            @include transition;
+          }
+
+          i {
+            color: $white;
+            @include transition;
+          }
+        }
+      }
+
+      // Slick Dots
+      .slick-dots {
+        display: flex;
+        gap: 20px;
+        position: absolute;
+        bottom: -72px;
+        margin-bottom: 0;
+        padding-left: 0;
+        right: 50%;
+        transform: translateY(-50%);
+        z-index: 2;
+
+        @include sm {
+          display: none !important;
+          position: relative;
+          flex-direction: row;
+          align-items: center;
+          justify-content: flex-end;
+          margin-right: 30px;
+          bottom: 70px;
+          top: unset;
+          left: unset;
+          right: unset;
+          transform: none;
+        }
+
+        li {
+          display: inline-block;
+          line-height: 0;
+          outline: 1px solid transparent;
+          border: 4px solid transparent;
+          border-radius: 50px;
+          @include transition;
+
+          button {
+            font-size: 0;
+            padding: 0;
+            width: 11px;
+            height: 11px;
+            background-color: #c3e4de;
+            border-radius: 50px;
+            position: relative;
+            @include transition;
+
+            &:hover {
+              background-color: $orange-color;
+              @include transition;
+            }
+          }
+          &.slick-active {
+            @include transition;
+            outline: 1px solid $orange-color;
+
+            button {
+              @include transition;
+            }
+          }
+        }
+      }
+    }
   }
 }
 // Team-area style-1
@@ -40,7 +175,7 @@
     .theme-btn {
       &.style-2 {
         justify-content: center;
-        margin-top: 72px;
+        // margin-top: 72px;
       }
     }
   }

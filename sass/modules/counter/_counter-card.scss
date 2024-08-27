@@ -10,7 +10,7 @@
       align-items: center;
       justify-content: center;
       background-color: $primary-color;
-      color: $black-2;
+      color: $black;
       border-radius: 4px;
       position: absolute;
       top: 24px;
@@ -68,7 +68,9 @@
     .theme-btn {
       display: flex;
       align-items: start;
-      color: $white;
+      a {
+        color: $white;
+      }
     }
   }
 }
