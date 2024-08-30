@@ -305,7 +305,7 @@ code {
 input.theme-btn {
   padding: 16px 24px;
   font-family: "Vazirmatn", sans-serif;
-  color: #5e5e5e;
+  color: #bdbdbd;
   font-size: 16px;
   font-weight: 500;
   line-height: 21px;
@@ -365,7 +365,7 @@ input.theme-btn:focus {
   align-items: center;
   justify-content: center;
   content: "\f105";
-  font-family: "Font Awesome 6";
+  font-family: "Font Awesome 6 Free";
   width: 44px;
   height: 44px;
   border-radius: 6px;
@@ -3412,8 +3412,8 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 .main-menu ul li.dropdown > a:after {
   position: absolute;
-  content: "\f22c";
-  font-family: bootstrap-icons;
+  content: "\f107";
+  font-family: "Font Awesome 6 Free";
   top: 50%;
   right: 0;
   transform: translate(0, -50%);
@@ -6064,7 +6064,7 @@ button.testimonial-arrow-btn:hover i {
 }
 .single-post-item .content-header .info span i {
   font-size: 18px;
-  font-family: "Font Awesome 6";
+  font-family: "Font Awesome 6 Free";
   color: #31373f;
 }
 .single-post-item .content-header .post-meta-right {
@@ -7188,7 +7188,7 @@ button.testimonial-arrow-btn:hover i {
 .widget .wp-block-latest-posts li .wp-block-latest-comments__comment-meta .wp-block-latest-comments__comment-date:before,
 .widget .wp-block-latest-posts li .wp-block-latest-posts__post-title .wp-block-latest-comments__comment-date:before {
   content: "\f274";
-  font-family: "Font Awesome 6";
+  font-family: "Font Awesome 6 Free";
   padding-right: 8px;
 }
 .widget .wp-block-latest-comments li a,
@@ -7623,7 +7623,7 @@ button.testimonial-arrow-btn:hover i {
 .widget_rss .wp-block-rss__item-publish-date:before,
 .widget_rss .rss-date:before {
   content: "\f274";
-  font-family: "Font Awesome 6";
+  font-family: "Font Awesome 6 Free";
   padding-right: 8px;
 }
 .wp-block-latest-posts .wp-block-latest-posts__post-author:before,
@@ -7633,7 +7633,7 @@ button.testimonial-arrow-btn:hover i {
 .widget_rss .wp-block-latest-posts__post-author:before,
 .widget_rss .wp-block-rss__item-author:before {
   content: "\f007";
-  font-family: "Font Awesome 6";
+  font-family: "Font Awesome 6 Free";
   padding-right: 8px;
 }
 .wp-block-latest-posts .wp-block-latest-posts__post-excerpt,
@@ -8885,7 +8885,7 @@ ul.children {
 .service-area.style-1 {
   margin-top: -96px;
   position: relative;
-  z-index: 10;
+  z-index: 3;
 }
 .service-area.style-1 .section-title {
   margin-bottom: 60px;
@@ -8929,7 +8929,7 @@ ul.children {
   height: 60px;
   border-radius: 50%;
   transition: 0.3s;
-  z-index: 99;
+  z-index: 1;
   background-color: #ffffff;
   border: 1px solid #828282;
   cursor: pointer;
@@ -9038,6 +9038,7 @@ ul.children {
 }
 .causes-area.style-1 .counter-card-wrapper .slick-dots li.slick-active {
   transition: all 0.5s ease-out;
+  background-color: #ff9a62;
   border: 1px solid #ff9a62;
 }
 .causes-area.style-1 .counter-card-wrapper .slick-dots li.slick-active button {
@@ -11578,7 +11579,7 @@ ul.children {
   padding: 60px;
   margin: 0 5px;
   background-color: #121212;
-  z-index: 20;
+  z-index: 1;
   position: relative;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {

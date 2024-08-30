@@ -368,8 +368,8 @@
         > a {
           &:after {
             position: absolute;
-            content: "\F22C";
-            font-family: $font-bootstrap;
+            content: "\f107";
+            font-family: $font-awesome;
             top: 50%;
             right: 0;
             transform: translate(0, -50%);
