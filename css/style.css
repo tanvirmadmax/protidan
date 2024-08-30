@@ -10676,7 +10676,7 @@ ul.children {
   content: "";
   width: 100%;
   height: 1px;
-  background-color: #4F4F4F;
+  background-color: #4f4f4f;
 }
 .footer .btn-wrapper .theme-btn {
   z-index: 1;
@@ -10775,11 +10775,14 @@ ul.children {
   padding-bottom: 0;
 }
 .footer-widget.widget_nav_menu li a {
+  display: flex;
+  gap: 4px;
   color: #c7cdda;
   text-transform: capitalize;
-  font-size: 18px;
   transition: all 0.5s ease-out;
   position: relative;
+  line-height: 22px;
+  font-size: 18px;
 }
 .footer-widget.widget_nav_menu li a:hover {
   transition: all 0.5s ease-out;
@@ -10824,7 +10827,7 @@ ul.children {
   flex-shrink: 0;
   width: 48px;
   height: 48px;
-  border: 1px solid #4F4F4F;
+  border: 1px solid #4f4f4f;
 }
 .footer-widget .footer-widget-contact .footer-contact ul li .contact-text {
   color: #c7cdda;
@@ -10910,7 +10913,7 @@ ul.children {
 
 .footer-bottom-area {
   padding: 16px 0;
-  background-color: #0C0C0C;
+  background-color: #0c0c0c;
 }
 @media (max-width: 767px) {
   .footer-bottom-area .copyright-text {

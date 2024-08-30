@@ -20,26 +20,26 @@
       padding-top: 60px;
     }
   }
-  .btn-wrapper{
+  .btn-wrapper {
     margin: 72px 0;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     &:before,
-      &:after{
-        content: "";
-        width: 100%;
-        height: 1px;
-        background-color: #4F4F4F;
-      }
+    &:after {
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: #4f4f4f;
+    }
     // .divider{
     //   width: 100%;
     //   height: 1px;
     //   background-color: #4F4F4F;
     //   position: absolute;
     // }
-    .theme-btn{
+    .theme-btn {
       z-index: 1;
       background-color: transparent;
       padding: 0 32px;
@@ -168,12 +168,17 @@
       }
 
       a {
+        display: flex;
+        gap: 4px;
+        // align-items: center;
         color: $white-100;
         text-transform: capitalize;
-        font-size: 18px;
         @include transition;
         position: relative;
-
+        line-height: 22px;
+        font-size: 18px;
+        span {
+        }
         &:hover {
           @include transition;
           color: $primary-color;
@@ -185,7 +190,7 @@
   // Footer Contact Widget
   .footer-widget-contact {
     padding-left: 40px;
-    .footer-widget-title{
+    .footer-widget-title {
       text-align: end;
     }
     p {
@@ -225,7 +230,7 @@
           flex-shrink: 0;
           width: 48px;
           height: 48px;
-          border: 1px solid #4F4F4F;
+          border: 1px solid #4f4f4f;
         }
 
         .contact-text {
@@ -342,7 +347,7 @@
 
 .footer-bottom-area {
   padding: 16px 0;
-  background-color: #0C0C0C;
+  background-color: #0c0c0c;
 
   @include rmaxwd(991) {
     // padding: 30px 0;
@@ -571,7 +576,6 @@
     top: 15px;
 
     .mc4wp-alert {
-
       &.mc4wp-error,
       &.mc4wp-success,
       &.mc4wp-notice {
