@@ -1,28 +1,30 @@
 .team-member-card {
-  display: flex;
+  display: flex !important;
   flex-direction: column;
   gap: 24px;
-  .image{
+  .image {
     padding: 24px 32px 0;
-    background-color: #F4F4F4;
-    img{
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    img {
       filter: grayscale(0.5);
     }
   }
-  .content-wrapper{
+  .content-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    .title-wrapper{
+    .title-wrapper {
       display: flex;
       flex-direction: column;
       gap: 8px;
-      .title{
-       font-weight: 600;
-       letter-spacing: 0.48px;
-       margin-bottom: 0;
+      .title {
+        font-weight: 600;
+        letter-spacing: 0.48px;
+        margin-bottom: 0;
       }
-      .desc{
+      .desc {
         font-family: $body-font;
         font-size: 16px;
         font-weight: 400;
@@ -31,8 +33,8 @@
         margin-bottom: 0;
       }
     }
-    .icon{
-      a{
+    .icon {
+      a {
         width: 48px;
         height: 48px;
         border-radius: 50px;
@@ -41,7 +43,7 @@
         justify-content: center;
         background-color: $primary-color;
         color: $black;
-        i{
+        i {
           line-height: 12px;
         }
       }

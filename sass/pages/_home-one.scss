@@ -25,6 +25,9 @@
   &.style-1 {
     .section-title-wrapper {
       margin-bottom: 72px;
+      .short-title {
+        color: $black;
+      }
     }
     .theme-btn-wrapper {
       align-items: end;
@@ -113,7 +116,7 @@
         margin-bottom: 0;
         padding-left: 0;
         right: 50%;
-        transform: translateY(-50%);
+        transform: translate(50%, -50%);
         z-index: 2;
 
         @include sm {
@@ -133,29 +136,32 @@
         li {
           display: inline-block;
           line-height: 0;
-          outline: 1px solid transparent;
-          border: 4px solid transparent;
+          border: 1px solid $white;
           border-radius: 50px;
           @include transition;
+          &:hover {
+            border-color: $primary-color;
+          }
 
           button {
             font-size: 0;
             padding: 0;
             width: 11px;
             height: 11px;
-            background-color: #c3e4de;
+            background-color: transparent;
             border-radius: 50px;
             position: relative;
             @include transition;
 
             &:hover {
-              background-color: $orange-color;
+              background-color: $primary-color;
+              border-color: $primary-color;
               @include transition;
             }
           }
           &.slick-active {
             @include transition;
-            outline: 1px solid $orange-color;
+            border: 1px solid $primary-color;
 
             button {
               @include transition;
@@ -176,6 +182,143 @@
       &.style-2 {
         justify-content: center;
         // margin-top: 72px;
+      }
+    }
+    .slick-slide {
+      margin: 0 10px;
+    }
+
+    /* the parent */
+    .slick-list {
+      margin: 0 -10px;
+    }
+    .team-member-card-wrapper {
+      button.slider-arrow-btn {
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        transition: 0.3s;
+        z-index: 1;
+        background-color: $white;
+        border: 1px solid $gray-3;
+        cursor: pointer;
+        top: 50%;
+        transform: translateY(-50%);
+        overflow: hidden;
+
+        &:before {
+          position: absolute;
+          width: 0;
+          height: 100%;
+          left: 0;
+          top: 0;
+          background: $primary-color;
+          content: "";
+          @include transition;
+          z-index: -1;
+        }
+        @include rmaxwd(767) {
+          width: 40px;
+          height: 40px;
+        }
+        &.prev-btn {
+          left: 0;
+          transform: translate(-50%, -50%);
+        }
+        &.next-btn {
+          right: 0;
+          transform: translate(50%, -50%);
+        }
+        i {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: $black;
+          font-size: 21px;
+          line-height: 21px;
+          font-weight: 500;
+          @include transition;
+        }
+        &:hover {
+          @include transition;
+          border-color: $orange-color;
+
+          &:before {
+            width: 100%;
+            @include transition;
+          }
+
+          i {
+            color: $white;
+            @include transition;
+          }
+        }
+      }
+
+      // Slick Dots
+      .slick-dots {
+        display: flex !important;
+        gap: 20px;
+        position: absolute;
+        bottom: -42px;
+        margin-bottom: 0;
+        padding-left: 0;
+        right: 50%;
+        transform: translate(50%, -50%);
+        z-index: 2;
+
+        @include sm {
+          display: none !important;
+          position: relative;
+          flex-direction: row;
+          align-items: center;
+          justify-content: flex-end;
+          margin-right: 30px;
+          bottom: 70px;
+          top: unset;
+          left: unset;
+          right: unset;
+          transform: none;
+        }
+
+        li {
+          display: inline-block;
+          line-height: 0;
+          border: 1px solid $primary-color;
+          border-radius: 50px;
+          @include transition;
+          &:hover {
+            border-color: $primary-color;
+          }
+
+          button {
+            font-size: 0;
+            padding: 0;
+            width: 11px;
+            height: 11px;
+            background-color: transparent;
+            border-radius: 50px;
+            position: relative;
+            @include transition;
+
+            &:hover {
+              background-color: $primary-color;
+              border-color: $primary-color;
+              @include transition;
+            }
+          }
+          &.slick-active {
+            @include transition;
+            border: 1px solid $primary-color;
+
+            button {
+              background-color: $primary-color;
+              @include transition;
+            }
+          }
+        }
       }
     }
   }
@@ -208,154 +351,50 @@
 }
 .testimonial-area {
   position: relative;
-  padding-bottom: 96px;
-  @include lg {
-    padding-bottom: 80px;
+  background-color: #f4f4f4;
+  .background-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
   }
-  @include md {
-    padding-bottom: 60px;
+  .background-color {
+    position: absolute;
+    left: 450px;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
   }
-  @include sm {
-    padding-bottom: 40px;
-  }
-  .left-image {
-    img {
-      width: 100%;
-      height: 488px;
-      object-fit: cover;
-      @include sm {
-        height: auto;
-      }
-      @include xl {
-        height: 465px;
-      }
-    }
-  }
-
-  .testimonial-info {
-    .testimonial-wrapper {
-      .testimonial-item {
-        @include lg {
-          padding: 0 8px;
+  .inner-wrapper {
+    margin-top: 96px;
+    position: relative;
+    .image {
+      position: absolute;
+      left: 0;
+      z-index: 3;
+      transform: translate(-29%, -112px);
+      img {
+        width: 100%;
+        // height: 861px;
+        object-fit: cover;
+        @include sm {
+          height: auto;
         }
-        .rating-box {
-          display: flex;
-          margin-bottom: 36px;
-          @include sm {
-            display: none;
-          }
-          .rating-icon {
-            margin-right: 15px;
-            display: flex;
-            gap: 10px;
-            span {
-              color: $white;
-              width: 36px;
-              height: 36px;
-              background-color: $primary-color;
-              border-radius: 5px;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              @include sm {
-                padding: 5px;
-                margin-right: 5px;
-              }
-              i {
-                font-size: 20px;
-                font-family: $body-font;
-                line-height: 20px;
-                @include sm {
-                  font-size: 15px;
-                }
-              }
-            }
-          }
-          .rating-rate {
-            h4 {
-              font-size: 30px;
-              line-height: 40px;
-              font-family: $heading-font;
-              font-weight: 500;
-              margin-bottom: 0;
-            }
-          }
-        }
-        .description {
-          p {
-            font-size: 24px;
-            line-height: 40px;
-            font-family: $heading-font;
-            margin-bottom: 17px;
-            color: $black;
-            letter-spacing: 1.2px;
-            span {
-              color: $primary-color;
-            }
-            @include sm {
-              padding-right: 0px;
-              font-size: 22px;
-              line-height: 30px;
-            }
-          }
-        }
-        .testimonial-profile-box {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          .profile-left {
-            display: flex;
-            align-items: center;
-            .profile-img {
-              margin-right: 22px;
-              @include sm {
-                margin-right: 10px;
-              }
-              img {
-                width: 100px;
-                height: 100px;
-                object-fit: cover;
-                border-radius: 100%;
-                -webkit-border-radius: 100%;
-                -moz-border-radius: 100%;
-                -ms-border-radius: 100%;
-                -o-border-radius: 100%;
-                border: 2px solid $primary-color;
-                @include sm {
-                  width: 70px;
-                  height: 70px;
-                }
-              }
-            }
-            .designation {
-              h5 {
-                font-size: 24px;
-                font-weight: 500;
-                font-family: $heading-font;
-                line-height: 30px;
-                color: $black;
-                margin-bottom: 2px;
-              }
-              p {
-                font-size: 15px;
-                color: $primary-color;
-                font-family: $body-font;
-                line-height: 24px;
-                margin-bottom: 0;
-              }
-            }
-          }
-          .right-quote {
-            span {
-              font-size: 103px;
-              @include sm {
-                font-size: 60px;
-              }
-            }
-          }
+        @include xl {
+          height: 465px;
         }
       }
     }
+  }
+  .testimonial-card-wrapper {
+    z-index: 4;
+  }
+  .testimonial-card {
+    margin-top: 61px;
+    position: relative;
   }
   .testimonial-btn {
     width: 45px;
@@ -393,19 +432,76 @@
       bottom: 0%;
     }
   }
+  button.slider-arrow-btn {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transition: 0.3s;
+    z-index: 1;
+    background-color: $white;
+    border: 1px solid $gray-3;
+    cursor: pointer;
+    bottom: 0;
+    overflow: hidden;
+    transform: translateY(-100%);
+
+    &:before {
+      position: absolute;
+      width: 0;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background: $primary-color;
+      content: "";
+      @include transition;
+      z-index: -1;
+    }
+    @include rmaxwd(767) {
+      width: 40px;
+      height: 40px;
+    }
+    &.prev-btn {
+      right: 70px;
+    }
+    &.next-btn {
+      right: 0;
+    }
+    i {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: $black;
+      font-size: 21px;
+      line-height: 21px;
+      font-weight: 500;
+      @include transition;
+    }
+    &:hover {
+      @include transition;
+      border-color: $orange-color;
+
+      &:before {
+        width: 100%;
+        @include transition;
+      }
+
+      i {
+        color: $white;
+        @include transition;
+      }
+    }
+  }
   .slick-dots {
     display: flex;
     gap: 20px;
-    flex-direction: column;
-    position: absolute;
-    top: 50%;
-    right: -65px;
-    transform: translateY(-50%);
+    // position: absolute;
+    transform: translateY(100%);
     z-index: 2;
-    margin-top: 32px;
-    @media only screen and (min-width: 991px) and (max-width: 1280px) {
-      right: -15px;
-    }
+    margin-top: 52px;
+    padding: 0;
+
     @include rmaxwd(991) {
       position: unset;
       right: unset;
@@ -419,8 +515,8 @@
     li {
       display: inline-block;
       line-height: 0;
-      outline: 2px solid transparent;
-      border: 5px solid transparent;
+      // outline: 2px solid transparent;
+      border: 1px solid $primary-color;
       border-radius: 50px;
       @include transition;
 
@@ -429,7 +525,7 @@
         padding: 0;
         width: 12px;
         height: 12px;
-        background-color: rgb(94, 111, 146);
+        background-color: transparent;
         opacity: 0.478;
         border-radius: 50px;
         position: relative;
@@ -437,7 +533,7 @@
       }
       &.slick-active {
         @include transition;
-        outline: 2px solid rgb(252, 133, 91);
+        background-color: $primary-color;
 
         button {
           @include transition;
@@ -529,7 +625,7 @@
 // Faqs area
 .faq-area {
   .section-title-wrapper {
-    margin-bottom: 72px;
+    margin-bottom: 70px;
   }
 }
 
@@ -552,6 +648,6 @@
 .latest-blog-area {
   background-color: #f4f4f4;
   .section-title {
-    margin-bottom: 72px;
+    margin-bottom: 62px;
   }
 }

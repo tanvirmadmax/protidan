@@ -16,6 +16,7 @@
     line-height: 55px;
     letter-spacing: 0.8px;
     color: $primary-color;
+    margin-top: -8px;
     margin-bottom: 16px;
     background-position: center;
     background-size: cover;
@@ -94,6 +95,11 @@
   &.style-3 {
     .short-title {
       color: $second-primary-color;
+    }
+  }
+  &.style-4 {
+    .short-title {
+      color: $black;
     }
   }
 }
