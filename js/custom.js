@@ -165,9 +165,9 @@
       dots: true,
       speed: 1500,
       prevArrow:
-        "<button type='button' class='slider-arrow-btn prev-btn'><i class='bi bi-arrow-left'></i></button>",
+        "<button type='button' class='slider-arrow-btn prev-btn'><i class='fa-solid fa-angle-left'></i></button>",
       nextArrow:
-        "<button type='button' class='slider-arrow-btn next-btn'><i class='bi bi-arrow-right'></i></button>",
+        "<button type='button' class='slider-arrow-btn next-btn'><i class='fa-solid fa-angle-right'></i></button>",
       responsive: [
         {
           breakpoint: 767,

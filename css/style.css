@@ -8912,28 +8912,28 @@ ul.children {
   background-repeat: no-repeat;
 }
 
-.causes-area.style-1 {
+.causes-area {
   /* the parent */
 }
-.causes-area.style-1 .section-title-wrapper {
-  margin-bottom: 72px;
+.causes-area .section-title-wrapper {
+  margin-bottom: 68px;
 }
-.causes-area.style-1 .section-title-wrapper .short-title {
+.causes-area .section-title-wrapper .short-title {
   color: #121212;
 }
-.causes-area.style-1 .theme-btn-wrapper {
+.causes-area .theme-btn-wrapper {
   align-items: end;
 }
-.causes-area.style-1 .slick-slide {
+.causes-area .slick-slide {
   margin: 0 10px;
 }
-.causes-area.style-1 .slick-list {
+.causes-area .slick-list {
   margin: 0 -10px;
 }
-.causes-area.style-1 .counter-card-wrapper {
+.causes-area .counter-card-wrapper {
   position: relative;
 }
-.causes-area.style-1 .counter-card-wrapper button.slider-arrow-btn {
+.causes-area .counter-card-wrapper button.slider-arrow-btn {
   position: absolute;
   width: 60px;
   height: 60px;
@@ -8941,13 +8941,12 @@ ul.children {
   transition: 0.3s;
   z-index: 1;
   background-color: #ffffff;
-  border: 1px solid #828282;
   cursor: pointer;
   top: 50%;
   transform: translateY(-50%);
   overflow: hidden;
 }
-.causes-area.style-1 .counter-card-wrapper button.slider-arrow-btn:before {
+.causes-area .counter-card-wrapper button.slider-arrow-btn:before {
   position: absolute;
   width: 0;
   height: 100%;
@@ -8959,20 +8958,20 @@ ul.children {
   z-index: -1;
 }
 @media (max-width: 767px) {
-  .causes-area.style-1 .counter-card-wrapper button.slider-arrow-btn {
+  .causes-area .counter-card-wrapper button.slider-arrow-btn {
     width: 40px;
     height: 40px;
   }
 }
-.causes-area.style-1 .counter-card-wrapper button.slider-arrow-btn.prev-btn {
+.causes-area .counter-card-wrapper button.slider-arrow-btn.prev-btn {
   left: 0;
   transform: translate(-50%, -50%);
 }
-.causes-area.style-1 .counter-card-wrapper button.slider-arrow-btn.next-btn {
+.causes-area .counter-card-wrapper button.slider-arrow-btn.next-btn {
   right: 0;
   transform: translate(50%, -50%);
 }
-.causes-area.style-1 .counter-card-wrapper button.slider-arrow-btn i {
+.causes-area .counter-card-wrapper button.slider-arrow-btn i {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -8983,20 +8982,20 @@ ul.children {
   font-weight: 500;
   transition: all 0.5s ease-out;
 }
-.causes-area.style-1 .counter-card-wrapper button.slider-arrow-btn:hover {
+.causes-area .counter-card-wrapper button.slider-arrow-btn:hover {
   transition: all 0.5s ease-out;
   border-color: #fe6809;
 }
-.causes-area.style-1 .counter-card-wrapper button.slider-arrow-btn:hover:before {
+.causes-area .counter-card-wrapper button.slider-arrow-btn:hover:before {
   width: 100%;
   transition: all 0.5s ease-out;
 }
-.causes-area.style-1 .counter-card-wrapper button.slider-arrow-btn:hover i {
+.causes-area .counter-card-wrapper button.slider-arrow-btn:hover i {
   color: #ffffff;
   transition: all 0.5s ease-out;
 }
-.causes-area.style-1 .counter-card-wrapper .slick-dots {
-  display: flex;
+.causes-area .counter-card-wrapper .slick-dots {
+  display: flex !important;
   gap: 20px;
   position: absolute;
   bottom: -72px;
@@ -9007,7 +9006,7 @@ ul.children {
   z-index: 2;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  .causes-area.style-1 .counter-card-wrapper .slick-dots {
+  .causes-area .counter-card-wrapper .slick-dots {
     display: none !important;
     position: relative;
     flex-direction: row;
@@ -9021,17 +9020,17 @@ ul.children {
     transform: none;
   }
 }
-.causes-area.style-1 .counter-card-wrapper .slick-dots li {
+.causes-area .counter-card-wrapper .slick-dots li {
   display: inline-block;
   line-height: 0;
   border: 1px solid #ffffff;
   border-radius: 50px;
   transition: all 0.5s ease-out;
 }
-.causes-area.style-1 .counter-card-wrapper .slick-dots li:hover {
+.causes-area .counter-card-wrapper .slick-dots li:hover {
   border-color: #ff9a62;
 }
-.causes-area.style-1 .counter-card-wrapper .slick-dots li button {
+.causes-area .counter-card-wrapper .slick-dots li button {
   font-size: 0;
   padding: 0;
   width: 11px;
@@ -9041,17 +9040,17 @@ ul.children {
   position: relative;
   transition: all 0.5s ease-out;
 }
-.causes-area.style-1 .counter-card-wrapper .slick-dots li button:hover {
+.causes-area .counter-card-wrapper .slick-dots li button:hover {
   background-color: #ff9a62;
   border-color: #ff9a62;
   transition: all 0.5s ease-out;
 }
-.causes-area.style-1 .counter-card-wrapper .slick-dots li.slick-active {
+.causes-area .counter-card-wrapper .slick-dots li.slick-active {
   transition: all 0.5s ease-out;
   background-color: #ff9a62;
   border: 1px solid #ff9a62;
 }
-.causes-area.style-1 .counter-card-wrapper .slick-dots li.slick-active button {
+.causes-area .counter-card-wrapper .slick-dots li.slick-active button {
   transition: all 0.5s ease-out;
 }
 
@@ -9578,6 +9577,31 @@ ul.children {
   .about-us-area.style-2 .about-info-card .about-info-content {
     padding-top: 100px;
   }
+}
+
+.causes-area.style-2 .counter-card-wrapper .slick-dots {
+  transform: none;
+  position: unset;
+  margin-top: 60px;
+}
+.causes-area.style-2 .slick-list {
+  overflow: visible !important;
+  position: relative;
+}
+.causes-area.style-2 .slick-list:before {
+  width: 625px;
+  height: 657px;
+  content: "";
+  background-color: #232323;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 9;
+  transform: translate(-100%);
+}
+.causes-area.style-2 .slider-arrow-btn.next-btn {
+  display: none !important;
 }
 
 .image-card-area.style-2 .content-wrapper {

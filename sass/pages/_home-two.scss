@@ -57,6 +57,38 @@
   }
 }
 
+// Causes-area style-2
+.causes-area {
+  &.style-2 {
+    .counter-card-wrapper .slick-dots {
+      transform: none;
+      position: unset;
+      margin-top: 60px;
+    }
+    .slick-list {
+      overflow: visible !important;
+      position: relative;
+      &:before {
+        width: 625px;
+        height: 657px;
+        content: "";
+        background-color: $bg-color;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 9;
+        transform: translate(-100%);
+      }
+    }
+    .slider-arrow-btn {
+      &.next-btn {
+        display: none !important;
+      }
+    }
+  }
+}
+
 .image-card-area {
   &.style-2 {
     .content-wrapper {
