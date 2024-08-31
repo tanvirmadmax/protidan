@@ -1,43 +1,74 @@
-.category-item{
-    display: inline-flex;
-    flex-direction: column;
-    gap: 16px;
+.category-item {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  padding: 68px;
+  background-color: $black;
+  width: 100%;
+  position: relative;
+  @include rwd(1400) {
+    padding: 40px;
+  }
+  @include xl {
+    padding: 40px 24px;
+  }
+  @include rmaxwd(1199) {
+    width: unset;
+    padding: 40px;
+  }
+  @include xs {
+    width: 100%;
+  }
+  &:hover {
+    .image {
+      .common {
+        visibility: hidden;
+        opacity: 0;
+      }
+      .primary {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+  .image {
+    .common {
+      position: absolute;
+      top: 0;
+      left: 0;
+      visibility: visible;
+      opacity: 1;
+      @include transition;
+    }
+    .primary {
+      position: absolute;
+      top: 0;
+      left: 0;
+      visibility: hidden;
+      opacity: 0;
+      @include transition;
+    }
+  }
+  .icon {
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+    display: flex;
     justify-content: center;
     align-items: center;
-    padding: 68px;
-    background-color: $black;
-    width: 100%;
-    @include rwd(1400){
-        padding: 40px;
+    background-color: $bg-color;
+    font-size: 64px;
+    color: $primary-color;
+  }
+  .content {
+    text-align: center;
+    .title {
+      color: $white;
     }
-    @include xl{
-        padding: 40px 24px;
+    .desc {
+      color: $primary-color;
     }
-    @include rmaxwd(1199){
-        width: unset;
-        padding: 40px;
-    }
-    @include xs{
-        width: 100%;
-    }
-    .icon{
-        width: 130px;
-        height: 130px;
-        border-radius: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: $bg-color;
-        font-size: 64px;
-        color: $primary-color;
-    }
-    .content{
-        text-align: center;
-        .title{
-            color: $white;
-        }
-        .desc{
-            color: $primary-color;
-        }
-    }
+  }
 }

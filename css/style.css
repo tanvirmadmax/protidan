@@ -12027,6 +12027,7 @@ ul.children {
   padding: 68px;
   background-color: #121212;
   width: 100%;
+  position: relative;
 }
 @media (min-width: 1400px) {
   .category-item {
@@ -12048,6 +12049,30 @@ ul.children {
   .category-item {
     width: 100%;
   }
+}
+.category-item:hover .image .common {
+  visibility: hidden;
+  opacity: 0;
+}
+.category-item:hover .image .primary {
+  visibility: visible;
+  opacity: 1;
+}
+.category-item .image .common {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.5s ease-out;
+}
+.category-item .image .primary {
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-out;
 }
 .category-item .icon {
   width: 130px;
