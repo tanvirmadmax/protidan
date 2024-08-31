@@ -19,7 +19,7 @@
       left: 0;
       bottom: 0;
       padding: 64px 45px;
-      transform: translate(-80px, 80px);
+      transform: translate(-80px, -80px);
       .title {
         font-family: $heading-font;
         font-size: 51px;
@@ -158,12 +158,20 @@
       }
     }
     .content-wrapper {
+      padding-left: 32px;
+      position: relative;
+      .curve-arrow {
+        position: absolute;
+        top: 100px;
+        right: 50px;
+      }
       .list-item {
         margin-top: 22px;
       }
       .meta-counter-wrapper {
         display: flex;
         gap: 48px;
+        margin-top: 46px;
         .counter-wrapper {
           max-width: 230px;
           padding: 28px;

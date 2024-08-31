@@ -4722,7 +4722,7 @@ body.admin-bar .header-menu-area.sticky_menu {
   left: 0;
   bottom: 0;
   padding: 64px 45px;
-  transform: translate(-80px, 80px);
+  transform: translate(-80px, -80px);
 }
 .about-us-area .image-wrapper .voucher .title {
   font-family: "Vazirmatn", sans-serif;
@@ -4855,12 +4855,22 @@ body.admin-bar .header-menu-area.sticky_menu {
   justify-content: start;
   margin-top: 24px;
 }
+.about-us-area.style-2 .content-wrapper {
+  padding-left: 32px;
+  position: relative;
+}
+.about-us-area.style-2 .content-wrapper .curve-arrow {
+  position: absolute;
+  top: 100px;
+  right: 50px;
+}
 .about-us-area.style-2 .content-wrapper .list-item {
   margin-top: 22px;
 }
 .about-us-area.style-2 .content-wrapper .meta-counter-wrapper {
   display: flex;
   gap: 48px;
+  margin-top: 46px;
 }
 .about-us-area.style-2 .content-wrapper .meta-counter-wrapper .counter-wrapper {
   max-width: 230px;
