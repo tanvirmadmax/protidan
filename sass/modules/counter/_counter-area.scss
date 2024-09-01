@@ -1,50 +1,53 @@
-.counter-area{
-    background-color: $primary-color;
-    padding-top: 197px;
-    padding-bottom: 90px;
-    background-size: cover;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    @include sm{
-        padding-top: 60px;
-        padding-bottom: 60px;
+.counter-area {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  @include sm {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .counter-item {
+    @include xl {
+      gap: 12px;
     }
-    .counter-item{
-        display: flex;
+    .icon {
+      span {
+        font-size: 50px;
+        color: $white;
+        background-image: linear-gradient(330deg, #ed3b3b 13.97%, #000 163.51%);
+        width: 100px;
+        height: 100px;
         align-items: center;
-        gap: 25px;
-        @include xl{
-            gap: 12px;
-        }
-        .icon{
-            span{
-                font-size: 50px;
-                color: $white;
-                background-image: linear-gradient(330deg, #ED3B3B 13.97%, #000 163.51%);
-                width: 100px;
-                height: 100px;
-                align-items: center;
-                justify-content: center;
-                display: inline-flex;
-                border-radius:100%;
-                border-bottom: 1px solid $white;
-            }
-        }
-        .content{
-            font-family: $heading-font;
-            h2{ 
-                color: $white;
-                line-height: 60px;
-                font-size: 60px;
-                margin-bottom: 10px;
-                font-weight: normal;
-              
-            }
-            p{
-                color: $white;
-                font-size: 24px;
-                line-height: 35px;
-            }
-        }
+        justify-content: center;
+        display: inline-flex;
+        border-radius: 100%;
+        border-bottom: 1px solid $white;
+      }
     }
+    .content {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 8px;
+      font-family: $heading-font;
+      h2 {
+        color: $white;
+        font-size: 57px;
+        font-weight: 600;
+        line-height: 68px;
+        letter-spacing: 1.14px;
+        margin-bottom: 0;
+      }
+      p {
+        color: $white;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 31px;
+        letter-spacing: 0.36px;
+        margin-bottom: 0;
+      }
+    }
+  }
 }

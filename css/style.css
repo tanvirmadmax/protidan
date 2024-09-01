@@ -11265,9 +11265,8 @@ ul.children {
 }
 
 .counter-area {
-  background-color: #ff9a62;
-  padding-top: 197px;
-  padding-bottom: 90px;
+  padding-top: 120px;
+  padding-bottom: 120px;
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -11278,11 +11277,6 @@ ul.children {
     padding-bottom: 60px;
   }
 }
-.counter-area .counter-item {
-  display: flex;
-  align-items: center;
-  gap: 25px;
-}
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .counter-area .counter-item {
     gap: 12px;
@@ -11291,7 +11285,7 @@ ul.children {
 .counter-area .counter-item .icon span {
   font-size: 50px;
   color: #ffffff;
-  background-image: linear-gradient(330deg, #ED3B3B 13.97%, #000 163.51%);
+  background-image: linear-gradient(330deg, #ed3b3b 13.97%, #000 163.51%);
   width: 100px;
   height: 100px;
   align-items: center;
@@ -11301,19 +11295,27 @@ ul.children {
   border-bottom: 1px solid #ffffff;
 }
 .counter-area .counter-item .content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
   font-family: "Vazirmatn", sans-serif;
 }
 .counter-area .counter-item .content h2 {
   color: #ffffff;
-  line-height: 60px;
-  font-size: 60px;
-  margin-bottom: 10px;
-  font-weight: normal;
+  font-size: 57px;
+  font-weight: 600;
+  line-height: 68px;
+  letter-spacing: 1.14px;
+  margin-bottom: 0;
 }
 .counter-area .counter-item .content p {
   color: #ffffff;
-  font-size: 24px;
-  line-height: 35px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 31px;
+  letter-spacing: 0.36px;
+  margin-bottom: 0;
 }
 
 .image-card {
