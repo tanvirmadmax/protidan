@@ -1,5 +1,8 @@
 // Categories-area
 .categories-area {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
   .card-wrapper {
     display: flex;
     gap: 1px;
@@ -59,6 +62,9 @@
 
 // Causes-area style-2
 .causes-area {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
   &.style-2 {
     .counter-card-wrapper .slick-dots {
       transform: none;
@@ -126,9 +132,49 @@
 
 // Testimonial area
 .testimonial-area {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  .section-title-wrapper {
+    position: relative;
+    .image {
+      position: absolute;
+      right: 80px;
+      top: 50%;
+      transform: translate(-100%, 0);
+    }
+  }
   .section-title {
     .desc {
       color: $gray-4;
+    }
+  }
+  .testimonial-slider-two {
+    .slick-list {
+      margin: 0 -10px;
+      overflow: visible !important;
+    }
+    .slick-slide {
+      margin: 0 10px;
+    }
+  }
+  &.style-2 {
+    button.slider-arrow-btn {
+      bottom: unset;
+      top: 50%;
+      &.prev-btn {
+        right: unset;
+        left: 0;
+        transform: translate(-50%, -50%);
+      }
+      &.next-btn {
+        right: 0;
+        transform: translate(50%, -50%);
+      }
+    }
+    .slick-dots {
+      justify-content: center;
     }
   }
 }

@@ -9522,6 +9522,11 @@ ul.children {
   margin-bottom: 62px;
 }
 
+.categories-area {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+}
 .categories-area .card-wrapper {
   display: flex;
   gap: 1px;
@@ -9579,6 +9584,11 @@ ul.children {
   }
 }
 
+.causes-area {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+}
 .causes-area.style-2 .counter-card-wrapper .slick-dots {
   transform: none;
   position: unset;
@@ -9630,8 +9640,46 @@ ul.children {
   border-radius: 0;
 }
 
+.testimonial-area {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.testimonial-area .section-title-wrapper {
+  position: relative;
+}
+.testimonial-area .section-title-wrapper .image {
+  position: absolute;
+  right: 80px;
+  top: 50%;
+  transform: translate(-100%, 0);
+}
 .testimonial-area .section-title .desc {
   color: #bdbdbd;
+}
+.testimonial-area .testimonial-slider-two .slick-list {
+  margin: 0 -10px;
+  overflow: visible !important;
+}
+.testimonial-area .testimonial-slider-two .slick-slide {
+  margin: 0 10px;
+}
+.testimonial-area.style-2 button.slider-arrow-btn {
+  bottom: unset;
+  top: 50%;
+}
+.testimonial-area.style-2 button.slider-arrow-btn.prev-btn {
+  right: unset;
+  left: 0;
+  transform: translate(-50%, -50%);
+}
+.testimonial-area.style-2 button.slider-arrow-btn.next-btn {
+  right: 0;
+  transform: translate(50%, -50%);
+}
+.testimonial-area.style-2 .slick-dots {
+  justify-content: center;
 }
 
 .about-us-area.style-4 .content-wrapper .category-item {
