@@ -26,6 +26,9 @@
     .footer-widget .footer-widget-contact .footer-contact ul li {
       justify-content: start;
       text-align: start;
+      .contact-icon {
+        color: $second-primary-color;
+      }
     }
     .divider {
       margin: 0 80px;
@@ -34,6 +37,7 @@
       background-color: $gray-2;
     }
     .footer-bottom-area {
+      padding: 16px 0;
       border-top: 1px solid $gray-2;
     }
   }

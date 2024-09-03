@@ -6580,6 +6580,9 @@ button.testimonial-arrow-btn:hover i {
   align-items: center;
   text-align: center;
 }
+.section-title.style-2 .short-title {
+  color: #121212;
+}
 .section-title.style-2 .short-title img {
   left: 0;
 }
@@ -10865,7 +10868,6 @@ ul.children {
 }
 .footer-widget.widget_nav_menu li a {
   display: flex;
-  align-items: center;
   gap: 8px;
   color: #bdbdbd;
   text-transform: capitalize;
@@ -10873,6 +10875,9 @@ ul.children {
   position: relative;
   line-height: 30px;
   font-size: 18px;
+}
+.footer-widget.widget_nav_menu li a i {
+  margin-top: 3px;
 }
 .footer-widget.widget_nav_menu li a:hover {
   transition: all 0.5s ease-out;
@@ -10903,7 +10908,7 @@ ul.children {
   margin-bottom: 0;
 }
 .footer-widget .footer-widget-contact .footer-contact ul li .contact-icon {
-  color: #ff5e54;
+  color: #ff9a62;
   float: left;
   display: flex;
   align-items: center;
@@ -10996,8 +11001,9 @@ ul.children {
   color: #ff9a62;
 }
 
-.footer-bottom-area {
+.footer-bottom-area .footer-bottom-inner {
   padding: 16px 0;
+  border-top: 1px solid #4f4f4f;
 }
 @media (max-width: 767px) {
   .footer-bottom-area .copyright-text {
@@ -11263,6 +11269,9 @@ ul.children {
   justify-content: start;
   text-align: start;
 }
+.footer.style-2 .footer-widget .footer-widget-contact .footer-contact ul li .contact-icon {
+  color: #ff5e54;
+}
 .footer.style-2 .divider {
   margin: 0 80px;
   width: 1px;
@@ -11270,6 +11279,7 @@ ul.children {
   background-color: #4f4f4f;
 }
 .footer.style-2 .footer-bottom-area {
+  padding: 16px 0;
   border-top: 1px solid #4f4f4f;
 }
 
