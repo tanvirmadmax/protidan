@@ -14,7 +14,6 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: $black;
 
     @include rmaxwd(767) {
       padding-top: 60px;
@@ -44,6 +43,11 @@
       background-color: transparent;
       padding: 0 32px;
       flex-shrink: 0;
+      &:hover {
+        a {
+          background-color: $second-primary-color;
+        }
+      }
     }
   }
 }
@@ -169,6 +173,7 @@
 
       a {
         display: flex;
+        align-items: center;
         gap: 8px;
         color: $gray-4;
         text-transform: capitalize;
@@ -202,16 +207,13 @@
         margin-bottom: 16px;
         display: flex;
         align-items: center;
-        justify-content: start;
+        justify-content: end;
         line-height: 24px;
         gap: 20px;
+        text-align: end;
 
         &:first-child {
           align-items: flex-start;
-
-          .contact-icon {
-            margin-top: 5px;
-          }
         }
 
         &:last-child {
@@ -345,7 +347,6 @@
 
 .footer-bottom-area {
   padding: 16px 0;
-  background-color: #0c0c0c;
 
   @include rmaxwd(991) {
     // padding: 30px 0;

@@ -3071,7 +3071,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 
 .scrollup-wrapper {
   position: fixed;
-  right: 40px;
+  right: 50%;
   bottom: 20px;
   z-index: 9999;
 }
@@ -3080,19 +3080,17 @@ body.admin-bar .header-menu-area.sticky_menu {
   display: flex;
   align-content: center;
   justify-content: center;
-  font-size: 26px;
-  color: #ffffff;
+  color: #ff5e54;
   text-decoration: none;
   width: 50px;
   height: 50px;
-  background-color: #ff9a62;
+  background-color: #232323;
   border-radius: 50px;
-  border: 2px solid;
-  outline: 2px dashed #ff9a62;
   align-items: center;
   cursor: pointer;
 }
 .scrollup-btn i {
+  font-size: 20px;
   margin-top: -3px;
   display: block;
 }
@@ -10747,7 +10745,6 @@ ul.children {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #121212;
 }
 @media (max-width: 767px) {
   .footer .footer-sec {
@@ -10772,6 +10769,9 @@ ul.children {
   background-color: transparent;
   padding: 0 32px;
   flex-shrink: 0;
+}
+.footer .btn-wrapper .theme-btn:hover a {
+  background-color: #ff5e54;
 }
 
 .footer-widget-title {
@@ -10865,6 +10865,7 @@ ul.children {
 }
 .footer-widget.widget_nav_menu li a {
   display: flex;
+  align-items: center;
   gap: 8px;
   color: #bdbdbd;
   text-transform: capitalize;
@@ -10890,15 +10891,13 @@ ul.children {
   margin-bottom: 16px;
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: end;
   line-height: 24px;
   gap: 20px;
+  text-align: end;
 }
 .footer-widget .footer-widget-contact .footer-contact ul li:first-child {
   align-items: flex-start;
-}
-.footer-widget .footer-widget-contact .footer-contact ul li:first-child .contact-icon {
-  margin-top: 5px;
 }
 .footer-widget .footer-widget-contact .footer-contact ul li:last-child {
   margin-bottom: 0;
@@ -10999,7 +10998,6 @@ ul.children {
 
 .footer-bottom-area {
   padding: 16px 0;
-  background-color: #0c0c0c;
 }
 @media (max-width: 767px) {
   .footer-bottom-area .copyright-text {
@@ -11242,19 +11240,37 @@ ul.children {
   padding: 0 108px;
   background-position: center;
 }
+.footer.style-2 .section-title .short-title {
+  color: #ff5e54;
+}
+.footer.style-2 .section-title .short-title img {
+  width: 100px;
+  height: 100px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
 .footer.style-2 .footer-sec {
   max-width: 1700px;
   width: 100%;
   background-color: transparent;
+  padding-top: 70px;
 }
 .footer.style-2 .footer-widget-text {
-  max-width: 300px;
+  max-width: 420px;
+}
+.footer.style-2 .footer-widget .footer-widget-contact .footer-contact ul li {
+  justify-content: start;
+  text-align: start;
 }
 .footer.style-2 .divider {
   margin: 0 80px;
   width: 1px;
   height: 280px;
   background-color: #4f4f4f;
+}
+.footer.style-2 .footer-bottom-area {
+  border-top: 1px solid #4f4f4f;
 }
 
 .footer.style-three .footer-sec {
