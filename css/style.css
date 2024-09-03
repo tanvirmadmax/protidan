@@ -10857,7 +10857,7 @@ ul.children {
   position: relative;
   display: inline-block;
   width: 100%;
-  padding-bottom: 10px;
+  padding-bottom: 16px;
 }
 .footer-widget.widget_nav_menu li:last-child {
   padding-top: 0;
@@ -10865,20 +10865,17 @@ ul.children {
 }
 .footer-widget.widget_nav_menu li a {
   display: flex;
-  gap: 4px;
-  color: #c7cdda;
+  gap: 8px;
+  color: #bdbdbd;
   text-transform: capitalize;
   transition: all 0.5s ease-out;
   position: relative;
-  line-height: 22px;
+  line-height: 30px;
   font-size: 18px;
 }
 .footer-widget.widget_nav_menu li a:hover {
   transition: all 0.5s ease-out;
   color: #ff9a62;
-}
-.footer-widget .footer-widget-contact {
-  padding-left: 40px;
 }
 .footer-widget .footer-widget-contact .footer-widget-title {
   text-align: end;
@@ -10893,10 +10890,9 @@ ul.children {
   margin-bottom: 16px;
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: start;
   line-height: 24px;
   gap: 20px;
-  text-align: end;
 }
 .footer-widget .footer-widget-contact .footer-contact ul li:first-child {
   align-items: flex-start;
@@ -10908,7 +10904,7 @@ ul.children {
   margin-bottom: 0;
 }
 .footer-widget .footer-widget-contact .footer-contact ul li .contact-icon {
-  color: #ffffff;
+  color: #ff5e54;
   float: left;
   display: flex;
   align-items: center;
@@ -10916,6 +10912,7 @@ ul.children {
   flex-shrink: 0;
   width: 48px;
   height: 48px;
+  border-radius: 4px;
   border: 1px solid #4f4f4f;
 }
 .footer-widget .footer-widget-contact .footer-contact ul li .contact-text {
@@ -11154,20 +11151,26 @@ ul.children {
 }
 .subscribe-form-widget .mc4wp-form-fields {
   display: flex;
-  background-color: #ffffff;
-  border-radius: 12px;
+  background-color: transparent;
+  border-radius: 4px;
   overflow: hidden;
+  flex-direction: column;
 }
 .subscribe-form-widget .single-field {
   flex-grow: 1;
 }
 .subscribe-form-widget .single-field input {
+  height: 52px;
   color: #5e5e5e;
-  height: 72px;
-  padding: 0 30px;
-  font-size: 18px;
-  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0.28px;
   width: 100%;
+  padding: 16px;
+  border: 1px solid #bdbdbd;
+  background-color: transparent;
+  border-radius: 4px;
 }
 .subscribe-form-widget .single-field *::-moz-placeholder {
   color: #5e5e5e;
@@ -11177,16 +11180,28 @@ ul.children {
   color: #5e5e5e;
 }
 .subscribe-form-widget .submit-btn {
-  color: #fe6809;
+  color: #121212;
   cursor: pointer;
   padding: 0;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 9px;
   text-transform: uppercase;
   font-size: 18px;
   font-weight: 500;
-  background-color: transparent;
+  background-color: #ff5e54;
+  padding: 16px 32px;
+  margin-top: 8px;
+  border-radius: 4px;
+}
+.subscribe-form-widget .form-check {
+  margin-top: 32px;
+}
+.subscribe-form-widget .form-check input {
+  width: 16px !important;
+  height: 16px !important;
+  margin-top: 6px !important;
 }
 .subscribe-form-widget .mc4wp-response {
   position: relative;
@@ -11212,7 +11227,7 @@ ul.children {
 }
 .social-profile a:hover {
   transition: all 0.5s ease-out;
-  color: #ff9a62;
+  color: #ff5e54;
 }
 
 .map-widget {
@@ -11223,72 +11238,23 @@ ul.children {
   height: 380px;
 }
 
+.footer.style-2 {
+  padding: 0 108px;
+  background-position: center;
+}
 .footer.style-2 .footer-sec {
-  padding-bottom: 85px;
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .footer.style-2 .footer-sec {
-    padding-bottom: 50px;
-  }
-}
-.footer.style-2 .footer-logo {
-  margin-top: 50px;
-  margin-bottom: 0;
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .footer.style-2 .footer-logo {
-    margin-top: 30px;
-  }
-}
-.footer.style-2 .footer-widget-title {
-  font-size: 30px;
-  font-weight: 400;
-  line-height: 35px;
-  margin-bottom: 10px;
-}
-.footer.style-2 .footer-widget.contact-area .contact-info {
-  margin-bottom: 20px;
-}
-.footer.style-2 .footer-widget.contact-area .contact-info .sub-title {
-  margin-bottom: 0;
-  color: #ff9a62;
-}
-.footer.style-2 .footer-widget.contact-area .contact-info h3 {
-  color: #ffffff;
-  margin-bottom: 0;
-  font-weight: 600;
-  line-height: 40px;
-}
-.footer.style-2 .footer-widget.contact-area p {
-  margin-bottom: 0;
-}
-.footer.style-2 .footer-widget.contact-area .address,
-.footer.style-2 .footer-widget.contact-area a {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 33px;
-  margin-bottom: 0;
-  color: #ffffff;
-}
-.footer.style-2 .subscribe-form-wrapper h3 {
-  color: #ffffff;
-  margin-bottom: 25px;
-}
-.footer.style-2 .subscribe-form-wrapper .subscribe-form-widget .mc4wp-form-fields {
+  max-width: 1700px;
+  width: 100%;
   background-color: transparent;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 0;
 }
-.footer.style-2 .subscribe-form-wrapper .subscribe-form-widget .single-field input {
-  height: 60px;
-  background-color: transparent;
-  padding: 0;
+.footer.style-2 .footer-widget-text {
+  max-width: 300px;
 }
-.footer.style-2 .subscribe-form-wrapper .subscribe-form-widget .submit-btn {
-  color: #ffffff;
-}
-.footer.style-2 .subscribe-form-wrapper .subscribe-form-widget .submit-btn i {
-  color: #ffffff;
+.footer.style-2 .divider {
+  margin: 0 80px;
+  width: 1px;
+  height: 280px;
+  background-color: #4f4f4f;
 }
 
 .footer.style-three .footer-sec {

@@ -1,91 +1,20 @@
 .footer {
   &.style-2 {
+    padding: 0 108px;
+    background-position: center;
     .footer-sec {
-      padding-bottom: 85px;
-      @include sm{
-        padding-bottom: 50px;
-      }
+      max-width: 1700px;
+      width: 100%;
+      background-color: transparent;
     }
-
-    .footer-logo {
-      margin-top: 50px;
-      margin-bottom: 0;
-      @include sm{
-        margin-top: 30px;
-      }
+    .footer-widget-text {
+      max-width: 300px;
     }
-
-    .footer-widget-title {
-      font-size: 30px;
-      font-weight: 400;
-      line-height: 35px;
-      margin-bottom: 10px;
-    }
-
-    .footer-widget {
-      &.contact-area {
-        .contact-info {
-          margin-bottom: 20px;
-
-          .sub-title {
-            margin-bottom: 0;
-            color: $primary-color;
-          }
-
-          h3 {
-            color: $white;
-            margin-bottom: 0;
-            font-weight: 600;
-            line-height: 40px;
-          }
-
-        }
-
-        p {
-          margin-bottom: 0;
-        }
-
-        .address,
-        a {
-          font-size: 16px;
-          font-weight: 500;
-          line-height: 33px;
-          margin-bottom: 0;
-          color: $white;
-        }
-      }
-    }
-
-    // Subscribe Form
-    .subscribe-form-wrapper {
-      h3 {
-        color: $white;
-        margin-bottom: 25px;
-      }
-
-      .subscribe-form-widget {
-        .mc4wp-form-fields {
-          background-color: transparent;
-          border-bottom: 1px solid rgba(255, 255, 255, 0.20);
-          border-radius: 0;
-        }
-
-        .single-field {
-          input {
-            height: 60px;
-            background-color: transparent;
-            padding: 0;
-          }
-        }
-
-        .submit-btn {
-          color: $white;
-
-          i {
-            color: $white;
-          }
-        }
-      }
+    .divider {
+      margin: 0 80px;
+      width: 1px;
+      height: 280px;
+      background-color: $gray-2;
     }
   }
 }

@@ -160,7 +160,7 @@
       position: relative;
       display: inline-block;
       width: 100%;
-      padding-bottom: 10px;
+      padding-bottom: 16px;
 
       &:last-child {
         padding-top: 0;
@@ -169,13 +169,12 @@
 
       a {
         display: flex;
-        gap: 4px;
-        // align-items: center;
-        color: $white-100;
+        gap: 8px;
+        color: $gray-4;
         text-transform: capitalize;
         @include transition;
         position: relative;
-        line-height: 22px;
+        line-height: 30px;
         font-size: 18px;
         span {
         }
@@ -189,7 +188,6 @@
 
   // Footer Contact Widget
   .footer-widget-contact {
-    padding-left: 40px;
     .footer-widget-title {
       text-align: end;
     }
@@ -204,10 +202,9 @@
         margin-bottom: 16px;
         display: flex;
         align-items: center;
-        justify-content: end;
+        justify-content: start;
         line-height: 24px;
         gap: 20px;
-        text-align: end;
 
         &:first-child {
           align-items: flex-start;
@@ -222,7 +219,7 @@
         }
 
         .contact-icon {
-          color: $white;
+          color: $second-primary-color;
           float: left;
           display: flex;
           align-items: center;
@@ -230,6 +227,7 @@
           flex-shrink: 0;
           width: 48px;
           height: 48px;
+          border-radius: 4px;
           border: 1px solid #4f4f4f;
         }
 
@@ -513,21 +511,27 @@
 
   .mc4wp-form-fields {
     display: flex;
-    background-color: $white;
-    border-radius: 12px;
+    background-color: transparent;
+    border-radius: 4px;
     overflow: hidden;
+    flex-direction: column;
   }
 
   .single-field {
     flex-grow: 1;
 
     input {
+      height: 52px;
       color: $black-3;
-      height: 72px;
-      padding: 0 30px;
-      font-size: 18px;
-      border-radius: 50px;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
+      letter-spacing: 0.28px;
       width: 100%;
+      padding: 16px;
+      border: 1px solid $gray-4;
+      background-color: transparent;
+      border-radius: 4px;
     }
 
     *::-webkit-input-placeholder {
@@ -558,16 +562,29 @@
   }
 
   .submit-btn {
-    color: $orange-color;
+    color: $black;
     cursor: pointer;
     padding: 0;
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 9px;
     text-transform: uppercase;
     font-size: 18px;
     font-weight: 500;
-    background-color: transparent;
+    background-color: $second-primary-color;
+    padding: 16px 32px;
+    margin-top: 8px;
+    border-radius: 4px;
+  }
+  // Terms-condition checkbox
+  .form-check {
+    margin-top: 32px;
+    input {
+      width: 16px !important;
+      height: 16px !important;
+      margin-top: 6px !important;
+    }
   }
 
   // Form Submit Message
@@ -604,7 +621,7 @@
 
     &:hover {
       @include transition;
-      color: $primary-color;
+      color: $second-primary-color;
     }
   }
 }
