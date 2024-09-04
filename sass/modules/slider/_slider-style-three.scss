@@ -3,63 +3,86 @@
     position: relative;
 
     .single-slider {
+      padding-top: 230px;
+      padding-bottom: 90px;
       @include sm {
         height: 450px;
       }
       @media only screen and (min-width: 768px) and (max-width: 1199px) {
-       padding-bottom: 0;
+        padding-bottom: 0;
+      }
+      .overlay {
+        background-color: $black;
+        opacity: 0.6;
       }
       .slider-overlay {
-        background: linear-gradient( 135deg, rgb(30,174,152) 0%, rgb(0,91,172) 100%);
+        background: linear-gradient(135deg, rgb(30, 174, 152) 0%, rgb(0, 91, 172) 100%);
         opacity: 0.659;
       }
-      .slider-content-wrapper {
-        gap: 100px;
-        margin-top: -60px;
-
-        @include sm {
-          margin-top: inherit;
+      .slider-content {
+        width: 100%;
+        text-align: center;
+        position: relative;
+        .image {
+          position: absolute;
+          top: 0;
+          right: 0;
+          transform: translateY(100%);
+          z-index: 0;
         }
-
-        .slider-content {
-          width: 100%;
-          text-align: center;
-
-
-          .slider-short-title {
-            font-size: 36px;
-
-            @include sm {
-              font-size: 20px;
-              line-height: 28px;
+        .slider-title {
+          position: relative;
+          z-index: 1;
+        }
+        .slider-btn-wrapper {
+          display: flex;
+          gap: 16px;
+          .theme-btn {
+            a {
+              color: $white;
+              border: 1px solid $white;
+              &:hover {
+                background-color: $second-primary-color;
+                border-color: transparent;
+              }
+            }
+            &.active {
+              a {
+                border-color: transparent;
+                background-color: $second-primary-color;
+              }
             }
           }
-          .slider-title {
-            font-size: 120px;
-            line-height: 132px;
-
-            @media only screen and (min-width: 1199px) and (max-width: 1399px){
-              font-size: 78px;
-              line-height: 90px;
-            }
-            @include lg {
-              font-size: 78px;
-              line-height: 90px;
-            }
-            @include md {
-              font-size: 60px;
-              line-height: 72px;
-            }
-            @include sm {
-              font-size: 42px;
-              line-height: 52px;
-            }
-            @include xs {
-              font-size: 38px;
-              line-height: 50px;
+        }
+        .counter-wrapper {
+          display: flex;
+          justify-content: center;
+          margin-top: 64px;
+          h2 {
+            color: $white;
+            font-size: 38px;
+          }
+          p {
+            color: $white;
+            margin-bottom: 0;
+          }
+          .counter-item {
+            border-right: 1px solid $gray-3;
+            padding: 0 24px;
+            margin: 8px;
+            &:last-child {
+              border-right: none;
+              border-left: 1px solid $gray-3;
             }
           }
+        }
+        .slider-short-title {
+          color: $second-primary-color;
 
+          @include sm {
+            font-size: 20px;
+            line-height: 28px;
+          }
         }
       }
     }
@@ -73,6 +96,5 @@
         display: none !important;
       }
     }
-
   }
 }

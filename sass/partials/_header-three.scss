@@ -1,6 +1,5 @@
 .header-area {
-  &.style-three {
-
+  &.style-3 {
     // Header Top Area
     .header-top {
       .header-top-btn {
@@ -22,12 +21,21 @@
 
     // Header Menu Area
     .header-menu-area {
+      &.sticky-header {
+        background-color: rgba(18, 18, 18, 0.5);
+        backdrop-filter: blur(10px);
+      }
       .logo {
-
         &:before {
           display: none;
         }
       }
+    }
+    .main-menu ul li.active > a {
+      color: $second-primary-color;
+    }
+    .header-btn {
+      background-color: $second-primary-color;
     }
   }
 }
