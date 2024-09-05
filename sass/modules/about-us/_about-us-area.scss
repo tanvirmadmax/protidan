@@ -209,4 +209,28 @@
       }
     }
   }
+  &.style-4 {
+    .image-wrapper {
+      .voucher {
+        left: unset;
+        right: 24px;
+        bottom: 24px;
+        transform: unset;
+        padding: 50px 54px;
+        gap: 0;
+        background-color: $second-primary-color;
+        .title,
+        .desc {
+          color: $black;
+          margin-bottom: 0;
+        }
+        .title {
+          line-height: 60px;
+        }
+        .desc {
+          line-height: 130%;
+        }
+      }
+    }
+  }
 }

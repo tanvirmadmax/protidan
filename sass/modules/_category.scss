@@ -71,4 +71,13 @@
       color: $primary-color;
     }
   }
+  &.style-2 {
+    position: relative;
+    z-index: 1;
+    .content {
+      .title {
+        margin-bottom: 6px;
+      }
+    }
+  }
 }
