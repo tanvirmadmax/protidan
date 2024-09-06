@@ -9843,6 +9843,12 @@ ul.children {
 .image-card-area.style-3 .image-wrapper .video-popup-btn a {
   background-color: #ff5e54;
 }
+.image-card-area.style-3 .image-wrapper img {
+  filter: unset;
+}
+.image-card-area.style-3 .image-wrapper:after {
+  background-color: transparent;
+}
 .image-card-area.style-3 .image-card .icon-wrapper:before {
   background-color: #ff5e54;
 }

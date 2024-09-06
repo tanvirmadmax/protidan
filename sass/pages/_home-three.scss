@@ -137,6 +137,12 @@
           background-color: $second-primary-color;
         }
       }
+      img {
+        filter: unset;
+      }
+      &:after {
+        background-color: transparent;
+      }
     }
     .image-card {
       .icon-wrapper {
