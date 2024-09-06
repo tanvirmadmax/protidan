@@ -9778,6 +9778,9 @@ ul.children {
 .causes-area.style-3 .section-title-wrapper {
   margin-bottom: 72px;
 }
+.causes-area.style-3 .section-title-wrapper .short-title {
+  color: #ff5e54;
+}
 .causes-area.style-3 .theme-btn-wrapper {
   align-items: end;
 }
@@ -9798,6 +9801,32 @@ ul.children {
 .causes-area.style-3 .slick-dots li button:hover {
   background-color: unset;
   border-color: unset;
+}
+
+.donate-area.style-3 .image-wrapper {
+  padding: 0 74px;
+  margin-top: -170px;
+}
+.donate-area.style-3 .title h2 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 200px;
+  font-weight: 900;
+  line-height: 260px;
+  letter-spacing: 4px;
+  text-transform: capitalize;
+}
+.donate-area.style-3 .donate-form {
+  position: relative;
+}
+.donate-area.style-3 .donate-form .curve-img {
+  position: absolute;
+  left: 0;
+  top: 84px;
+  transform: translate(-100%);
+}
+.donate-area.style-3 .donate-form .theme-btn a {
+  background-color: #ff5e54;
 }
 
 .feature-area.style-2 {
