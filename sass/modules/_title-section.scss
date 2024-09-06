@@ -96,6 +96,12 @@
   &.style-3 {
     .short-title {
       color: $second-primary-color;
+      img {
+        width: 100px;
+        height: 100px;
+        left: 40px;
+        top: -20px;
+      }
     }
   }
   &.style-4 {

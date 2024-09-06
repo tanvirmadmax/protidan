@@ -5049,6 +5049,7 @@ body.admin-bar .header-menu-area.sticky_menu {
 .counter-card .image-wrapper .image img {
   width: 100%;
   height: 100%;
+  min-height: 318px;
 }
 .counter-card .content-wrapper {
   padding: 24px;
@@ -6637,6 +6638,12 @@ button.testimonial-arrow-btn:hover i {
 }
 .section-title.style-3 .short-title {
   color: #ff5e54;
+}
+.section-title.style-3 .short-title img {
+  width: 100px;
+  height: 100px;
+  left: 40px;
+  top: -20px;
 }
 .section-title.style-4 .short-title {
   color: #121212;
@@ -8980,7 +8987,7 @@ ul.children {
 .causes-area .counter-card-wrapper {
   position: relative;
 }
-.causes-area .counter-card-wrapper button.slider-arrow-btn {
+.causes-area button.slider-arrow-btn {
   position: absolute;
   width: 60px;
   height: 60px;
@@ -8993,7 +9000,7 @@ ul.children {
   transform: translateY(-50%);
   overflow: hidden;
 }
-.causes-area .counter-card-wrapper button.slider-arrow-btn:before {
+.causes-area button.slider-arrow-btn:before {
   position: absolute;
   width: 0;
   height: 100%;
@@ -9005,20 +9012,20 @@ ul.children {
   z-index: -1;
 }
 @media (max-width: 767px) {
-  .causes-area .counter-card-wrapper button.slider-arrow-btn {
+  .causes-area button.slider-arrow-btn {
     width: 40px;
     height: 40px;
   }
 }
-.causes-area .counter-card-wrapper button.slider-arrow-btn.prev-btn {
+.causes-area button.slider-arrow-btn.prev-btn {
   left: 0;
   transform: translate(-50%, -50%);
 }
-.causes-area .counter-card-wrapper button.slider-arrow-btn.next-btn {
+.causes-area button.slider-arrow-btn.next-btn {
   right: 0;
   transform: translate(50%, -50%);
 }
-.causes-area .counter-card-wrapper button.slider-arrow-btn i {
+.causes-area button.slider-arrow-btn i {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -9029,19 +9036,19 @@ ul.children {
   font-weight: 500;
   transition: all 0.5s ease-out;
 }
-.causes-area .counter-card-wrapper button.slider-arrow-btn:hover {
+.causes-area button.slider-arrow-btn:hover {
   transition: all 0.5s ease-out;
   border-color: #fe6809;
 }
-.causes-area .counter-card-wrapper button.slider-arrow-btn:hover:before {
+.causes-area button.slider-arrow-btn:hover:before {
   width: 100%;
   transition: all 0.5s ease-out;
 }
-.causes-area .counter-card-wrapper button.slider-arrow-btn:hover i {
+.causes-area button.slider-arrow-btn:hover i {
   color: #ffffff;
   transition: all 0.5s ease-out;
 }
-.causes-area .counter-card-wrapper .slick-dots {
+.causes-area .slick-dots {
   display: flex !important;
   gap: 20px;
   position: absolute;
@@ -9053,7 +9060,7 @@ ul.children {
   z-index: 2;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
-  .causes-area .counter-card-wrapper .slick-dots {
+  .causes-area .slick-dots {
     display: none !important;
     position: relative;
     flex-direction: row;
@@ -9067,17 +9074,17 @@ ul.children {
     transform: none;
   }
 }
-.causes-area .counter-card-wrapper .slick-dots li {
+.causes-area .slick-dots li {
   display: inline-block;
   line-height: 0;
   border: 1px solid #ffffff;
   border-radius: 50px;
   transition: all 0.5s ease-out;
 }
-.causes-area .counter-card-wrapper .slick-dots li:hover {
+.causes-area .slick-dots li:hover {
   border-color: #ff9a62;
 }
-.causes-area .counter-card-wrapper .slick-dots li button {
+.causes-area .slick-dots li button {
   font-size: 0;
   padding: 0;
   width: 11px;
@@ -9087,17 +9094,17 @@ ul.children {
   position: relative;
   transition: all 0.5s ease-out;
 }
-.causes-area .counter-card-wrapper .slick-dots li button:hover {
+.causes-area .slick-dots li button:hover {
   background-color: #ff9a62;
   border-color: #ff9a62;
   transition: all 0.5s ease-out;
 }
-.causes-area .counter-card-wrapper .slick-dots li.slick-active {
+.causes-area .slick-dots li.slick-active {
   transition: all 0.5s ease-out;
   background-color: #ff9a62;
   border: 1px solid #ff9a62;
 }
-.causes-area .counter-card-wrapper .slick-dots li.slick-active button {
+.causes-area .slick-dots li.slick-active button {
   transition: all 0.5s ease-out;
 }
 
@@ -9738,12 +9745,6 @@ ul.children {
 .about-us-area.style-4 .content-wrapper .section-title {
   padding-right: 130px;
 }
-.about-us-area.style-4 .content-wrapper .section-title .short-title img {
-  width: 100px;
-  height: 100px;
-  left: 40px;
-  top: -20px;
-}
 .about-us-area.style-4 .content-wrapper .category-item {
   margin-top: 30px;
 }
@@ -9774,11 +9775,29 @@ ul.children {
   padding-top: 43px;
 }
 
-.causes-area.style-2 .section-title-wrapper {
+.causes-area.style-3 .section-title-wrapper {
   margin-bottom: 72px;
 }
-.causes-area.style-2 .theme-btn-wrapper {
+.causes-area.style-3 .theme-btn-wrapper {
   align-items: end;
+}
+.causes-area.style-3 button.slider-arrow-btn {
+  background-color: #ff5e54;
+}
+.causes-area.style-3 .slick-dots li {
+  border: 1px solid #bdbdbd;
+}
+.causes-area.style-3 .slick-dots li.slick-active {
+  background-color: #ff5e54;
+  border-color: #ff5e54;
+}
+.causes-area.style-3 .slick-dots li:hover {
+  background-color: #ff5e54;
+  border-color: #ff5e54;
+}
+.causes-area.style-3 .slick-dots li button:hover {
+  background-color: unset;
+  border-color: unset;
 }
 
 .feature-area.style-2 {

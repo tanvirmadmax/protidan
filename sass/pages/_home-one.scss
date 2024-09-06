@@ -41,130 +41,129 @@
   }
   .counter-card-wrapper {
     position: relative;
+  }
+  button.slider-arrow-btn {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transition: 0.3s;
+    z-index: 1;
+    background-color: $white;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    overflow: hidden;
 
-    button.slider-arrow-btn {
+    &:before {
       position: absolute;
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      transition: 0.3s;
-      z-index: 1;
-      background-color: $white;
-      cursor: pointer;
+      width: 0;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background: $primary-color;
+      content: "";
+      @include transition;
+      z-index: -1;
+    }
+    @include rmaxwd(767) {
+      width: 40px;
+      height: 40px;
+    }
+    &.prev-btn {
+      left: 0;
+      transform: translate(-50%, -50%);
+    }
+    &.next-btn {
+      right: 0;
+      transform: translate(50%, -50%);
+    }
+    i {
+      position: absolute;
       top: 50%;
-      transform: translateY(-50%);
-      overflow: hidden;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: $black;
+      font-size: 21px;
+      line-height: 21px;
+      font-weight: 500;
+      @include transition;
+    }
+    &:hover {
+      @include transition;
+      border-color: $orange-color;
 
       &:before {
-        position: absolute;
-        width: 0;
-        height: 100%;
-        left: 0;
-        top: 0;
-        background: $primary-color;
-        content: "";
+        width: 100%;
         @include transition;
-        z-index: -1;
       }
-      @include rmaxwd(767) {
-        width: 40px;
-        height: 40px;
-      }
-      &.prev-btn {
-        left: 0;
-        transform: translate(-50%, -50%);
-      }
-      &.next-btn {
-        right: 0;
-        transform: translate(50%, -50%);
-      }
+
       i {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: $black;
-        font-size: 21px;
-        line-height: 21px;
-        font-weight: 500;
+        color: $white;
         @include transition;
-      }
-      &:hover {
-        @include transition;
-        border-color: $orange-color;
-
-        &:before {
-          width: 100%;
-          @include transition;
-        }
-
-        i {
-          color: $white;
-          @include transition;
-        }
       }
     }
+  }
 
-    // Slick Dots
-    .slick-dots {
-      display: flex !important;
-      gap: 20px;
-      position: absolute;
-      bottom: -72px;
-      margin-bottom: 0;
-      padding-left: 0;
-      right: 50%;
-      transform: translate(50%, -50%);
-      z-index: 2;
+  // Slick Dots
+  .slick-dots {
+    display: flex !important;
+    gap: 20px;
+    position: absolute;
+    bottom: -72px;
+    margin-bottom: 0;
+    padding-left: 0;
+    right: 50%;
+    transform: translate(50%, -50%);
+    z-index: 2;
 
-      @include sm {
-        display: none !important;
-        position: relative;
-        flex-direction: row;
-        align-items: center;
-        justify-content: flex-end;
-        margin-right: 30px;
-        bottom: 70px;
-        top: unset;
-        left: unset;
-        right: unset;
-        transform: none;
+    @include sm {
+      display: none !important;
+      position: relative;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+      margin-right: 30px;
+      bottom: 70px;
+      top: unset;
+      left: unset;
+      right: unset;
+      transform: none;
+    }
+
+    li {
+      display: inline-block;
+      line-height: 0;
+      border: 1px solid $white;
+      border-radius: 50px;
+      @include transition;
+      &:hover {
+        border-color: $primary-color;
       }
 
-      li {
-        display: inline-block;
-        line-height: 0;
-        border: 1px solid $white;
+      button {
+        font-size: 0;
+        padding: 0;
+        width: 11px;
+        height: 11px;
+        background-color: transparent;
         border-radius: 50px;
+        position: relative;
         @include transition;
+
         &:hover {
+          background-color: $primary-color;
           border-color: $primary-color;
+          @include transition;
         }
+      }
+      &.slick-active {
+        @include transition;
+        background-color: $primary-color;
+        border: 1px solid $primary-color;
 
         button {
-          font-size: 0;
-          padding: 0;
-          width: 11px;
-          height: 11px;
-          background-color: transparent;
-          border-radius: 50px;
-          position: relative;
           @include transition;
-
-          &:hover {
-            background-color: $primary-color;
-            border-color: $primary-color;
-            @include transition;
-          }
-        }
-        &.slick-active {
-          @include transition;
-          background-color: $primary-color;
-          border: 1px solid $primary-color;
-
-          button {
-            @include transition;
-          }
         }
       }
     }

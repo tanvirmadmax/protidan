@@ -4,14 +4,6 @@
     .content-wrapper {
       .section-title {
         padding-right: 130px;
-        .short-title {
-          img {
-            width: 100px;
-            height: 100px;
-            left: 40px;
-            top: -20px;
-          }
-        }
       }
       .category-item {
         margin-top: 30px;
@@ -54,12 +46,34 @@
 
 // Cayses-area
 .causes-area {
-  &.style-2 {
+  &.style-3 {
     .section-title-wrapper {
       margin-bottom: 72px;
     }
     .theme-btn-wrapper {
       align-items: end;
+    }
+    button.slider-arrow-btn {
+      background-color: $second-primary-color;
+    }
+    .slick-dots {
+      li {
+        border: 1px solid $gray-4;
+        &.slick-active {
+          background-color: $second-primary-color;
+          border-color: $second-primary-color;
+        }
+        &:hover {
+          background-color: $second-primary-color;
+          border-color: $second-primary-color;
+        }
+        button {
+          &:hover {
+            background-color: unset;
+            border-color: unset;
+          }
+        }
+      }
     }
   }
 }
