@@ -12,10 +12,8 @@
   .image-wrapper {
     position: relative;
     max-width: 526px;
+    max-height: 304px;
     flex-shrink: 0;
-    img {
-      // width: 100%;
-    }
     .date {
       padding: 21px 13px;
       position: absolute;
@@ -125,6 +123,30 @@
     }
   }
   &.style-3 {
+    .image-wrapper {
+      .date {
+        background-color: $second-primary-color;
+        h3,
+        p {
+          color: $white;
+        }
+      }
+    }
+    .content-wrapper .meta ul li i {
+      color: $second-primary-color;
+    }
+    .theme-btn {
+      a {
+        color: $black;
+        border-color: $gray-4;
+        &:hover {
+          background-color: $second-primary-color;
+          border-color: transparent;
+        }
+      }
+    }
+  }
+  &.style-4 {
     .image-wrapper {
       max-width: 250px;
       max-height: 266px;

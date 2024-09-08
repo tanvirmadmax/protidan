@@ -181,11 +181,16 @@
 
 // event area
 .event-area {
-  .theme-btn {
-    a {
-      background-color: $black;
-      color: $white;
-      border-color: transparent;
+  .theme-btn-wrapper {
+    .theme-btn {
+      a {
+        background-color: $black;
+        color: $white;
+        border-color: transparent;
+        &:hover {
+          background-color: $primary-color;
+        }
+      }
     }
   }
 }
