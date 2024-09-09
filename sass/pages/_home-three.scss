@@ -194,6 +194,78 @@
     }
   }
 }
+// Testimonial-area
+.testimonial-area {
+  &.style-3 {
+    position: relative;
+    .slick-slide {
+      margin: 0 10px;
+      &.slick-current {
+        @include transition;
+        box-shadow: 0px 10px 44px 0px rgba(4, 43, 77, 0.08);
+        background-color: $white;
+
+        @include rmaxwd(991) {
+          box-shadow: 1px 8px 44px rgba(20, 20, 43, 0.03);
+        }
+        .content {
+          .text {
+            color: $black-3;
+          }
+        }
+        .meta-user .user-info .info {
+          .title {
+            color: black;
+          }
+          .desc {
+            color: $black-3;
+          }
+        }
+      }
+    }
+
+    /* the parent */
+    .slick-list {
+      margin: 0 -10px;
+    }
+    .testimonial-slider-three {
+      margin-top: 70px;
+    }
+    .slider-image {
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100%;
+      img {
+        height: 100%;
+      }
+    }
+    .testimonial-card {
+      &.style-3 {
+        max-width: 636px;
+        min-height: 486px;
+        margin: 0 20px;
+      }
+    }
+
+    button.slider-arrow-btn {
+      top: -30%;
+    }
+    .background-image-wrapper {
+      position: absolute;
+      left: 0;
+      top: 0;
+      display: flex;
+      height: 100%;
+      .image,
+      .bg-shape {
+        img {
+          height: 100%;
+        }
+      }
+    }
+  }
+}
 // Why Choose Us Area
 .why-choose-us-area {
   &.style-2 {

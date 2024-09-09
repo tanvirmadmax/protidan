@@ -9883,6 +9883,67 @@ ul.children {
   transform: translate(100%, 0);
 }
 
+.testimonial-area.style-3 {
+  position: relative;
+  /* the parent */
+}
+.testimonial-area.style-3 .slick-slide {
+  margin: 0 10px;
+}
+.testimonial-area.style-3 .slick-slide.slick-current {
+  transition: all 0.5s ease-out;
+  box-shadow: 0px 10px 44px 0px rgba(4, 43, 77, 0.08);
+  background-color: #ffffff;
+}
+@media (max-width: 991px) {
+  .testimonial-area.style-3 .slick-slide.slick-current {
+    box-shadow: 1px 8px 44px rgba(20, 20, 43, 0.03);
+  }
+}
+.testimonial-area.style-3 .slick-slide.slick-current .content .text {
+  color: #5e5e5e;
+}
+.testimonial-area.style-3 .slick-slide.slick-current .meta-user .user-info .info .title {
+  color: black;
+}
+.testimonial-area.style-3 .slick-slide.slick-current .meta-user .user-info .info .desc {
+  color: #5e5e5e;
+}
+.testimonial-area.style-3 .slick-list {
+  margin: 0 -10px;
+}
+.testimonial-area.style-3 .testimonial-slider-three {
+  margin-top: 70px;
+}
+.testimonial-area.style-3 .slider-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+.testimonial-area.style-3 .slider-image img {
+  height: 100%;
+}
+.testimonial-area.style-3 .testimonial-card.style-3 {
+  max-width: 636px;
+  min-height: 486px;
+  margin: 0 20px;
+}
+.testimonial-area.style-3 button.slider-arrow-btn {
+  top: -30%;
+}
+.testimonial-area.style-3 .background-image-wrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  height: 100%;
+}
+.testimonial-area.style-3 .background-image-wrapper .image img,
+.testimonial-area.style-3 .background-image-wrapper .bg-shape img {
+  height: 100%;
+}
+
 .why-choose-us-area.style-2 {
   padding-top: 138px;
   background-position: center center;
