@@ -200,10 +200,14 @@
     position: relative;
     .slick-slide {
       margin: 0 10px;
+      position: relative;
+      z-index: 1;
+
       &.slick-current {
         @include transition;
         box-shadow: 0px 10px 44px 0px rgba(4, 43, 77, 0.08);
         background-color: $white;
+        z-index: 10;
 
         @include rmaxwd(991) {
           box-shadow: 1px 8px 44px rgba(20, 20, 43, 0.03);
@@ -220,6 +224,16 @@
           .desc {
             color: $black-3;
           }
+        }
+      }
+    }
+    .slick-dots {
+      justify-content: center;
+      li {
+        border-color: $white;
+        &.slick-active {
+          background-color: $second-primary-color;
+          border-color: $second-primary-color;
         }
       }
     }
@@ -250,6 +264,20 @@
 
     button.slider-arrow-btn {
       top: -30%;
+      background-color: transparent;
+      border-color: $gray-4;
+      &:hover {
+        &:before {
+          background-color: $second-primary-color;
+        }
+      }
+      i {
+        color: $white;
+      }
+      &.prev-btn {
+        background-color: $second-primary-color;
+        border-color: $second-primary-color;
+      }
     }
     .background-image-wrapper {
       position: absolute;
@@ -266,170 +294,7 @@
     }
   }
 }
-// Why Choose Us Area
-.why-choose-us-area {
-  &.style-2 {
-    padding-top: 138px;
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-
-    @include rmaxwd(991) {
-      padding-top: 100px;
-      padding-bottom: 50px;
-    }
-    @include rmaxwd(767) {
-      padding-top: 0 !important;
-      padding-bottom: 20px !important;
-    }
-
-    .section-title {
-      margin-bottom: 50px;
-      @include rmaxwd(767) {
-        padding-top: 70px;
-        padding-bottom: 20px;
-      }
-      .title {
-        br {
-          @media only screen and (min-width: 1024px) and (max-width: 1280px) {
-            display: none;
-          }
-        }
-      }
-    }
-    .why-choose-card-wrapper {
-      padding-left: 110px;
-
-      @include rwd(1024) {
-        padding-left: 50px;
-      }
-      @include rmaxwd(991) {
-        padding-left: 0;
-      }
-    }
-  }
-}
-
-// Why Choose Area Three
-.why-choose-three-area {
-  background-color: $secondary-color;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-// Project Area & Blog Area
-.portfolio-area {
-  &.style-1 {
-    padding-top: 138px;
-    padding-bottom: 114px;
-
-    @include rmaxwd(991) {
-      padding-top: 100px;
-      padding-bottom: 80px;
-    }
-    @include rmaxwd(767) {
-      padding-top: 70px;
-      padding-bottom: 40px;
-    }
-  }
-}
-.latest-posts-area {
-  &.style-3 {
-    padding-top: 138px;
-    padding-bottom: 85px;
-
-    @include rmaxwd(991) {
-      padding-top: 100px;
-      padding-bottom: 80px;
-    }
-    @include rmaxwd(991) {
-      padding-top: 70px;
-      padding-bottom: 25px;
-    }
-  }
-}
-// Pricing Area
-.pricing-area {
-  &.style-1 {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    padding-top: 138px;
-    padding-bottom: 144px;
-
-    @include rmaxwd(991) {
-      padding-top: 100px;
-      padding-bottom: 70px;
-    }
-    @include rmaxwd(767) {
-      padding-top: 70px;
-      padding-bottom: 40px;
-    }
-  }
-}
-.price-card-padding {
-  padding: 0 50px;
-
-  @include rmaxwd(1399) {
-    padding: 0 12px;
-  }
-}
-// Our Service Area
-.service-area {
-  &.style-2 {
-    padding-top: 138px;
-    padding-bottom: 90px;
-
-    @include rmaxwd(991) {
-      padding-top: 100px;
-      padding-bottom: 50px;
-      .section-title {
-        margin-bottom: 15px;
-      }
-    }
-
-    @include rmaxwd(767) {
-      padding-top: 70px;
-      padding-bottom: 20px;
-
-      .row.mb-70 {
-        margin-bottom: 50px;
-      }
-    }
-  }
-}
-
-// Accordion Area
-.faq-area {
-  &.style-2 {
-    padding-top: 216px;
-    padding-bottom: 144px;
-
-    @include rmaxwd(1199) {
-      padding: 100px 0;
-    }
-
-    @include rmaxwd(767) {
-      padding: 70px 0;
-    }
-    .accordion-wrapper {
-      @include rmaxwd(1199) {
-        padding-right: 0 !important;
-        padding-bottom: 80px;
-      }
-    }
-    .section-title {
-      .title {
-        br {
-          @media only screen and (min-width: 1200px) and (max-width: 1399px) {
-            display: none;
-          }
-        }
-      }
-    }
-  }
-}
-
+// Testimonial area
 .testimonial-area {
   &.style-3 {
     padding-top: 138px;
@@ -455,8 +320,19 @@
   }
 }
 
-.brand-slider-area {
-  &.style-3 {
-    padding-bottom: 62px;
+// Event area style-2
+.event-area {
+  &.style-2 {
+    .section-title {
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      .short-title {
+        width: 100%;
+        img {
+          left: 72px;
+        }
+      }
+    }
   }
 }
