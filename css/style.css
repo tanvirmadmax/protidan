@@ -5253,53 +5253,13 @@ body.admin-bar .header-menu-area.sticky_menu {
   letter-spacing: 0.56px;
 }
 
-.testimonial-card.style-three {
-  flex-direction: row;
-  padding: 0;
+.testimonial-card.style-3 {
+  max-width: 636px;
+  min-height: 486px;
+  margin: 0 20px;
 }
-.testimonial-card.style-three .icon {
-  align-self: flex-start;
-  flex-shrink: 0;
-}
-.testimonial-card.style-three .content-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 45px;
-}
-.testimonial-card.style-three .content-wrapper .content {
-  margin-top: 18px;
-}
-.testimonial-card.style-three .content-wrapper .content .text {
-  font-size: 26px;
-  font-style: italic;
-  line-height: 40px;
-}
-.testimonial-card.style-three .content-wrapper .meta-user .icon {
-  display: none;
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .testimonial-card.style-three {
-    flex-direction: column;
-    gap: 20px;
-    padding: 30px;
-  }
-  .testimonial-card.style-three .content-wrapper {
-    gap: 20px;
-  }
-  .testimonial-card.style-three .content-wrapper .content {
-    margin-top: 0;
-  }
-  .testimonial-card.style-three .content-wrapper .content .text {
-    font-size: 18px;
-    line-height: 30px;
-  }
-  .testimonial-card.style-three .content-wrapper .meta-user .user-info .info h2 {
-    font-size: 16px;
-    line-height: 28px;
-  }
-  .testimonial-card.style-three .content-wrapper .meta-user .user-info .info p {
-    font-size: 14px;
-  }
+.testimonial-card.style-3 .meta-user .image {
+  filter: grayscale(1);
 }
 
 .testimonial-slider-wrapper {
@@ -9936,11 +9896,6 @@ ul.children {
 }
 .testimonial-area.style-3 .slider-image img {
   height: 100%;
-}
-.testimonial-area.style-3 .testimonial-card.style-3 {
-  max-width: 636px;
-  min-height: 486px;
-  margin: 0 20px;
 }
 .testimonial-area.style-3 button.slider-arrow-btn {
   top: -30%;
