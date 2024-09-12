@@ -1,46 +1,6 @@
 // About Us Area
 .about-us-area {
   &.style-4 {
-    .content-wrapper {
-      .section-title {
-        padding-right: 130px;
-      }
-      .category-item {
-        margin-top: 30px;
-        .icon {
-          color: $second-primary-color;
-          width: 120px;
-          height: 120px;
-          img {
-            width: 60px;
-            height: 60px;
-          }
-        }
-        .content {
-          .desc {
-            color: $second-primary-color;
-          }
-        }
-      }
-      .theme-btn {
-        &.style-2 {
-          a {
-            background-color: $second-primary-color;
-            border-color: transparent;
-            margin-top: 32px;
-          }
-        }
-      }
-    }
-    .image-wrapper {
-      background-color: $white;
-      border-radius: 0 375px 0 0;
-      margin-left: -110px;
-      .image {
-        padding-left: 164px;
-        padding-top: 43px;
-      }
-    }
   }
 }
 

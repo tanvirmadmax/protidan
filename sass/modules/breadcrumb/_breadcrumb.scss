@@ -1,6 +1,6 @@
 .page-breadcrumb-area {
-  padding-top: 401px;
-  padding-bottom: 124px;
+  padding-top: 280px;
+  padding-bottom: 250px;
   position: relative;
   z-index: 2;
   background-repeat: no-repeat;
@@ -17,6 +17,9 @@
     padding: 80px 0;
     padding-top: 240px;
   }
+  .breadcrumb-wrapper {
+    text-align: center;
+  }
 }
 
 .page-overlay {
@@ -25,7 +28,7 @@
 
   &:before {
     content: "";
-    background-color: #151519B2;
+    background-color: #151519b2;
     opacity: 0.7;
     height: 100%;
     left: 0;
@@ -34,7 +37,6 @@
     top: 0;
     width: 100%;
     z-index: -1;
-
   }
 
   &:after {
@@ -46,13 +48,12 @@
 }
 
 .page-heading {
-
   h3,
   .page-title {
     font-family: $heading-font;
     font-size: 50px;
     color: $white;
-    margin-top: 20px;
+    margin-top: 12px;
     text-transform: capitalize;
     line-height: normal;
     font-weight: 600;
@@ -110,7 +111,6 @@
         font-weight: 400;
         margin-bottom: 0;
         @include transition;
-
 
         &:hover {
           @include transition;

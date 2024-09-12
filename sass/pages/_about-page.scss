@@ -1,27 +1,38 @@
+.about-page {
+  background-color: $black;
+}
 // About Us Area
-.about-page-about-us-area {
-  padding-top: 140px;
-  padding-bottom: 154px;
-
-  @include rmaxwd(991) {
-   padding: 100px 0;
-  }
-  @include rmaxwd(767) {
-   padding: 70px 0;
-  }
-  .about-info-card {
-    .about-info-content {
-      padding-left: 120px;
-
-      @include rmaxwd(1199) {
-        padding-left: 0;
-        padding-top: 330px;
-      }
-      @include rmaxwd(767) {
-        padding-top: 150px;
-      }
-      @include rmaxwd(650) {
-        padding-top: 110px;
+.about-us-area {
+  &.style-5 {
+    margin-top: -140px;
+    position: relative;
+    z-index: 10;
+    .content-wrapper {
+      .counter-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        margin-top: 30px;
+        .counter-item {
+          h3 {
+            color: $primary-color;
+            font-size: 38px;
+            font-weight: 700;
+            line-height: 49px;
+            letter-spacing: 0.76px;
+            margin-bottom: 8px;
+          }
+          p {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 130%; /* 20.8px */
+            letter-spacing: 0.32px;
+            text-transform: uppercase;
+            margin-bottom: 0;
+            color: $black;
+          }
+        }
       }
     }
   }
@@ -44,53 +55,52 @@
   }
 }
 
-
 // FAQ Area
 .faq-area {
-   &.style-3 {
-     padding-top: 138px;
-     padding-bottom: 142px;
-     @include rmaxwd(991) {
-       padding: 100px 0;
-     }
-     @include rmaxwd(767) {
-       padding: 70px 0;
-     }
-     .section-title {
-       margin-bottom: 30px;
-       @include rmaxwd(575) {
-         margin-bottom: 20px;
-       }
+  &.style-3 {
+    padding-top: 138px;
+    padding-bottom: 142px;
+    @include rmaxwd(991) {
+      padding: 100px 0;
+    }
+    @include rmaxwd(767) {
+      padding: 70px 0;
+    }
+    .section-title {
+      margin-bottom: 30px;
+      @include rmaxwd(575) {
+        margin-bottom: 20px;
+      }
 
-       .title {
-         br {
-           @media only screen and (min-width: 992px) and (max-width: 1399px) {
-             display: none;
-           }
-         }
-       }
-     }
-     .video-popup-card.style-three {
-       margin-left: 220px;
+      .title {
+        br {
+          @media only screen and (min-width: 992px) and (max-width: 1399px) {
+            display: none;
+          }
+        }
+      }
+    }
+    .video-popup-card.style-three {
+      margin-left: 220px;
 
-       .video-popup-image {
-         @media only screen and (min-width: 992px) and (max-width: 1280px) {
-           height: 707px;
-         }
-       }
-       @media only screen and (min-width: 1200px) and (max-width: 1399px) {
-         margin-left: 90px;
-       }
-       @include rmaxwd(1199) {
-         margin-left: 30px;
-         margin-top: 80px;
-       }
-       @include rmaxwd(767) {
-         margin-left: 0 !important;
-         margin-top: 40px !important;
-       }
-     }
-   }
+      .video-popup-image {
+        @media only screen and (min-width: 992px) and (max-width: 1280px) {
+          height: 707px;
+        }
+      }
+      @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+        margin-left: 90px;
+      }
+      @include rmaxwd(1199) {
+        margin-left: 30px;
+        margin-top: 80px;
+      }
+      @include rmaxwd(767) {
+        margin-left: 0 !important;
+        margin-top: 40px !important;
+      }
+    }
+  }
 }
 
 // Timeline Area

@@ -211,6 +211,13 @@
   }
   &.style-4 {
     .image-wrapper {
+      background-color: $white;
+      border-radius: 0 375px 0 0;
+      margin-left: -110px;
+      .image {
+        padding-left: 164px;
+        padding-top: 43px;
+      }
       .voucher {
         left: unset;
         right: 24px;
@@ -229,6 +236,104 @@
         }
         .desc {
           line-height: 130%;
+        }
+      }
+    }
+    .content-wrapper {
+      .section-title {
+        padding-right: 130px;
+      }
+      .category-item {
+        margin-top: 30px;
+        .icon {
+          color: $second-primary-color;
+          width: 120px;
+          height: 120px;
+          img {
+            width: 60px;
+            height: 60px;
+          }
+        }
+        .content {
+          .desc {
+            color: $second-primary-color;
+          }
+        }
+      }
+      .theme-btn {
+        &.style-2 {
+          a {
+            background-color: $second-primary-color;
+            border-color: transparent;
+            margin-top: 32px;
+          }
+        }
+      }
+    }
+  }
+  &.style-5 {
+    .inner-wrapper {
+      background-color: $white;
+    }
+    .image-wrapper {
+      margin-left: -110px;
+      .voucher {
+        left: unset;
+        right: 24px;
+        bottom: 24px;
+        transform: unset;
+        padding: 50px 54px;
+        gap: 0;
+        background-color: $primary-color;
+        .title,
+        .desc {
+          color: $black;
+          margin-bottom: 0;
+        }
+        .title {
+          line-height: 60px;
+          font-size: 68px;
+          font-weight: 900;
+          letter-spacing: 1.36px;
+          text-transform: capitalize;
+        }
+        .desc {
+          line-height: 130%;
+          font-size: 38px;
+          font-weight: 700;
+          line-height: 130%;
+          letter-spacing: 0.76px;
+        }
+      }
+    }
+    .content-wrapper {
+      .section-title {
+        padding-right: 130px;
+      }
+      .category-item {
+        margin-top: 30px;
+        .icon {
+          color: $second-primary-color;
+          width: 120px;
+          height: 120px;
+          img {
+            width: 60px;
+            height: 60px;
+          }
+        }
+        .content {
+          .desc {
+            color: $primary-color;
+          }
+        }
+      }
+      .theme-btn {
+        &.style-2 {
+          a {
+            background-color: $primary-color;
+            border-color: transparent;
+            margin-top: 32px;
+          }
         }
       }
     }

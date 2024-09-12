@@ -397,6 +397,12 @@ input.theme-btn {
   margin: 0 auto;
 }
 
+.custom-container-two {
+  max-width: 1728px;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .mt-72 {
   margin-top: 72px;
 }
@@ -4930,6 +4936,15 @@ body.admin-bar .header-menu-area.sticky_menu {
   height: 1px;
   background-color: #bdbdbd;
 }
+.about-us-area.style-4 .image-wrapper {
+  background-color: #ffffff;
+  border-radius: 0 375px 0 0;
+  margin-left: -110px;
+}
+.about-us-area.style-4 .image-wrapper .image {
+  padding-left: 164px;
+  padding-top: 43px;
+}
 .about-us-area.style-4 .image-wrapper .voucher {
   left: unset;
   right: 24px;
@@ -4949,6 +4964,86 @@ body.admin-bar .header-menu-area.sticky_menu {
 }
 .about-us-area.style-4 .image-wrapper .voucher .desc {
   line-height: 130%;
+}
+.about-us-area.style-4 .content-wrapper .section-title {
+  padding-right: 130px;
+}
+.about-us-area.style-4 .content-wrapper .category-item {
+  margin-top: 30px;
+}
+.about-us-area.style-4 .content-wrapper .category-item .icon {
+  color: #ff5e54;
+  width: 120px;
+  height: 120px;
+}
+.about-us-area.style-4 .content-wrapper .category-item .icon img {
+  width: 60px;
+  height: 60px;
+}
+.about-us-area.style-4 .content-wrapper .category-item .content .desc {
+  color: #ff5e54;
+}
+.about-us-area.style-4 .content-wrapper .theme-btn.style-2 a {
+  background-color: #ff5e54;
+  border-color: transparent;
+  margin-top: 32px;
+}
+.about-us-area.style-5 .inner-wrapper {
+  background-color: #ffffff;
+}
+.about-us-area.style-5 .image-wrapper {
+  margin-left: -110px;
+}
+.about-us-area.style-5 .image-wrapper .voucher {
+  left: unset;
+  right: 24px;
+  bottom: 24px;
+  transform: unset;
+  padding: 50px 54px;
+  gap: 0;
+  background-color: #ff9a62;
+}
+.about-us-area.style-5 .image-wrapper .voucher .title,
+.about-us-area.style-5 .image-wrapper .voucher .desc {
+  color: #121212;
+  margin-bottom: 0;
+}
+.about-us-area.style-5 .image-wrapper .voucher .title {
+  line-height: 60px;
+  font-size: 68px;
+  font-weight: 900;
+  letter-spacing: 1.36px;
+  text-transform: capitalize;
+}
+.about-us-area.style-5 .image-wrapper .voucher .desc {
+  line-height: 130%;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 130%;
+  letter-spacing: 0.76px;
+}
+.about-us-area.style-5 .content-wrapper .section-title {
+  padding-right: 130px;
+}
+.about-us-area.style-5 .content-wrapper .category-item {
+  margin-top: 30px;
+}
+.about-us-area.style-5 .content-wrapper .category-item .icon {
+  color: #ff5e54;
+  width: 120px;
+  height: 120px;
+}
+.about-us-area.style-5 .content-wrapper .category-item .icon img {
+  width: 60px;
+  height: 60px;
+}
+.about-us-area.style-5 .content-wrapper .category-item .content .desc {
+  color: #ff9a62;
+}
+.about-us-area.style-5 .content-wrapper .theme-btn.style-2 a {
+  background-color: #ff9a62;
+  border-color: transparent;
+  margin-top: 32px;
 }
 
 .video-popup-card {
@@ -6610,8 +6705,8 @@ button.testimonial-arrow-btn:hover i {
 }
 
 .page-breadcrumb-area {
-  padding-top: 401px;
-  padding-bottom: 124px;
+  padding-top: 280px;
+  padding-bottom: 250px;
   position: relative;
   z-index: 2;
   background-repeat: no-repeat;
@@ -6630,6 +6725,9 @@ button.testimonial-arrow-btn:hover i {
     padding: 80px 0;
     padding-top: 240px;
   }
+}
+.page-breadcrumb-area .breadcrumb-wrapper {
+  text-align: center;
 }
 
 .page-overlay:before {
@@ -6656,7 +6754,7 @@ button.testimonial-arrow-btn:hover i {
   font-family: "Vazirmatn", sans-serif;
   font-size: 50px;
   color: #ffffff;
-  margin-top: 20px;
+  margin-top: 12px;
   text-transform: capitalize;
   line-height: normal;
   font-weight: 600;
@@ -9705,39 +9803,6 @@ ul.children {
   background-color: #ff9a62;
 }
 
-.about-us-area.style-4 .content-wrapper .section-title {
-  padding-right: 130px;
-}
-.about-us-area.style-4 .content-wrapper .category-item {
-  margin-top: 30px;
-}
-.about-us-area.style-4 .content-wrapper .category-item .icon {
-  color: #ff5e54;
-  width: 120px;
-  height: 120px;
-}
-.about-us-area.style-4 .content-wrapper .category-item .icon img {
-  width: 60px;
-  height: 60px;
-}
-.about-us-area.style-4 .content-wrapper .category-item .content .desc {
-  color: #ff5e54;
-}
-.about-us-area.style-4 .content-wrapper .theme-btn.style-2 a {
-  background-color: #ff5e54;
-  border-color: transparent;
-  margin-top: 32px;
-}
-.about-us-area.style-4 .image-wrapper {
-  background-color: #ffffff;
-  border-radius: 0 375px 0 0;
-  margin-left: -110px;
-}
-.about-us-area.style-4 .image-wrapper .image {
-  padding-left: 164px;
-  padding-top: 43px;
-}
-
 .causes-area.style-3 .section-title-wrapper {
   margin-bottom: 72px;
 }
@@ -9960,38 +10025,38 @@ ul.children {
   left: 72px;
 }
 
-.about-page-about-us-area {
-  padding-top: 140px;
-  padding-bottom: 154px;
+.about-page {
+  background-color: #121212;
 }
-@media (max-width: 991px) {
-  .about-page-about-us-area {
-    padding: 100px 0;
-  }
+
+.about-us-area.style-5 {
+  margin-top: -140px;
+  position: relative;
+  z-index: 10;
 }
-@media (max-width: 767px) {
-  .about-page-about-us-area {
-    padding: 70px 0;
-  }
+.about-us-area.style-5 .content-wrapper .counter-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 30px;
 }
-.about-page-about-us-area .about-info-card .about-info-content {
-  padding-left: 120px;
+.about-us-area.style-5 .content-wrapper .counter-wrapper .counter-item h3 {
+  color: #ff9a62;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 49px;
+  letter-spacing: 0.76px;
+  margin-bottom: 8px;
 }
-@media (max-width: 1199px) {
-  .about-page-about-us-area .about-info-card .about-info-content {
-    padding-left: 0;
-    padding-top: 330px;
-  }
-}
-@media (max-width: 767px) {
-  .about-page-about-us-area .about-info-card .about-info-content {
-    padding-top: 150px;
-  }
-}
-@media (max-width: 650px) {
-  .about-page-about-us-area .about-info-card .about-info-content {
-    padding-top: 110px;
-  }
+.about-us-area.style-5 .content-wrapper .counter-wrapper .counter-item p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%; /* 20.8px */
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  color: #121212;
 }
 
 .counter-up-area.style-3 {
