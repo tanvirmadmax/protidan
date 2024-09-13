@@ -1,0 +1,65 @@
+.causes-area {
+  &.style-5 {
+    .custom-container-two {
+      background-color: $white;
+    }
+    .counter-card {
+      &.style-3 {
+        flex-direction: row;
+        .image-wrapper {
+          .image {
+            max-width: 348px;
+            min-width: 348px;
+            width: 100%;
+            max-height: 408px;
+            min-height: 408px;
+            height: 100%;
+            img {
+              object-fit: cover;
+              filter: grayscale(1);
+            }
+          }
+        }
+        .content-wrapper {
+          padding: 42px 32px;
+          width: 100%;
+          border-top: 1px solid $gray-4;
+          border-left: none;
+          .inner-wrapper {
+            max-width: 783px;
+            width: 100%;
+          }
+          .title {
+            color: $black;
+            margin-bottom: 16px;
+            line-height: 36px;
+          }
+          .desc-wrapper {
+            span {
+              color: $gray-3;
+            }
+            p {
+              color: $black;
+            }
+          }
+          .desc {
+            margin-bottom: 0;
+          }
+          .skill-progressbar {
+            margin-top: 24px;
+            .progress-content-outter {
+              background-color: #f4f4f4;
+            }
+          }
+          .theme-btn {
+            a {
+              background-color: $primary-color;
+              border-color: transparent;
+              color: $black;
+            }
+          }
+        }
+      }
+    }
+  }
+}
