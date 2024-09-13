@@ -10140,57 +10140,11 @@ ul.children {
   margin-top: 48px;
 }
 
-.faq-area.style-3 {
-  padding-top: 138px;
-  padding-bottom: 142px;
+.faq-area .custom-container-two {
+  background-color: #ffffff;
 }
-@media (max-width: 991px) {
-  .faq-area.style-3 {
-    padding: 100px 0;
-  }
-}
-@media (max-width: 767px) {
-  .faq-area.style-3 {
-    padding: 70px 0;
-  }
-}
-.faq-area.style-3 .section-title {
-  margin-bottom: 30px;
-}
-@media (max-width: 575px) {
-  .faq-area.style-3 .section-title {
-    margin-bottom: 20px;
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1399px) {
-  .faq-area.style-3 .section-title .title br {
-    display: none;
-  }
-}
-.faq-area.style-3 .video-popup-card.style-three {
-  margin-left: 220px;
-}
-@media only screen and (min-width: 992px) and (max-width: 1280px) {
-  .faq-area.style-3 .video-popup-card.style-three .video-popup-image {
-    height: 707px;
-  }
-}
-@media only screen and (min-width: 1200px) and (max-width: 1399px) {
-  .faq-area.style-3 .video-popup-card.style-three {
-    margin-left: 90px;
-  }
-}
-@media (max-width: 1199px) {
-  .faq-area.style-3 .video-popup-card.style-three {
-    margin-left: 30px;
-    margin-top: 80px;
-  }
-}
-@media (max-width: 767px) {
-  .faq-area.style-3 .video-popup-card.style-three {
-    margin-left: 0 !important;
-    margin-top: 40px !important;
-  }
+.faq-area.style-2 .section-title .short-title {
+  color: #ff9a62;
 }
 
 .timeline-area.style-1 {
