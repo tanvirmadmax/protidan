@@ -110,6 +110,16 @@
         margin-top: 48px;
       }
     }
+    .image-wrapper {
+      margin-right: -300px;
+      &:after {
+        display: none;
+      }
+      img {
+        width: 100%;
+        filter: unset;
+      }
+    }
   }
 }
 

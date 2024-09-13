@@ -82,7 +82,46 @@
     }
   }
 }
-
+// image-card-area
+.image-card-area {
+  &.style-4 {
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    .image-wrapper {
+      margin-left: -120px;
+      img {
+        width: 100%;
+      }
+    }
+    .section-title {
+      .short-title {
+        color: $black;
+      }
+      .desc {
+        color: $gray-4;
+      }
+    }
+    .theme-btn {
+      a {
+        background-color: transparent;
+      }
+    }
+    .content-wrapper {
+      top: 148px;
+      .inner-wrapper {
+        .shape {
+          position: absolute;
+          left: -100px;
+          top: 30%;
+        }
+      }
+      .theme-btn {
+        margin-top: 48px;
+      }
+    }
+  }
+}
 // FAQ Area
 .faq-area {
   &.style-3 {

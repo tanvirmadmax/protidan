@@ -9172,6 +9172,9 @@ ul.children {
 .team-area.style-1 .section-title-wrapper {
   margin-bottom: 60px;
 }
+.team-area.style-1 .section-title-wrapper .short-title {
+  color: #ff9a62;
+}
 .team-area.style-1 .theme-btn.style-2 {
   justify-content: center;
 }
@@ -9737,6 +9740,16 @@ ul.children {
 .image-card-area.style-2 .content-wrapper .theme-btn {
   margin-top: 48px;
 }
+.image-card-area.style-2 .image-wrapper {
+  margin-right: -300px;
+}
+.image-card-area.style-2 .image-wrapper:after {
+  display: none;
+}
+.image-card-area.style-2 .image-wrapper img {
+  width: 100%;
+  filter: unset;
+}
 
 .donate-area.style-2 {
   background-position: center;
@@ -10093,6 +10106,38 @@ ul.children {
 .causes-area.style-3 .inner-wrapper .theme-btn-wrapper .theme-btn a {
   background-color: #ff9a62;
   color: #121212;
+}
+
+.image-card-area.style-4 {
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+.image-card-area.style-4 .image-wrapper {
+  margin-left: -120px;
+}
+.image-card-area.style-4 .image-wrapper img {
+  width: 100%;
+}
+.image-card-area.style-4 .section-title .short-title {
+  color: #121212;
+}
+.image-card-area.style-4 .section-title .desc {
+  color: #bdbdbd;
+}
+.image-card-area.style-4 .theme-btn a {
+  background-color: transparent;
+}
+.image-card-area.style-4 .content-wrapper {
+  top: 148px;
+}
+.image-card-area.style-4 .content-wrapper .inner-wrapper .shape {
+  position: absolute;
+  left: -100px;
+  top: 30%;
+}
+.image-card-area.style-4 .content-wrapper .theme-btn {
+  margin-top: 48px;
 }
 
 .faq-area.style-3 {
