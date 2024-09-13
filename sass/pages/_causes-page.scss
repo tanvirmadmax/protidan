@@ -1,7 +1,23 @@
 .causes-area {
   &.style-5 {
+    margin-top: -148px;
+    position: relative;
+    z-index: 4;
     .custom-container-two {
       background-color: $white;
+      .theme-btn-wrapper {
+        .theme-btn {
+          a {
+            background-color: transparent;
+            color: $black;
+            border-color: $gray-4;
+            &:hover {
+              background-color: $primary-color;
+              border-color: $primary-color;
+            }
+          }
+        }
+      }
     }
     .counter-item-wrapper {
       .counter-card {
@@ -70,7 +86,6 @@
                   background-color: #d9d9d9;
                   transform: translate(25%, -25%);
                   border: 1px solid #828282;
-                  z-index: 10;
                 }
               }
             }
@@ -83,6 +98,10 @@
               background-color: $primary-color;
               border-color: transparent;
               color: $black;
+              &:hover {
+                background-color: $black;
+                color: $white;
+              }
             }
           }
         }
