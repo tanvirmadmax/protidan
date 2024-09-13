@@ -10041,6 +10041,12 @@ ul.children {
 .causes-area.style-5 .custom-container-two {
   background-color: #ffffff;
 }
+.causes-area.style-5 .counter-item-wrapper .counter-card {
+  margin-top: 24px;
+}
+.causes-area.style-5 .counter-item-wrapper .counter-card:first-child {
+  margin-top: 0;
+}
 .causes-area.style-5 .counter-card.style-3 {
   flex-direction: row;
 }
@@ -10086,6 +10092,25 @@ ul.children {
 }
 .causes-area.style-5 .counter-card.style-3 .content-wrapper .skill-progressbar .progress-content-outter {
   background-color: #f4f4f4;
+}
+.causes-area.style-5 .counter-card.style-3 .content-wrapper .skill-progressbar .progress-content-outter .progress-content {
+  position: relative;
+  overflow: visible !important;
+}
+.causes-area.style-5 .counter-card.style-3 .content-wrapper .skill-progressbar .progress-content-outter .progress-content span {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  right: 0;
+  top: 0;
+  border-radius: 50px;
+  background-color: #d9d9d9;
+  transform: translate(25%, -25%);
+  border: 1px solid #828282;
+  z-index: 10;
+}
+.causes-area.style-5 .counter-card.style-3 .content-wrapper .skill-progressbar .progress-number-count {
+  color: #121212;
 }
 .causes-area.style-5 .counter-card.style-3 .content-wrapper .theme-btn a {
   background-color: #ff9a62;
