@@ -352,3 +352,12 @@ input.theme-btn {
 .mt-72 {
   margin-top: 72px;
 }
+
+.inner-page-wrapper {
+  margin-top: -148px;
+  position: relative;
+  z-index: 4;
+  .inner-wrapper {
+    background-color: $white;
+  }
+}

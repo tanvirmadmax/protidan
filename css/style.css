@@ -407,6 +407,15 @@ input.theme-btn {
   margin-top: 72px;
 }
 
+.inner-page-wrapper {
+  margin-top: -148px;
+  position: relative;
+  z-index: 4;
+}
+.inner-page-wrapper .inner-wrapper {
+  background-color: #ffffff;
+}
+
 /* Deafult Margin & Padding */
 /*-- Margin Top --*/
 .mt-5 {
