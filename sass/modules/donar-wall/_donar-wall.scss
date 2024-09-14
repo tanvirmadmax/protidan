@@ -1,0 +1,75 @@
+.donar-wall-wrapper {
+  margin-top: -148px;
+  position: relative;
+  z-index: 4;
+  .py-96 {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  .inner-wrapper {
+    background-color: $white;
+  }
+  .donar-card {
+    margin-top: 24px;
+    // &:first-child {
+    //   margin-top: 0;
+    // }
+    // &:nth-child(2) {
+    //   margin-top: 0;
+    // }
+  }
+  .theme-btn-wrapper {
+    .theme-btn {
+      &.style-2 {
+        a {
+          background-color: $primary-color;
+          color: $black;
+          border-color: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+.donar-card {
+  padding: 21px 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid $gray-4;
+  position: relative;
+
+  .image-wrapper {
+    .image {
+      margin-bottom: 16px;
+      img {
+        border-radius: 4px;
+        overflow: hidden;
+      }
+    }
+    .title {
+      margin-bottom: 4px;
+      color: $black;
+    }
+    .desc {
+      margin-bottom: 0;
+    }
+  }
+  .content-wrapper {
+    .title {
+      margin-bottom: 0;
+      color: $black;
+    }
+    .desc {
+      margin-bottom: 16px;
+    }
+  }
+  .divider {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background-color: $gray-4;
+  }
+}

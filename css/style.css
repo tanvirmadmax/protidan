@@ -12391,4 +12391,63 @@ ul.children {
 }
 .category-item.style-2 .content .title {
   margin-bottom: 6px;
+}
+
+.donar-wall-wrapper {
+  margin-top: -148px;
+  position: relative;
+  z-index: 4;
+}
+.donar-wall-wrapper .py-96 {
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+.donar-wall-wrapper .inner-wrapper {
+  background-color: #ffffff;
+}
+.donar-wall-wrapper .donar-card {
+  margin-top: 24px;
+}
+.donar-wall-wrapper .theme-btn-wrapper .theme-btn.style-2 a {
+  background-color: #ff9a62;
+  color: #121212;
+  border-color: #ff9a62;
+}
+
+.donar-card {
+  padding: 21px 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #bdbdbd;
+  position: relative;
+}
+.donar-card .image-wrapper .image {
+  margin-bottom: 16px;
+}
+.donar-card .image-wrapper .image img {
+  border-radius: 4px;
+  overflow: hidden;
+}
+.donar-card .image-wrapper .title {
+  margin-bottom: 4px;
+  color: #121212;
+}
+.donar-card .image-wrapper .desc {
+  margin-bottom: 0;
+}
+.donar-card .content-wrapper .title {
+  margin-bottom: 0;
+  color: #121212;
+}
+.donar-card .content-wrapper .desc {
+  margin-bottom: 16px;
+}
+.donar-card .divider {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #bdbdbd;
 }/*# sourceMappingURL=style.css.map */
