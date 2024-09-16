@@ -109,3 +109,199 @@
     }
   }
 }
+
+// Causes Details page
+.causes-details {
+  .title {
+    margin-top: 48px;
+    margin-bottom: 0;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 49px;
+    letter-spacing: 0.76px;
+    color: $black;
+  }
+  .desc {
+    margin-top: 16px;
+    margin-bottom: 0;
+    color: $black-3;
+  }
+  blockquote {
+    border-left: 4px solid $primary-color;
+    padding: 0;
+    padding-left: 24px;
+    flex-direction: column;
+    gap: 0;
+    margin: 46px 0;
+    p {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 34px;
+      letter-spacing: 0.4px;
+      color: $black;
+    }
+    .meta-user {
+      margin-top: 16px;
+      p {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 21px;
+        letter-spacing: 0.32px;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .list-item-wrapper {
+    margin-top: 16px;
+  }
+  .author-info {
+    margin-top: 32px;
+    background-color: $gray-5;
+    padding: 26px 32px;
+    justify-content: space-between;
+    .thumb-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+    .author-thumb {
+      border-radius: 100px;
+      overflow: hidden;
+    }
+    .author-text {
+      max-width: 526px;
+      .title {
+        color: $black;
+        margin-bottom: 4px;
+        margin-top: 0;
+        a {
+          font-size: 24px;
+          font-weight: 600;
+          line-height: 34px;
+          letter-spacing: 0.48px;
+        }
+      }
+      .author-desc {
+        line-height: 27px;
+        color: $black;
+        margin-top: 0;
+      }
+      .desc {
+        color: $black-3;
+        margin-top: 8px;
+      }
+    }
+    .counter-wrapper {
+      display: flex;
+      align-items: center;
+      .divider {
+        width: 1px;
+        height: 60px;
+        background-color: $gray-4;
+        margin: 0 60px;
+      }
+      .counter-item {
+        .content {
+          p {
+            margin-bottom: 0;
+          }
+          h4 {
+            margin-bottom: 0;
+            color: $black;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+    .right-side-wrapper {
+      .theme-btn {
+        float: right;
+        margin-top: 16px;
+        a {
+          background-color: $primary-color;
+          border-color: $primary-color;
+          color: $black;
+          &:hover {
+            background-color: $white;
+            color: $black;
+          }
+        }
+      }
+    }
+  }
+  .single-post-meta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 25px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 100%;
+    margin-top: 30px;
+    padding-top: 32px;
+    // border-top: 1px solid $black-3;
+    flex-wrap: wrap;
+    @include sm {
+      padding-top: 0;
+    }
+    .blog-post-tag {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      .post-tag-list {
+        display: flex;
+        gap: 8px;
+        a {
+          font-family: $body-font;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 21px;
+          color: $black;
+          padding: 8px 12px;
+          background-color: $gray-5;
+          letter-spacing: 0.28px;
+        }
+      }
+    }
+  }
+  // Social Share
+  .social-share {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+
+    a {
+      width: 32px;
+      height: 32px;
+      border-radius: 50px;
+      background-color: $primary-color;
+      // color: $white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &:hover {
+        background-color: $black;
+        i {
+          color: $white;
+          @include transition;
+        }
+      }
+
+      i {
+        color: $black;
+        font-size: 14px;
+        @include transition;
+      }
+    }
+
+    .social-share-title {
+      font-size: 16px;
+      font-weight: 700;
+      font-family: $heading-font;
+      color: $secondary-color;
+      margin-right: 5px;
+      text-transform: uppercase;
+    }
+  }
+}

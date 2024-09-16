@@ -7086,26 +7086,6 @@ button.testimonial-arrow-btn:hover i {
   border-radius: 20px;
   box-shadow: 4px 3px 60px 0px rgba(178, 178, 178, 0.1);
 }
-.project-sidebar .list-item-wrapper {
-  padding-left: 0;
-  margin-bottom: 0;
-  list-style: none;
-  gap: 25px;
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-}
-.project-sidebar .list-item-wrapper li {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-.project-sidebar .list-item-wrapper li .title {
-  margin-bottom: 0;
-}
-.project-sidebar .list-item-wrapper li p {
-  margin-bottom: 0;
-}
 .project-sidebar .social-share {
   padding-left: 0;
   list-style: none;
@@ -7156,40 +7136,36 @@ button.testimonial-arrow-btn:hover i {
   color: #ff9a62;
 }
 
-.list-item ul {
+.list-item-wrapper ul {
   padding-left: 0;
-  list-style: none;
+  list-style: unset;
   margin-bottom: 0;
 }
-.list-item ul li {
+.list-item-wrapper ul li {
   display: flex;
+  align-items: center;
   gap: 8px;
   margin-top: 10px;
   font-family: "Vazirmatn", sans-serif;
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.32px;
+  line-height: 31px;
   text-transform: uppercase;
   color: #121212;
 }
-.list-item ul li:before {
-  content: "\f272";
-  font-family: bootstrap-icons;
-  font-size: 15px;
-  color: #121212;
-  width: 24px;
-  height: 24px;
+.list-item-wrapper ul li:before {
+  content: "";
+  width: 4px;
+  height: 4px;
   border-radius: 50px;
-  background-color: #ff9a62;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 1px;
+  background-color: #121212;
+  transform: translateY(-50%);
 }
-.list-item ul li:last-child {
+.list-item-wrapper ul li:last-child {
   padding-bottom: 0;
 }
-.list-item ul li i {
+.list-item-wrapper ul li i {
   color: #1eae98;
   font-size: 20px;
   position: relative;
@@ -10137,6 +10113,189 @@ ul.children {
 .causes-area.style-5 .counter-card.style-3 .content-wrapper .theme-btn a:hover {
   background-color: #121212;
   color: #ffffff;
+}
+
+.causes-details .title {
+  margin-top: 48px;
+  margin-bottom: 0;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 49px;
+  letter-spacing: 0.76px;
+  color: #121212;
+}
+.causes-details .desc {
+  margin-top: 16px;
+  margin-bottom: 0;
+  color: #5e5e5e;
+}
+.causes-details blockquote {
+  border-left: 4px solid #ff9a62;
+  padding: 0;
+  padding-left: 24px;
+  flex-direction: column;
+  gap: 0;
+  margin: 46px 0;
+}
+.causes-details blockquote p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0.4px;
+  color: #121212;
+}
+.causes-details blockquote .meta-user {
+  margin-top: 16px;
+}
+.causes-details blockquote .meta-user p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
+}
+.causes-details .list-item-wrapper {
+  margin-top: 16px;
+}
+.causes-details .author-info {
+  margin-top: 32px;
+  background-color: #f4f4f4;
+  padding: 26px 32px;
+  justify-content: space-between;
+}
+.causes-details .author-info .thumb-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.causes-details .author-info .author-thumb {
+  border-radius: 100px;
+  overflow: hidden;
+}
+.causes-details .author-info .author-text {
+  max-width: 526px;
+}
+.causes-details .author-info .author-text .title {
+  color: #121212;
+  margin-bottom: 4px;
+  margin-top: 0;
+}
+.causes-details .author-info .author-text .title a {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 34px;
+  letter-spacing: 0.48px;
+}
+.causes-details .author-info .author-text .author-desc {
+  line-height: 27px;
+  color: #121212;
+  margin-top: 0;
+}
+.causes-details .author-info .author-text .desc {
+  color: #5e5e5e;
+  margin-top: 8px;
+}
+.causes-details .author-info .counter-wrapper {
+  display: flex;
+  align-items: center;
+}
+.causes-details .author-info .counter-wrapper .divider {
+  width: 1px;
+  height: 60px;
+  background-color: #bdbdbd;
+  margin: 0 60px;
+}
+.causes-details .author-info .counter-wrapper .counter-item .content p {
+  margin-bottom: 0;
+}
+.causes-details .author-info .counter-wrapper .counter-item .content h4 {
+  margin-bottom: 0;
+  color: #121212;
+  font-weight: 600;
+}
+.causes-details .author-info .right-side-wrapper .theme-btn {
+  float: right;
+  margin-top: 16px;
+}
+.causes-details .author-info .right-side-wrapper .theme-btn a {
+  background-color: #ff9a62;
+  border-color: #ff9a62;
+  color: #121212;
+}
+.causes-details .author-info .right-side-wrapper .theme-btn a:hover {
+  background-color: #ffffff;
+  color: #121212;
+}
+.causes-details .single-post-meta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 25px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  width: 100%;
+  margin-top: 30px;
+  padding-top: 32px;
+  flex-wrap: wrap;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .causes-details .single-post-meta {
+    padding-top: 0;
+  }
+}
+.causes-details .single-post-meta .blog-post-tag {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.causes-details .single-post-meta .blog-post-tag .post-tag-list {
+  display: flex;
+  gap: 8px;
+}
+.causes-details .single-post-meta .blog-post-tag .post-tag-list a {
+  font-family: "Vazirmatn", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #121212;
+  padding: 8px 12px;
+  background-color: #f4f4f4;
+  letter-spacing: 0.28px;
+}
+.causes-details .social-share {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+}
+.causes-details .social-share a {
+  width: 32px;
+  height: 32px;
+  border-radius: 50px;
+  background-color: #ff9a62;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.causes-details .social-share a:hover {
+  background-color: #121212;
+}
+.causes-details .social-share a:hover i {
+  color: #ffffff;
+  transition: all 0.5s ease-out;
+}
+.causes-details .social-share a i {
+  color: #121212;
+  font-size: 14px;
+  transition: all 0.5s ease-out;
+}
+.causes-details .social-share .social-share-title {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Vazirmatn", sans-serif;
+  color: #393d48;
+  margin-right: 5px;
+  text-transform: uppercase;
 }
 
 .about-page {
