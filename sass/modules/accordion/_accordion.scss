@@ -1,6 +1,6 @@
 .accordion {
   .accordion-item {
-    background-color: $white;
+    background-color: transparent;
     margin: 16px 0;
     border-radius: 0;
     border: 1px solid $gray-50;
@@ -27,7 +27,7 @@
       align-items: center;
       position: relative;
       cursor: pointer;
-      background-color: $white;
+      background-color: transparent;
       border-bottom: 1px solid $gray-50;
       box-shadow: none;
       &.collapsed {
@@ -48,7 +48,7 @@
       }
     }
     .accordion-body {
-      background-color: $white;
+      background-color: transparent;
       padding: 16px 40px 40px;
       @include transition;
     }

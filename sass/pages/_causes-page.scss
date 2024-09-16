@@ -235,7 +235,6 @@
     justify-content: space-between;
     padding-top: 25px;
     margin-top: 30px;
-    margin-bottom: 20px;
     width: 100%;
     margin-top: 30px;
     padding-top: 32px;
@@ -303,5 +302,10 @@
       margin-right: 5px;
       text-transform: uppercase;
     }
+  }
+}
+.faq-area-wrapper {
+  .faq-area {
+    background-color: $gray-5;
   }
 }
