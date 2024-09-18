@@ -1,0 +1,86 @@
+.donation-details-wrapper {
+  .content-title {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: $black;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 49px;
+    letter-spacing: 0.76px;
+  }
+  .title {
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0.56px;
+    color: $black;
+    margin-top: 32px;
+    margin-bottom: 16px;
+  }
+  .all-services {
+    padding: 24px;
+    border: 1px solid $gray-4;
+    .service-title {
+      margin-bottom: 24px;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 140%; /* 33.6px */
+      letter-spacing: 0.48px;
+      color: $black;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+      margin-bottom: 0;
+      li {
+        border: 1px solid $gray-4;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 21px;
+        letter-spacing: 0.32px;
+        text-transform: uppercase;
+        padding: 14px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 8px;
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+    &.contact-us {
+      margin-top: 24px;
+    }
+  }
+  .comment-respond {
+    margin-top: 24px;
+    padding: 0;
+    background-color: transparent;
+    box-shadow: none;
+    input {
+      border-radius: 0;
+      height: 48px;
+      border: 1px solid $gray-4 !important;
+      background-color: transparent;
+      box-shadow: none;
+    }
+    textarea {
+      border-radius: 0;
+      border: 1px solid $gray-4 !important;
+    }
+    .theme-btn {
+      background-color: $primary-color;
+      color: $black;
+      padding: 16px 24px;
+      border-radius: 4px;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 21px;
+      letter-spacing: 0.32px;
+      text-transform: uppercase;
+      &:hover {
+        background-color: $black;
+        color: $white;
+      }
+    }
+  }
+}

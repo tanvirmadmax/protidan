@@ -12045,6 +12045,71 @@ ul.children {
   background-color: #4f4f4f;
   color: #ffffff !important;
 }
+.donate-form.style-3 {
+  background-color: transparent;
+  padding: 0;
+  margin-bottom: 54px;
+}
+.donate-form.style-3 .sub-title {
+  color: #828282;
+}
+.donate-form.style-3 .title-wrapper .title {
+  color: #121212;
+  margin-bottom: 0;
+}
+.donate-form.style-3 .donate-input-field {
+  border: 1px solid #bdbdbd;
+  border-left: none;
+}
+.donate-form.style-3 .progress-content-outter .circle {
+  background-color: #121212;
+}
+.donate-form.style-3 .value-list {
+  margin-top: 32px;
+}
+.donate-form.style-3 .value-list .value {
+  border: 1px solid #bdbdbd;
+  color: #5e5e5e;
+  border-radius: 4px;
+}
+.donate-form.style-3 .value-list .value.active {
+  border-color: #bdbdbd;
+}
+.donate-form.style-3 .value-list .value.set-value {
+  width: 250px;
+}
+.donate-form.style-3 .value-list .value.custom-value {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: transparent;
+  width: 150px;
+}
+.donate-form.style-3 .value-list .value.custom-value:before {
+  background-color: transparent;
+}
+.donate-form.style-3 .value-list .value.custom-value input {
+  border: 1px solid #bdbdbd;
+  border-radius: 50px !important;
+}
+.donate-form.style-3 .value-list .value.custom-value input[type=radio]:checked {
+  background-color: #ff9a62 !important;
+}
+.donate-form.style-3 .value-list .value.custom-value input:before {
+  width: 8px;
+  height: 8px;
+  border-radius: 50px;
+  background-color: #121212 !important;
+}
+.donate-form.style-3 .value-list .value.custom-value label {
+  font-family: "Vazirmatn", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0.32px;
+  text-wrap: nowrap;
+  color: #5e5e5e;
+}
 .donate-form .theme-btn.style-1 {
   padding: 17px 32px !important;
 }
@@ -12621,4 +12686,89 @@ ul.children {
   width: 1px;
   height: 100%;
   background-color: #bdbdbd;
+}
+
+.donation-details-wrapper .content-title {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  color: #121212;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 49px;
+  letter-spacing: 0.76px;
+}
+.donation-details-wrapper .title {
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: 0.56px;
+  color: #121212;
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+.donation-details-wrapper .all-services {
+  padding: 24px;
+  border: 1px solid #bdbdbd;
+}
+.donation-details-wrapper .all-services .service-title {
+  margin-bottom: 24px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 140%; /* 33.6px */
+  letter-spacing: 0.48px;
+  color: #121212;
+}
+.donation-details-wrapper .all-services ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.donation-details-wrapper .all-services ul li {
+  border: 1px solid #bdbdbd;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
+  padding: 14px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+.donation-details-wrapper .all-services ul li:first-child {
+  margin-top: 0;
+}
+.donation-details-wrapper .all-services.contact-us {
+  margin-top: 24px;
+}
+.donation-details-wrapper .comment-respond {
+  margin-top: 24px;
+  padding: 0;
+  background-color: transparent;
+  box-shadow: none;
+}
+.donation-details-wrapper .comment-respond input {
+  border-radius: 0;
+  height: 48px;
+  border: 1px solid #bdbdbd !important;
+  background-color: transparent;
+  box-shadow: none;
+}
+.donation-details-wrapper .comment-respond textarea {
+  border-radius: 0;
+  border: 1px solid #bdbdbd !important;
+}
+.donation-details-wrapper .comment-respond .theme-btn {
+  background-color: #ff9a62;
+  color: #121212;
+  padding: 16px 24px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
+}
+.donation-details-wrapper .comment-respond .theme-btn:hover {
+  background-color: #121212;
+  color: #ffffff;
 }/*# sourceMappingURL=style.css.map */

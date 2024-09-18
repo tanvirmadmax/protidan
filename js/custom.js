@@ -502,7 +502,7 @@
     /*
         Skill Progress Bar Js
         ============================*/
-    $(".causes-area, .donate-area").each(function () {
+    $(".causes-area, .donate-area, .donation-details-wrapper").each(function () {
       let section = $(this);
       section.one("inview", function (event, isInView) {
         if (isInView) {

@@ -207,6 +207,79 @@
       }
     }
   }
+  &.style-3 {
+    background-color: transparent;
+    padding: 0;
+    .sub-title {
+      color: $gray-3;
+    }
+    .title-wrapper {
+      .title {
+        color: $black;
+        margin-bottom: 0;
+      }
+    }
+    .donate-input-field {
+      border: 1px solid $gray-4;
+      border-left: none;
+    }
+    .progress-content-outter {
+      .circle {
+        background-color: $black;
+      }
+    }
+    .value-list {
+      margin-top: 32px;
+      .value {
+        border: 1px solid $gray-4;
+        color: $black-3;
+        border-radius: 4px;
+        &.active {
+          border-color: $gray-4;
+        }
+        &.set-value {
+          width: 250px;
+        }
+        &.custom-value {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          border: transparent;
+          width: 150px;
+          &:before {
+            background-color: transparent;
+          }
+          &.active {
+          }
+          input {
+            border: 1px solid $gray-4;
+            border-radius: 50px !important;
+            &[type="radio"] {
+              &:checked {
+                background-color: $primary-color !important;
+              }
+            }
+            &:before {
+              width: 8px;
+              height: 8px;
+              border-radius: 50px;
+              background-color: $black !important;
+            }
+          }
+          label {
+            font-family: $body-font;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 27px;
+            letter-spacing: 0.32px;
+            text-wrap: nowrap;
+            color: $black-3;
+          }
+        }
+      }
+    }
+    margin-bottom: 54px;
+  }
   .theme-btn {
     &.style-1 {
       padding: 17px 32px !important;
