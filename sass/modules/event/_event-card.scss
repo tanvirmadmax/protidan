@@ -9,6 +9,9 @@
       }
     }
   }
+  @include sm {
+    flex-direction: column;
+  }
   .image-wrapper {
     position: relative;
     max-width: 526px;
@@ -57,8 +60,12 @@
   }
   .content-wrapper {
     padding: 42px 78px 40px 32px;
-    border: 1px solid $gray-50;
+    border: 1px solid $gray-4;
     border-left: transparent;
+    @include sm {
+      border-left: 1px solid $gray-4;
+      padding-right: 32px;
+    }
     .meta {
       margin-bottom: 16px;
       ul {
@@ -67,7 +74,10 @@
         gap: 24px;
         padding-left: 0;
         margin-bottom: 16px;
-
+        @include sm {
+          gap: 8px;
+          flex-wrap: wrap;
+        }
         li {
           display: flex;
           align-items: center;
@@ -102,6 +112,9 @@
       margin-top: 32px;
       align-items: start;
       justify-content: start;
+      a {
+        color: $black;
+      }
     }
   }
   &.style-2 {
@@ -170,6 +183,32 @@
         &:hover {
           background-color: $second-primary-color;
           border-color: transparent;
+        }
+      }
+    }
+  }
+  &.style-5 {
+    flex-direction: column;
+    .image-wrapper {
+      width: 100%;
+      max-width: 100%;
+      overflow: hidden;
+      img {
+        width: 100%;
+      }
+      .date {
+        left: unset;
+        right: 40px;
+        padding: 12px 26px;
+      }
+    }
+    .content-wrapper {
+      padding: 24px 16px;
+      border-left: 1px solid $gray-4;
+      .theme-btn {
+        a {
+          background-color: $primary-color;
+          border: transparent;
         }
       }
     }

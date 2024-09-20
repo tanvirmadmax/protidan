@@ -6597,6 +6597,15 @@ button.testimonial-arrow-btn:hover i {
   font-size: 16px;
 }
 
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .section-title-wrapper {
+    flex-direction: column;
+    gap: 24px;
+    justify-content: start;
+    align-items: start !important;
+  }
+}
+
 .section-title {
   display: flex;
   gap: 0px;
@@ -6604,6 +6613,11 @@ button.testimonial-arrow-btn:hover i {
   justify-content: center;
   z-index: 2;
   position: relative;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .section-title {
+    flex-direction: column;
+  }
 }
 .section-title .short-title {
   font-family: "Just Another Hand", cursive;
@@ -6688,6 +6702,9 @@ button.testimonial-arrow-btn:hover i {
 }
 .section-title.style-2 .short-title {
   color: #121212;
+}
+.section-title.style-2 .short-title.text-primary {
+  color: #ff9a62 !important;
 }
 .section-title.style-2 .short-title img {
   left: 0;
@@ -6917,6 +6934,7 @@ button.testimonial-arrow-btn:hover i {
   display: inline-flex;
   width: 100%;
   align-items: center;
+  justify-content: center;
   gap: 12px;
   flex-wrap: wrap;
   margin-bottom: 0;
@@ -6927,6 +6945,7 @@ button.testimonial-arrow-btn:hover i {
   display: inline-flex;
   width: 100%;
   align-items: center;
+  justify-content: center;
   gap: 12px;
   flex-wrap: wrap;
   list-style: none;
@@ -6962,12 +6981,15 @@ button.testimonial-arrow-btn:hover i {
   justify-content: center;
   color: #666666;
   background-color: #ffffff;
-  border-radius: 6px;
-  height: 53px;
-  width: 53px;
+  border-radius: 50px;
+  height: 32px;
+  width: 32px;
   transition: all 0.5s ease-out;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
   border: 1px solid #828282;
   text-transform: capitalize;
 }
@@ -9601,6 +9623,11 @@ ul.children {
 
 .brand-area .brand-slider {
   padding: 0 96px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .brand-area .brand-slider {
+    padding: 0 24px;
+  }
 }
 
 .event-area .event-card-wrapper {
@@ -12335,6 +12362,11 @@ ul.children {
   background-color: #ff9a62;
   border-color: #ff9a62;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .event-card {
+    flex-direction: column;
+  }
+}
 .event-card .image-wrapper {
   position: relative;
   max-width: 526px;
@@ -12386,6 +12418,12 @@ ul.children {
   border: 1px solid #bdbdbd;
   border-left: transparent;
 }
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .event-card .content-wrapper {
+    border-left: 1px solid #bdbdbd;
+    padding-right: 32px;
+  }
+}
 .event-card .content-wrapper .meta {
   margin-bottom: 16px;
 }
@@ -12395,6 +12433,12 @@ ul.children {
   gap: 24px;
   padding-left: 0;
   margin-bottom: 16px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .event-card .content-wrapper .meta ul {
+    gap: 8px;
+    flex-wrap: wrap;
+  }
 }
 .event-card .content-wrapper .meta ul li {
   display: flex;
@@ -12428,6 +12472,9 @@ ul.children {
   margin-top: 32px;
   align-items: start;
   justify-content: start;
+}
+.event-card .content-wrapper .theme-btn a {
+  color: #121212;
 }
 .event-card.style-2 .image-wrapper {
   max-width: 526px;
@@ -12488,6 +12535,30 @@ ul.children {
 .event-card.style-4 .theme-btn a:hover {
   background-color: #ff5e54;
   border-color: transparent;
+}
+.event-card.style-5 {
+  flex-direction: column;
+}
+.event-card.style-5 .image-wrapper {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+.event-card.style-5 .image-wrapper img {
+  width: 100%;
+}
+.event-card.style-5 .image-wrapper .date {
+  left: unset;
+  right: 40px;
+  padding: 12px 26px;
+}
+.event-card.style-5 .content-wrapper {
+  padding: 24px 16px;
+  border-left: 1px solid #bdbdbd;
+}
+.event-card.style-5 .content-wrapper .theme-btn a {
+  background-color: #ff9a62;
+  border: transparent;
 }
 
 .single-post-item {
@@ -12771,4 +12842,17 @@ ul.children {
 .donation-details-wrapper .comment-respond .theme-btn:hover {
   background-color: #121212;
   color: #ffffff;
+}
+
+.upcoming-event-wrapper .event-card-wrapper .event-card {
+  margin-top: 32px;
+}
+.upcoming-event-wrapper .event-card-wrapper .event-card .theme-btn a {
+  color: #121212;
+}
+.upcoming-event-wrapper .event-card-wrapper .event-card:first-child {
+  margin-top: 0;
+}
+.upcoming-event-wrapper .image-card-area .image-wrapper img {
+  filter: grayscale(1);
 }/*# sourceMappingURL=style.css.map */

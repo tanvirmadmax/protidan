@@ -1,0 +1,19 @@
+.upcoming-event-wrapper {
+  .event-card-wrapper {
+    .event-card {
+      margin-top: 32px;
+
+      .theme-btn {
+        a {
+          color: $black;
+        }
+      }
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+  .image-card-area .image-wrapper img {
+    filter: grayscale(1);
+  }
+}

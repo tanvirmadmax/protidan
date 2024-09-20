@@ -42,7 +42,6 @@
       @include transition;
     }
   }
-
 }
 
 .basic-pagination,
@@ -51,6 +50,7 @@
   display: inline-flex;
   width: 100%;
   align-items: center;
+  justify-content: center;
   gap: 12px;
   flex-wrap: wrap;
   margin-bottom: 0;
@@ -59,6 +59,7 @@
     display: inline-flex;
     width: 100%;
     align-items: center;
+    justify-content: center;
     gap: 12px;
     flex-wrap: wrap;
     list-style: none;
@@ -88,12 +89,15 @@
     justify-content: center;
     color: $text-color;
     background-color: $white;
-    border-radius: 6px;
-    height: 53px;
-    width: 53px;
+    border-radius: 50px;
+    height: 32px;
+    width: 32px;
     @include transition;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0.32px;
+    text-transform: uppercase;
     border: 1px solid $gray-3;
     text-transform: capitalize;
 
@@ -116,6 +120,5 @@
       border-color: $primary-color;
       @include transition;
     }
-
   }
 }
